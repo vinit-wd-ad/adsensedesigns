@@ -231,7 +231,7 @@ render_header(
         <div class="section-title">
             <span class="wow fadeInUp">Our work</span>
             <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                We’ve done lot’s of work, Let’s
+                We’ve done lot’s of work
             </h2>
         </div>
     </div>
@@ -888,15 +888,15 @@ render_header(
                         <h3 class="wow fadeInUp text-light" data-wow-delay=".3s">Contact Info</h3>
                         <div class="info-items mb-3 wow fadeInUp" data-wow-delay=".5s">
                             <h5 class="text-light">Address</h5>
-                            <p class="text-light">201-A, Jaina Tower-II, District Centre, Janak Puri, New Delhi 110058</p>
+                            <p class="text-light"><i class="fas fa-map-marker-alt"></i> 201-A, Jaina Tower-II, District Centre, Janak Puri, New Delhi 110058</p>
                         </div>
                         <div class="info-items mb-3 wow fadeInUp" data-wow-delay=".7s">
                             <h5 class="text-light">Phone</h5>
-                            <a href="tel:+09354587874" class="text-light"> 011-40044653</a>
+                            <a href="tel:+09354587874" class="text-light"><i class="fa fa-phone"></i> 011-40044653</a>
                         </div>
                         <div class="info-items wow fadeInUp" data-wow-delay=".9s">
                             <h5 class="text-light">Email</h5>
-                            <a href="#0" class="text-light">info@adsensedesigns.com</a>
+                            <a href="#0" class="text-light"><i class="fa fa-envelope"></i> info@adsensedesigns.com</a>
                         </div>
                     </div>
                 </div>
