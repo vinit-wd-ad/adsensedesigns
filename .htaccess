@@ -1,0 +1,40 @@
+RewriteEngine On
+
+# 1. Redirect why-us and index with query strings ONLY to /invalid-page.php
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/(why-us|index)(\.php)?\?[^\s]*\sHTTP/
+RewriteRule ^(why-us|index)(\.php)?$ /invalid-page.php [R=301,L]
+
+# 2. Redirect pure numeric URLs or numeric + .htm to /invalid-page.php
+RewriteCond %{REQUEST_URI} ^/([0-9]+)(\.htm)?$ [NC]
+RewriteRule ^ /invalid-page.php [R=301,L]
+
+# 3. SMART RULE: Saare spam folders ko EK HI BAAR MEIN /invalid-page.php par redirect karein
+RewriteRule ^(shopdetail|oreka|toreka|feature|pcmypage|product_archives|snoox|safe_search|product|zhHant)(/.*)?$ /invalid-page.php [R=301,L]
+
+# 4. Handle clean URLs like /about => about.php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
+
+# 5. Remove .php from URL in browser
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php\sHTTP/
+RewriteRule ^ %1 [R=301,L]
+
+# 6. 404 fallback
+ErrorDocument 404 /404.php
+
+
+<IfModule mod_headers.c>
+    # Security headers
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-XSS-Protection "1; mode=block"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+    # Clickjacking se bachne ke liye
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # CSP: cdnjs + Elfsight domains allow
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://maps.googleapis.com https://www.youtube.com https://www.youtube-nocookie.com https://elfsightcdn.com https://snapwidget.com https://cdn.lightwidget.com; style-src 'self' 'unsafe-inline'; frame-src 'self' https://www.google.com https://maps.google.com https://www.youtube.com https://www.youtube-nocookie.com https://www.instagram.com https://snapwidget.com https://cdn.lightwidget.com https://apps.elfsight.com https://*.elf.site; connect-src 'self' https://*.elf.site https://apps.elfsight.com; img-src 'self' data: https:; object-src 'none'"
+</IfModule>

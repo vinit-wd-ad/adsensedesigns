@@ -1,0 +1,324 @@
+.custom-slider {
+  overflow: hidden;
+
+  .slider {
+    animation: slidein 30s linear infinite;
+    white-space: nowrap;
+
+    .logos {
+      width: 100%;
+      display: inline-block;
+      margin: 0px 0;
+
+      .fab {
+        width: calc(100% / 5);
+        animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+      }
+    }
+  }
+}
+
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.base-color {
+  color: var(--theme);
+}
+
+.choose-us-section .news-area .choose-wrapper .choose-card {
+  margin: 10px 0px;
+  padding: 10px 0px;
+  border-radius: 10px;
+}
+
+.choose-us-section .news-area .choose-wrapper .choose-card .content {
+  margin: 0px 0px 5px 75px;
+  border: 1px solid;
+  padding: 10px 17px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 1px var(--theme);
+}
+.choose-us-section .news-area .choose-wrapper .choose-card .content p {
+  text-transform: capitalize;
+}
+.choose-us-section .news-area .choose-wrapper .choose-card .content h5 {
+  /* color: white; */
+  font-size: 30px;
+}
+.choose-us-section .news-area .choose-wrapper .choose-card .icon1 {
+  display: flex;
+  height: 100%;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #9c9c9c;
+  padding: 0px 17px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 1px var(--theme);
+}
+.choose-us-section .news-area .choose-wrapper .choose-card .icon1:hover,
+.choose-us-section .news-area .choose-wrapper .choose-card .content:hover {
+  box-shadow: 0px 0px 8px 1px var(--theme);
+}
+.choose-us-section .news-area .choose-wrapper .choose-card .icon1 img {
+  width: 200px;
+}
+
+.choose-wrapper.style-2
+  .choose-content
+  .icon-area.style-2
+  .icon-items
+  .icon1
+  img {
+  -webkit-transition: 0.6s ease-out;
+  -moz-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
+  width: 130%;
+  /* border-right: 3px solid #f38383;
+    padding-right: 12px; */
+}
+.choose-wrapper.style-2 .choose-content .icon-area.style-2 .icon-items .icon1 {
+  /* border-right: 3px solid var(--theme); */
+  /* padding-right: 12px; */
+}
+
+.choose-wrapper.style-2 .choose-content .icon-area .icon1:hover img {
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+.bt-banner-height {
+  height: 25rem;
+}
+
+.bg-wh {
+  background-color: white !important;
+}
+
+.news-section .team-image {
+  height: 400px !important;
+}
+
+.new-service h4 {
+  font-weight: 600;
+}
+
+.service-img img {
+  width: 100%;
+  height: auto;
+  /* height: 133px !important; */
+}
+
+/* Fade Animation CSS Start  */
+.animation {
+  justify-content: center;
+
+  .anm_mod {
+    transform: translate3d(0, 100%, 0);
+    transition: all 1s ease;
+
+    &.full {
+      width: 100%;
+      font-size: 3rem;
+    }
+
+    &.left {
+      transform: translate3d(-100%, 0, 0);
+    }
+
+    &.right {
+      transform: translate3d(100%, 0, 0);
+    }
+
+    &.delay {
+      transition: all 2s ease;
+    }
+
+    &.fast {
+      transition: all 0.8 ease;
+    }
+  }
+}
+
+.animation .anm_mod.active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.org_to_top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Fade Animation CSS End  */
+
+.icon-area {
+  transition: transform 0.9s;
+}
+
+.icon-area:hover {
+  box-shadow: 0px 0px 10px 1px var(--theme);
+  transform: rotate(-1deg);
+
+  -ms-transform: scale(1.05);
+  /* IE 9 */
+  -webkit-transform: scale(1.05);
+  /* Safari 3-8 */
+  transform: scale(1.05);
+}
+
+.section-title b {
+  color: var(--theme) !important;
+}
+
+.faq-wrapper .faq-content .faq-accordion b {
+  color: var(--black);
+}
+.faq-wrapper .faq-content .faq-accordion i {
+  color: var(--theme);
+  font-size: large;
+}
+.testimonial-section-3
+  .testimonial-slider
+  .swiper-slide
+  .testimonial-card-items-2
+  .testimonial-content {
+  height: 220px !important;
+  width: 100%;
+  overflow: hidden;
+}
+
+.case-btn {
+  /* background-image: var(--color-gradient-1); */
+  color: var(--black);
+  display: inline-block;
+  margin: 3px 3px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 30px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+  /* border-radius: 10px; */
+}
+.case-btn::before {
+  content: "";
+  background-image: var(--color-gradient-1);
+  width: 0;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  z-index: -1;
+}
+.case-btn::after {
+  content: "";
+  background-image: var(--color-gradient-1);
+  width: 0;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  z-index: -1;
+}
+
+.case-btn:hover {
+  color: var(--white);
+}
+
+.case-btn:hover::before {
+  width: 100%;
+  /* border-radius: 10px 10px 0px 0px; */
+}
+.case-btn:hover::after {
+  width: 100%;
+  /* border-radius: 0px 0px 10px 10px; */
+}
+
+.case-btn.hover-white:hover {
+  color: var(--header);
+}
+
+.case-btn.hover-white:hover::before,
+.content p span.hover-white:hover::after {
+  background-color: var(--white);
+}
+
+.case-btn.header-color {
+  background-color: var(--header);
+  background-image: inherit;
+}
+
+.case-btn.header-color::before,
+.content p span.header-color::after {
+  background-image: var(--color-gradient-1);
+}
+
+.case-btn.header-color-2 {
+  background-color: var(--header);
+  background-image: inherit;
+}
+
+.case-btn.header-color-2::before,
+.content p span.header-color-2::after {
+  background-color: var(--white);
+}
+
+.case-btn.header-color-2:hover {
+  color: var(--header);
+}
+
+.case-btn.bg-white {
+  background-color: var(--white);
+  color: var(--header);
+  background-image: initial;
+}
+
+.case-btn.bg-white:hover {
+  color: var(--white);
+}
+
+.case-btn.bg-white:hover::before,
+.content p span.bg-white:hover::after {
+  background-color: var(--header);
+}
+
+@media (max-width: 767px) {
+  .case-btn {
+    padding: 14px 32px;
+  }
+}
+
+@media (max-width: 575px) {
+  .case-btn {
+    padding: 12px 30px;
+    font-size: 13px;
+  }
+}
