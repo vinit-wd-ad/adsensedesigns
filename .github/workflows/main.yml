@@ -19,4 +19,6 @@ jobs:
           port: 65002
           script: |
             cd /home/u386335356/domains/adsensedesigns.com/public_html/main_adsense
+            git config pull.rebase false
+            git reset --hard HEAD
             git pull origin main
