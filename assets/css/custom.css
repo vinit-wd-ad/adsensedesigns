@@ -322,3 +322,30 @@
     font-size: 13px;
   }
 }
+
+.social-icon .style-1 {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+.social-icon .style-1 i {
+  font-size: 55px;
+}
+
+.social-icon .icon-box:nth-child(1):hover {
+  background: #4768ed;
+}
+
+.social-icon .icon-box:nth-child(2):hover {
+  background: linear-gradient(90deg, #dd00ff 0%, #f2295b 100%);
+}
+.social-icon .icon-box:nth-child(3):hover {
+  background: #4768ed;
+}
+.social-icon .icon-box:nth-child(4):hover {
+  background: linear-gradient(90deg, #ff0000 0%, #f2295b 100%);
+}
+.social-icon .icon-box:hover i {
+  color: #fff;
+}

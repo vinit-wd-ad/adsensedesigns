@@ -1,6 +1,6 @@
-<?php
+<?php 
 
-include "header.php";
+include "header.php"; 
 
 render_header(
     "We are adding sense to your brand",
@@ -249,7 +249,7 @@ render_header(
                             <div class="project-content">
                                 <p>Storeforme</p>
                                 <h4>
-                                    <a href="https://www.storeforme.in/" target="_blank">Web Development</a>
+                                    <a href="https://www.storeforme.in/" target="_blank" >Web Development</a>
                                 </h4>
                             </div>
                         </div>
@@ -259,7 +259,7 @@ render_header(
                     <div class="project-items-2 style-2">
                         <div class="project-image">
                             <img src="assets/img/project/drolia1.png" alt="project-img">
-                            <a href="https://droliachemicalworks.com/" target="_blank" class="icon">
+                            <a href="https://droliachemicalworks.com/" target="_blank"class="icon">
                                 <i class="flaticon-next"></i>
                             </a>
                             <div class="project-content">
@@ -281,7 +281,7 @@ render_header(
                             <div class="project-content">
                                 <p>Devenergy </p>
                                 <h4>
-                                    <a href="https://www.devenergy.co.in/" target='_blank'>Web Development</a>
+                                    <a href="https://www.devenergy.co.in/" target='_blank' >Web Development</a>
                                 </h4>
                             </div>
                         </div>
@@ -855,7 +855,7 @@ render_header(
 </div>
 
 <!-- Social Section Start -->
-<section class="news-section section-padding fix pb-0">
+<section class="news-section section-padding fix">
     <div class="line-area">
         <span></span>
         <span></span>
@@ -863,31 +863,61 @@ render_header(
     </div>
     <div class="container">
         <div class="section-title text-center">
-            <!-- <span class="wow fadeInUp">Our Social </span> -->
+            <span class="wow fadeInUp">Our Social </span>
             <h2 class="wow fadeInUp" data-wow-delay=".3s">Folllow Us</h2>
         </div>
-    </div>
-    <div class="container-fluid p-0">
-        <div class="row social-icon">
-            <div class="col-xl-3 col-lg-6 col-md-6 icon-box p-0 wow fadeInUp" data-wow-delay=".3s">
-                <a href="https://www.facebook.com/ADSENSEDESIGNS/" target="_blank" class="style-1">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
+        <div class="row">
+            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                <div class="team-card-items style-2">
+                    <div class="team-image bg-cover" style="background-image: url(assets/img/team/05.jpg);">
+                        <div class="team-content-2">
+                            <h4>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    Adsense Designs
+                                </a>
+                            </h4>
+                            <p>Pvt. Ltd.</p>
+                        </div>
+                        <div class="social-profile">
+                            <a href="https://www.instagram.com/" target="_blank" class="plus-btn"><i class='fab fa-instagram'></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 icon-box p-0 wow fadeInUp" data-wow-delay=".3s">
-                <a href="https://www.instagram.com/adsensedesigns/" target="_blank" class="style-1">
-                    <i class="fab fa-instagram"></i>
-                </a>
+            <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                <div class="team-card-items style-2">
+                    <div class="team-image bg-cover" style="background-image: url(assets/img/team/05.jpg);">
+                        <div class="team-content-2">
+                            <h4>
+                                <a href="https://www.facebook.com/login/" target="_blank">
+                                    Adsense Designs
+                                </a>
+                            </h4>
+                            <p>Pvt. Ltd.</p>
+                        </div>
+                        <div class="social-profile">
+                            <a href="https://www.facebook.com/login/" target="_blank" class="plus-btn"><i class='fab fa-facebook-f'></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 icon-box p-0 wow fadeInUp" data-wow-delay=".3s">
-                <a href="https://www.linkedin.com/company/adsense-designsdelhi/" target="_blank" class="style-1">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 icon-box p-0 wow fadeInUp" data-wow-delay=".3s">
-                <a href="" target="_blank" class="style-1">
-                    <i class="fab fa-youtube"></i>
-                </a>
+            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                <div class="team-card-items style-2">
+                    <div class="team-image bg-cover" style="background-image: url(assets/img/team/05.jpg);">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                        <div class="team-content-2">
+                            <h4>
+                                <a href="https://www.youtube.com/embed/tgbNymZ7vqY" target="_blank">
+                                    Adsense Designs
+                                </a>
+                            </h4>
+                            <p>Pvt. Ltd.</p>
+                        </div>
+                        <div class="social-profile">
+                            <a href="https://www.youtube.com/embed/tgbNymZ7vqY" class="plus-btn" target="_blank"><i class='fab fa-youtube-square'></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
