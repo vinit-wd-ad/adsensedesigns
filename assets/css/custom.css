@@ -349,3 +349,30 @@
 .social-icon .icon-box:hover i {
   color: #fff;
 }
+
+/* 1. Base Setup: Removes all standard borders and outlines */
+.nav-tabs {
+  border-bottom: 0 !important;
+}
+
+.nav-tabs .nav-link {
+  color: #495057;
+  background: transparent;
+  font-size: 0.9rem;
+  border: 0 !important;
+  /* Forces completely flat layout */
+  transition: all 0.25s ease-in-out;
+}
+
+/* 2. Soft Hover Effect */
+.nav-tabs .nav-link:hover {
+  color: var(--theme);
+  background-color: #f8f9fa;
+}
+
+/* 3. Solid Active Background with Sharp Corners */
+.nav-tabs .nav-link.active {
+  color: #ffffff !important;
+  background-color: var(--theme) !important;
+  /* Solid dark background */
+}

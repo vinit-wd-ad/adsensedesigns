@@ -5686,7 +5686,7 @@ input.main-search-input::placeholder {
   position: relative;
 }
 
-.project-section-3::before {
+/* .project-section-3::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -5697,7 +5697,7 @@ input.main-search-input::placeholder {
   content: "";
   background-color: var(--bg);
   height: 50%;
-}
+} */
 
 .project-section-3 .shape-image {
   position: absolute;

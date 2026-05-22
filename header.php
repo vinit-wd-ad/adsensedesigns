@@ -206,10 +206,10 @@ function render_header($title = "Default Title", $description = "Default descrip
                     <div class="mega-menu-wrapper">
                         <div class="header-main">
                             <div class="logo">
-                                <a href="index.php" class="header-logo">
+                                <a href="./" class="header-logo">
                                     <img src="assets/img/logo/logo2.svg" alt="logo-img">
                                 </a>
-                                <a href="index.html" class="header-logo-2">
+                                <a href="./" class="header-logo-2">
                                     <img src="assets/img/logo/logo1.png" alt="logo-img">
                                 </a>
                             </div>
@@ -219,7 +219,7 @@ function render_header($title = "Default Title", $description = "Default descrip
                                         <nav id="mobile-menu">
                                             <ul>
                                                 <li class="active">
-                                                    <a href="index.php">
+                                                    <a href="./">
                                                         Home
                                                     </a>
                                                 </li>
