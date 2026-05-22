@@ -24,7 +24,7 @@ function render_header($title = "Default Title", $description = "Default descrip
         <meta name="msvalidate.01" content="8BA2DD0F6A3775417E8A3BBF05F9D014" />
 
         <!--<< Favcion >>-->
-        <link rel="shortcut icon" href="assets/img/logo/logo2.svg">
+        <link rel="shortcut icon" href="assets/img/logo/s-logo.png">
         <!--<< Bootstrap min.css >>-->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!--<< Font Awesome.css >>-->
@@ -210,7 +210,7 @@ function render_header($title = "Default Title", $description = "Default descrip
                                     <img src="assets/img/logo/logo2.svg" alt="logo-img">
                                 </a>
                                 <a href="index.html" class="header-logo-2">
-                                    <img src="assets/img/logo/logo2.svg" alt="logo-img">
+                                    <img src="assets/img/logo/logo1.png" alt="logo-img">
                                 </a>
                             </div>
                             <div class="header-left">
