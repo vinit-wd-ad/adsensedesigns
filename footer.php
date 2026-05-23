@@ -127,20 +127,15 @@
 <!--<< Custom.js >>-->
 <script src="assets/js/custom.js"></script>
 
-<script src="https://unpkg.com/lenis@1.3.16/dist/lenis.min.js"></script>
+<script src="https://unpkg.com/lenis@1.3.16/dist/lenis.min.js"></script> 
 
+<!-- 3. The Activation Config -->
 <script>
     const lenis = new Lenis({
-        duration: 1.2,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
-        // smooth: true 
+        autoRaf: true,
+        anchors: true,
+        duration: 1.2 
     });
-
-    function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
 </script>
 
 </body>
