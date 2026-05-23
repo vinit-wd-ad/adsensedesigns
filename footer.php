@@ -12,7 +12,7 @@
                         </div>
                         <div class="footer-content">
                             <p>
-                            201-A, Jaina Tower-II, District Centre,<br> Janak Puri, New Delhi 110058
+                                201-A, Jaina Tower-II, District Centre,<br> Janak Puri, New Delhi 110058
                             </p>
                             <h6><a href="#"> 011-40044653</a></h6>
                             <h6><a href="#">info@adsensedesigns.com</a></h6>
@@ -126,6 +126,22 @@
 <script src="assets/js/main.js"></script>
 <!--<< Custom.js >>-->
 <script src="assets/js/custom.js"></script>
+
+<script src="https://unpkg.com/lenis@1.3.16/dist/lenis.min.js"></script>
+
+<script>
+    const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
+        // smooth: true 
+    });
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+</script>
 
 </body>
 
