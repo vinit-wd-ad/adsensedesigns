@@ -212,7 +212,7 @@ h6 {
   font-family: "Kanit", sans-serif;
   margin: 0px;
   padding: 0;
-  color: var(--header);
+  color: var(--theme);
   text-transform: capitalize;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -690,7 +690,7 @@ input.main-search-input::placeholder {
 }
 
 .section-title span {
-  color: var(--theme);
+  color: var(--text);
   margin-bottom: 10px;
   display: inline-block;
   font-weight: 600;
@@ -4500,7 +4500,7 @@ input.main-search-input::placeholder {
 }
 
 .about-wrapper-3 .about-content h5 {
-  color: var(--theme);
+  color: var(--text);
 }
 
 .about-wrapper-3 .about-content p {

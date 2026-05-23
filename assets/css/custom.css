@@ -188,7 +188,7 @@
 }
 
 .section-title b {
-  color: var(--theme) !important;
+  color: var(--header) !important;
 }
 
 .faq-wrapper .faq-content .faq-accordion b {
@@ -357,10 +357,9 @@
 
 .nav-tabs .nav-link {
   color: #495057;
-  background: transparent;
+  background-color: #ecebeb;
   font-size: 0.9rem;
-  border: 0 !important;
-  /* Forces completely flat layout */
+  border: 1px solid #fff !important;
   transition: all 0.25s ease-in-out;
 }
 

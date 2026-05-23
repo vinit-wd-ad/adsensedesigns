@@ -238,63 +238,65 @@ render_header(
     <div class="container pt-4 shadow-sm style-2">
 
         <!-- 1. Tabs Links (Pure Flat Horizontal Layout - No Borders) -->
-        <ul class="nav nav-tabs d-flex justify-content-between flex-row border-0 mb-3" id="premiumTab" role="tablist">
-            <li class="nav-item flex-fill text-center" role="presentation">
-                <button class="nav-link active w-100 border-0 rounded-0 py-3 text-uppercase tracking-wider fw-bold" id="h-brand-tab" data-bs-toggle="tab" data-bs-target="#h-brand-pane" type="button" role="tab" aria-selected="true">
+        <ul class="nav nav-tabs d-flex flex-nowrap justify-content-between border-0 mb-3 w-100" id="premiumTab" role="tablist" style="overflow-x: auto; white-space: normal;">
+            <li class="nav-item flex-fill text-center" role="presentation" style="min-width: 110px;">
+                <button class="nav-link active w-100 border-0 rounded-0 py-2 px-1 text-uppercase tracking-wider fw-bold lh-sm text-wrap" id="h-brand-tab" data-bs-toggle="tab" data-bs-target="#h-brand-pane" type="button" role="tab" aria-selected="true">
                     BRAND IDENTITY
                 </button>
             </li>
-            <li class="nav-item flex-fill text-center" role="presentation">
-                <button class="nav-link w-100 border-0 rounded-0 py-3 text-uppercase tracking-wider fw-bold" id="h-packaging-tab" data-bs-toggle="tab" data-bs-target="#h-packaging-pane" type="button" role="tab" aria-selected="false">
+            <li class="nav-item flex-fill text-center" role="presentation" style="min-width: 110px;">
+                <button class="nav-link w-100 border-0 rounded-0 py-2 px-1 text-uppercase tracking-wider fw-bold lh-sm text-wrap" id="h-packaging-tab" data-bs-toggle="tab" data-bs-target="#h-packaging-pane" type="button" role="tab" aria-selected="false">
                     PACKAGING DESIGN
                 </button>
             </li>
-            <li class="nav-item flex-fill text-center" role="presentation">
-                <button class="nav-link w-100 border-0 rounded-0 py-3 text-uppercase tracking-wider fw-bold" id="h-web-tab" data-bs-toggle="tab" data-bs-target="#h-web-pane" type="button" role="tab" aria-selected="false">
+            <li class="nav-item flex-fill text-center" role="presentation" style="min-width: 110px;">
+                <button class="nav-link w-100 border-0 rounded-0 py-2 px-1 text-uppercase tracking-wider fw-bold lh-sm text-wrap" id="h-web-tab" data-bs-toggle="tab" data-bs-target="#h-web-pane" type="button" role="tab" aria-selected="false">
                     WEB SOLUTIONS
                 </button>
             </li>
-            <li class="nav-item flex-fill text-center" role="presentation">
-                <button class="nav-link w-100 border-0 rounded-0 py-3 text-uppercase tracking-wider fw-bold" id="h-social-tab" data-bs-toggle="tab" data-bs-target="#h-social-pane" type="button" role="tab" aria-selected="false">
+            <li class="nav-item flex-fill text-center" role="presentation" style="min-width: 110px;">
+                <button class="nav-link w-100 border-0 rounded-0 py-2 px-1 text-uppercase tracking-wider fw-bold lh-sm text-wrap" id="h-social-tab" data-bs-toggle="tab" data-bs-target="#h-social-pane" type="button" role="tab" aria-selected="false">
                     SOCIAL MEDIA MANAGEMENT
                 </button>
             </li>
-            <li class="nav-item flex-fill text-center" role="presentation">
-                <button class="nav-link w-100 border-0 rounded-0 py-3 text-uppercase tracking-wider fw-bold" id="h-marketing-tab" data-bs-toggle="tab" data-bs-target="#h-marketing-pane" type="button" role="tab" aria-selected="false">
+            <li class="nav-item flex-fill text-center" role="presentation" style="min-width: 110px;">
+                <button class="nav-link w-100 border-0 rounded-0 py-2 px-1 text-uppercase tracking-wider fw-bold lh-sm text-wrap" id="h-marketing-tab" data-bs-toggle="tab" data-bs-target="#h-marketing-pane" type="button" role="tab" aria-selected="false">
                     TOTAL MARKETING SOLUTION
                 </button>
             </li>
-            <li class="nav-item flex-fill text-center" role="presentation">
-                <button class="nav-link w-100 border-0 rounded-0 py-3 text-uppercase tracking-wider fw-bold" id="h-promo-tab" data-bs-toggle="tab" data-bs-target="#h-promo-pane" type="button" role="tab" aria-selected="false">
+            <li class="nav-item flex-fill text-center" role="presentation" style="min-width: 110px;">
+                <button class="nav-link w-100 border-0 rounded-0 py-2 px-1 text-uppercase tracking-wider fw-bold lh-sm text-wrap" id="h-promo-tab" data-bs-toggle="tab" data-bs-target="#h-promo-pane" type="button" role="tab" aria-selected="false">
                     PROMOTIONAL ITEMS
                 </button>
             </li>
-            <li class="nav-item flex-fill text-center" role="presentation">
-                <button class="nav-link w-100 border-0 rounded-0 py-3 text-uppercase tracking-wider fw-bold" id="h-merch-tab" data-bs-toggle="tab" data-bs-target="#h-merch-pane" type="button" role="tab" aria-selected="false">
+            <li class="nav-item flex-fill text-center" role="presentation" style="min-width: 110px;">
+                <button class="nav-link w-100 border-0 rounded-0 py-2 px-1 text-uppercase tracking-wider fw-bold lh-sm text-wrap" id="h-merch-tab" data-bs-toggle="tab" data-bs-target="#h-merch-pane" type="button" role="tab" aria-selected="false">
                     BRAND MERCHANDISERS
                 </button>
             </li>
-            <li class="nav-item flex-fill text-center" role="presentation">
-                <button class="nav-link w-100 border-0 rounded-0 py-3 text-uppercase tracking-wider fw-bold" id="h-trophies-tab" data-bs-toggle="tab" data-bs-target="#h-trophies-pane" type="button" role="tab" aria-selected="false">
+            <li class="nav-item flex-fill text-center" role="presentation" style="min-width: 110px;">
+                <button class="nav-link w-100 border-0 rounded-0 py-2 px-1 text-uppercase tracking-wider fw-bold lh-sm text-wrap" id="h-trophies-tab" data-bs-toggle="tab" data-bs-target="#h-trophies-pane" type="button" role="tab" aria-selected="false">
                     TROPHIES & MEMENTOES
                 </button>
             </li>
         </ul>
 
         <!-- 2. Tabs Contents Area -->
-        <div class="tab-content p-4 border-0" id="premiumTabContent">
+        <div class="tab-content py-4 border-0" id="premiumTabContent">
 
             <!-- BRAND IDENTITY -->
             <div class="tab-pane fade show active" id="h-brand-pane" role="tabpanel" tabindex="0">
                 <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <h3 class="fw-bold mb-3 text-dark">Crafting Iconic Brand Identities</h3>
-                        <p class="lead text-muted">We don't just create logos; we design a complete visual personality for your business.</p>
-                        <p class="text-muted">Our services include comprehensive brand guidelines, custom color palettes, professional typography rules, and corporate stationery design tailored to make you stand out distinctively in the market.</p>
-                        <a href="./case-studies" class="btn btn-dark rounded-0 mt-2 px-4 py-2">View Case Studies</a>
+                    <!-- <div class="col-lg-6 mt-4 mt-lg-0">
+                        <video autoplay muted loop playsinline style="width:100%; height:auto; object-fit:cover;">
+                            <source src="assets/img/project/branding1.mp4" type="video/mp4">
+                        </video>
+                    </div> -->
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <img src="assets/img/project/brand-identity1.jpg" class="img-fluid w-100 rounded-0 shadow-sm" alt="Brand Identity Concept">
                     </div>
-                    <div class="col-lg-5 mt-4 mt-lg-0">
-                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-0 shadow-sm" alt="Brand Identity Concept">
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <img src="assets/img/project/brand-identity3.jpg" class="img-fluid w-100 rounded-0 shadow-sm" alt="Brand Identity Concept">
                     </div>
                 </div>
             </div>
@@ -302,21 +304,11 @@ render_header(
             <!-- PACKAGING DESIGN -->
             <div class="tab-pane fade" id="h-packaging-pane" role="tabpanel" tabindex="0">
                 <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <h3 class="fw-bold mb-3 text-dark">Premium Product Packaging</h3>
-                        <p class="lead text-muted">We don't just create logos; we design a complete visual personality for your business.</p>
-                        <p class="text-muted">Your product's packaging is the first point of contact that attracts customers. Explore some of our premium custom packaging designs:</p>
-                        <a href="./case-studies" class="btn btn-dark rounded-0 mt-2 px-4 py-2">View Case Studies</a>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <img src="assets/img/project/packaging1.png" class="img-fluid rounded-0 shadow-sm" alt="Box Packaging">
                     </div>
-                    <div class="col-lg-7 mt-4 mt-lg-0">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <img src="https://candzey.com/wp-content/uploads/2013/06/MIX-FRUIT-1.jpg" class="img-fluid rounded-0 shadow-sm" alt="Box Packaging">
-                            </div>
-                            <div class="col-md-6">
-                                <img src="assets/img/project/project2.jpg" class="img-fluid rounded-0 shadow-sm" alt="Box Packaging">
-                            </div>
-                        </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <img src="assets/img/project/packaging2.png" class="img-fluid rounded-0 shadow-sm" alt="Box Packaging">
                     </div>
                 </div>
             </div>
@@ -324,17 +316,13 @@ render_header(
             <!-- WEB SOLUTIONS -->
             <div class="tab-pane fade" id="h-web-pane" role="tabpanel" tabindex="0">
                 <div class="row align-items-center">
-                    <div class="col-lg-5 mb-4 mb-lg-0">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-0 shadow-sm" alt="Web Solutions">
-                    </div>
-                    <div class="col-lg-7 ps-lg-4">
-                        <h3 class="fw-bold mb-3 text-dark">Modern & Responsive Web Solutions</h3>
-                        <p class="text-muted">We build high-performance websites, e-commerce stores, and custom web applications that are exceptionally fast and fully responsive across all devices.</p>
-                        <ul class="text-muted">
-                            <li>Custom UI/UX Architecture</li>
-                            <li>E-Commerce Hub Integration</li>
-                            <li>Speed Optimization & Robust Core SEO</li>
-                        </ul>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mt-4 mt-lg-0">
+                            <img src="assets/img/project/web-solution2.png" class="img-fluid w-100 h-100 rounded-0 shadow-sm" alt="Box Packaging">
+                        </div>
+                        <div class="col-lg-6 mt-4 mt-lg-0">
+                            <img src="assets/img/project/web-solution3.jpeg" class="img-fluid rounded-0 shadow-sm" alt="Box Packaging">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -342,13 +330,18 @@ render_header(
             <!-- SOCIAL MEDIA MANAGEMENT -->
             <div class="tab-pane fade" id="h-social-pane" role="tabpanel" tabindex="0">
                 <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <h3 class="fw-bold mb-3 text-dark">Social Media Management</h3>
-                        <p class="lead text-muted">Grow your digital presence with strategic social campaigns.</p>
-                        <p class="text-muted">We manage your brand accounts across platforms through data-driven content creation, trend monitoring, active community management, and targeted ad campaigns designed to maximize engagement and audience growth.</p>
+                    <div class="col-lg-4 mt-4 mt-lg-0">
+                        <video autoplay muted loop playsinline style="width:100%; height:auto; object-fit:cover;">
+                            <source src="assets/img/project/social1.mp4" type="video/mp4">
+                        </video>
                     </div>
-                    <div class="col-lg-5 mt-4 mt-lg-0">
-                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-0 shadow-sm" alt="Social Media Strategy">
+                    <div class="col-lg-4 mt-4 mt-lg-0">
+                        <video autoplay muted loop playsinline style="width:100%; height:auto; object-fit:cover;">
+                            <source src="assets/img/project/social2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-lg-4 mt-4 mt-lg-0">
+                        <img src="assets/img/project/social3.jpeg" class="img-fluid rounded-0 shadow-sm" alt="Social Media Strategy">
                     </div>
                 </div>
             </div>
@@ -356,38 +349,38 @@ render_header(
             <!-- TOTAL MARKETING SOLUTION -->
             <div class="tab-pane fade" id="h-marketing-pane" role="tabpanel" tabindex="0">
                 <div class="row align-items-center">
-                    <div class="col-lg-5 mb-4 mb-lg-0">
-                        <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-0 shadow-sm" alt="Total Marketing Ecosystem">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="assets/img/project/total-marketing2.png" class="img-fluid rounded-0 shadow-sm" alt="Total Marketing Ecosystem">
                     </div>
-                    <div class="col-lg-7 ps-lg-4">
-                        <h3 class="fw-bold mb-3 text-dark">Total Marketing Solution</h3>
-                        <p class="lead text-muted">A comprehensive, full-funnel approach to brand dominance.</p>
-                        <p class="text-muted">From cutting-edge digital performance marketing and SEO to traditional print media and strategic advertising, we build a complete dynamic blueprint ecosystem that delivers trackable ROI for your company.</p>
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-0 h-100 w-100 shadow-sm" alt="Total Marketing Ecosystem">
                     </div>
                 </div>
             </div>
 
             <!-- PROMOTIONAL ITEMS -->
             <div class="tab-pane fade" id="h-promo-pane" role="tabpanel" tabindex="0">
-                <h3 class="fw-bold mb-3 text-dark">Promotional Items</h3>
-                <p class="text-muted mb-4">Enhance your ground presence and leave lasting impressions with high-quality flyers, premium brochures, and creative business display materials:</p>
-                <div class="row g-3">
+                <div class="row align-items-center">
                     <div class="col-md-4">
-                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded-0 shadow-sm" alt="Corporate Giveaways">
+                        <img src="assets/img/project/promotional-1.jpeg" class="img-fluid rounded-0 shadow-sm" alt="Corporate Giveaways">
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <a href="./case-studies" class="btn btn-dark rounded-0 mt-2 px-4 py-2">View Case Studies</a>
                     </div>
                 </div>
             </div>
 
             <!-- BRAND MERCHANDISERS -->
             <div class="tab-pane fade" id="h-merch-pane" role="tabpanel" tabindex="0">
-                <h3 class="fw-bold mb-3 text-dark">Brand Merchandisers</h3>
-                <p class="text-muted mb-4">Turn your customers and staff into brand ambassadors with custom corporate uniforms, bespoke t-shirts, diaries, keychains, and premium lifestyle apparel gear:</p>
-                <div class="row g-3">
-                    <div class="col-md-3">
-                        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded-0 shadow-sm" alt="Premium Apparel & Clothes">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <img src="assets/img/project/brand1.jpeg" class="img-fluid rounded-0 shadow-sm" alt="Corporate Giveaways">
                     </div>
-                    <div class="col-md-3">
-                        <img src="https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded-0 shadow-sm" alt="Corporate Diaries & Merch">
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <a href="./case-studies" class="btn btn-dark rounded-0 mt-2 px-4 py-2">View Case Studies</a>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/project/brand3.jpeg" class="img-fluid rounded-0 shadow-sm" alt="Corporate Giveaways">
                     </div>
                 </div>
             </div>
@@ -395,23 +388,14 @@ render_header(
             <!-- TROPHIES & MEMENTOES -->
             <div class="tab-pane fade" id="h-trophies-pane" role="tabpanel" tabindex="0">
                 <div class="row align-items-center">
-                    <div class="col-lg-5">
-                        <h3 class="fw-bold mb-3 text-dark">Trophies & Mementoes</h3>
-                        <p class="lead text-muted">Celebrate success and milestones with handcrafted recognition awards.</p>
-                        <p class="text-muted">We design and manufacture ultra-premium crystal shields, custom-cut acrylic frames, geometric corporate awards, and polished wooden plaques perfectly curated for your annual recognition meets, sporting events, and corporate milestones.</p>
+                    <div class="col-md-4">
+                        <img src="assets/img/project/trophy1.png" class="img-fluid rounded-0 shadow-sm" alt="Premium Crystal Award">
                     </div>
-                    <div class="col-lg-7 mt-4 mt-lg-0">
-                        <div class="row g-2">
-                            <div class="col-md-4">
-                                <img src="assets/img/project/trophy1.png" class="img-fluid rounded-0 shadow-sm" alt="Premium Crystal Award">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="assets/img/project/trophy2.png" class="img-fluid rounded-0 shadow-sm" alt="Corporate Trophies">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="assets/img/project/trophy3.png" class="img-fluid rounded-0 shadow-sm" alt="Corporate Trophies">
-                            </div>
-                        </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/project/trophy2.png" class="img-fluid rounded-0 shadow-sm" alt="Corporate Trophies">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/project/trophy3.png" class="img-fluid rounded-0 shadow-sm" alt="Corporate Trophies">
                     </div>
                 </div>
             </div>
@@ -421,7 +405,7 @@ render_header(
 
     <!-- CSS Styling (Place inside your global stylesheet or <style> block) -->
     <style>
-        
+
     </style>
 </section>
 
