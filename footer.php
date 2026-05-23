@@ -127,15 +127,23 @@
 <!--<< Custom.js >>-->
 <script src="assets/js/custom.js"></script>
 
-<script src="https://unpkg.com/lenis@1.3.16/dist/lenis.min.js"></script> 
+<!-- Lenis CDN -->
+<script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
 
-<!-- 3. The Activation Config -->
 <script>
+    // Initialize Lenis
     const lenis = new Lenis({
-        autoRaf: true,
-        anchors: true,
-        duration: 1.2 
-    });
+        duration: 1.2,
+        smoothWheel: true
+    })
+
+    // Animation Frame Loop
+    function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
 </script>
 
 </body>

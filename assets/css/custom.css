@@ -1,21 +1,9 @@
-html.lenis, html.lenis body {
+html.lenis {
   height: auto;
 }
 
-.lenis-smooth {
+.lenis.lenis-smooth {
   scroll-behavior: auto !important;
-}
-
-.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis-scrolling iframe {
-  pointer-events: none;
 }
 
 .custom-slider {
