@@ -128,9 +128,7 @@
 <script src="assets/js/custom.js"></script>
 
 <!-- Lenis CDN -->
-<!-- <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script> -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script> -->
-<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+<script src="assets/js/lenis.min.js"></script>
 
 <script>
     window.addEventListener('load', function() {
