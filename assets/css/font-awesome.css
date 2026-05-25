@@ -7,8 +7,7 @@
 
 @font-face {
     font-family: "flaticon";
-    src: url("../fonts/index.htm") format("truetype"),
-url("../fonts/flaticon.woff") format("woff"),
+    src: url("../fonts/flaticon.woff") format("woff"),
 url("../fonts/flaticon.woff2") format("woff2"),
 }
 

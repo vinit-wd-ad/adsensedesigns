@@ -27,8 +27,6 @@ function render_header($title = "Default Title", $description = "Default descrip
         <link rel="shortcut icon" href="assets/img/logo/s-logo.png">
         <!--<< Bootstrap min.css >>-->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
-        
         <!--<< Font Awesome.css >>-->
         <link rel="stylesheet" href="assets/css/font-awesome.css">
         <!--<< Animate.css >>-->
