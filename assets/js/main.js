@@ -26,7 +26,7 @@ function loader() {
         preloader.classList.add('loaded');
 
         setTimeout(() => {
-            preloader.style.transition = 'opacity 0.5s ease';
+            preloader.style.transition = 'opacity 0.1s ease';
             preloader.style.opacity = '0';
 
             setTimeout(() => {
@@ -522,6 +522,13 @@ document.addEventListener("DOMContentLoaded", function () {
             autoplay: {
                 delay: 2000,
                 disableOnInteraction: false,
+            },
+            breakpoints: {
+                1199: { slidesPerView: 2 },
+                991: { slidesPerView: 2 },
+                767: { slidesPerView: 2 },
+                575: { slidesPerView: 1 },
+                0: { slidesPerView: 1 },
             },
             navigation: {
                 nextEl: ".array-prev",

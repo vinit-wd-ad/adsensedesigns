@@ -4,7 +4,7 @@ function render_header($title = "Default Title", $description = "Default descrip
 ?>
 
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="en" class="lenis">
 
     <head>
         <meta charset="UTF-8" />
