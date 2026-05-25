@@ -21,7 +21,7 @@ function render_header($title = "Default Title", $description = "Default descrip
             echo '<link rel="' . htmlspecialchars($rel) . '" href="' . htmlspecialchars($href) . '">' . "\n";
         }
         ?>
-        <meta name="msvalidate.01" content="8BA2DD0F6A3775417E8A3BBF05F9D014" />
+        <!-- <meta name="msvalidate.01" content="8BA2DD0F6A3775417E8A3BBF05F9D014" /> -->
 
         <!--<< Favcion >>-->
         <link rel="shortcut icon" href="assets/img/logo/s-logo.png">
@@ -31,20 +31,13 @@ function render_header($title = "Default Title", $description = "Default descrip
         <link rel="stylesheet" href="assets/css/font-awesome.css">
         <!--<< Animate.css >>-->
         <link rel="stylesheet" href="assets/css/animate.css">
-        <!--<< Magnific Popup.css >>-->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <!--<< MeanMenu.css >>-->
-        <link rel="stylesheet" href="assets/css/meanmenu.css">
         <!--<< Swiper Bundle.css >>-->
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        <!--<< Nice Select.css >>-->
-        <link rel="stylesheet" href="assets/css/nice-select.css">
         <!--<< Main.css >>-->
         <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/custom.css?v=1.01.01">
+        <link rel="stylesheet" href="assets/css/custom.css?v=1.01.02">
         <!--<< Style.css >>-->
         <link rel="stylesheet" href="assets/css/style.css">
-
 
     </head>
 

@@ -11,6 +11,65 @@ body {
   overflow-x: hidden;
 }
 
+.offcanvas__info {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 320px;
+  height: 100%;
+  background: #fff;
+  z-index: 9999;
+  transition: 0.4s;
+  overflow-y: auto;
+}
+
+.offcanvas__info.active {
+  right: 0;
+}
+
+.offcanvas__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  z-index: 999;
+}
+
+.offcanvas__overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-menu .submenu {
+  position: static !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  width: 100% !important;
+  padding-left: 15px;
+  transition: all 0.6s ease;
+}
+
+.mobile-menu li a {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  color: var(--header);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.mobile-menu li a i {
+  transition: transform 0.25s ease-in-out;
+}
+
 .custom-slider {
   overflow: hidden;
 
@@ -387,4 +446,49 @@ body {
   color: #ffffff !important;
   background-color: var(--theme) !important;
   /* Solid dark background */
+}
+
+
+.form-clt select {
+  padding: 18px 30px; 
+  border: none;
+  outline: none;
+  background-color: var(--white);
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text);
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  padding-right: 45px;
+  cursor: pointer;
+}
+
+.form-clt {
+  position: relative;
+}
+
+.form-clt:has(select)::after {
+  content: "▼";
+  font-size: 12px;
+  color: var(--text);
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; 
+}
+
+.form-clt select option {
+  font-weight: 500;
+  background-color: var(--white);
+  color: var(--text);
+}
+
+
+.form-clt select option:hover {
+  background-color: #f0f0f0;
 }

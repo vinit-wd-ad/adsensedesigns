@@ -1,39 +1,55 @@
-// Show currrent date 
+// Show current date 
 const date = new Date();
 var today = date.getFullYear();
-$(".today-date").html(today);
+document.querySelectorAll(".today-date").forEach(el => {
+    el.innerHTML = today;
+});
 
 
 // Fade Animation Custom start
-$(window).scroll(function() {
-    $(".animation .anm_mod").each(function() {
-        const position = $(this).offset().top;
-        const scroll = $(window).scrollTop();
-        const windowHeight = $(window).height();
+
+window.addEventListener("scroll", function () {
+    document.querySelectorAll(".animation .anm_mod").forEach(el => {
+        // Get element's bounding position relative to the viewport + current scroll
+        const rect = el.getBoundingClientRect();
+        const position = rect.top + window.scrollY;
+        const scroll = window.scrollY;
+        const windowHeight = window.innerHeight;
+
+        // Check if the element has entered the viewport view range
         if (scroll > position - windowHeight) {
-            $(this).addClass("active");
+            el.classList.add("active");
         }
+
+        // Reset animation state when scrolled close to the top
         if (scroll < 100) {
-            $(this).removeClass("active");
+            el.classList.remove("active");
         }
     });
 });
 
-$(function() {
-    $('a[href^="#"]').click(function() {
-        const speed = 800;
-        const href = $(this).attr("href");
-        const target = $(href == "#" || href == "" ? "html" : href);
-        const position = target.offset().top;
-        $("html, body").animate({
-            scrollTop: position
-        }, speed, "swing");
-        return false;
+// Smooth Scroll for Anchors
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const href = this.getAttribute("href");
+        // Fallback to html element if href is empty or just '#'
+        const targetSelector = (href === "#" || href === "") ? "html" : href;
+        const targetElement = document.querySelector(targetSelector);
+
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
     });
 });
-
 // Fade Animation Custom End
 
-$(document).ready(function () {
-    $('.anm_mod .content p').css({'text-transform' : 'capitalize'});
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.anm_mod .content p').forEach(el => {
+        el.style.textTransform = 'capitalize';
+    });
 });
