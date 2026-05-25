@@ -409,160 +409,90 @@ render_header(
     </style>
 </section>
 
-<!-- Video Section Start -->
-<div class="video-section bg-cover" style="background-image: url('assets/img/cta-banner/video-bg-2.jpg');">
-    <div class="container">
-        <div class="video-box text-center">
-            <a href="" class="video-btn ripple video-popup">
-                <i class="flaticon-play-button"></i>
-            </a>
-        </div>
-    </div>
-</div>
+<!-- Why choose us section -->
+<section class="services-section">
+    <div class="container position-relative">
 
-<!-- why us Section Start -->
-<section class="faq-section section-padding fix">
-    <div class="line-area">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="container">
-        <div class="faq-wrapper">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="faq-image-items">
-                        <div class="faq-image-1 bg-cover wow fadeInUp" data-wow-delay=".3s" style="background-image: url('assets/img/faq/faq-7.png');"></div>
-                        <div class="faq-image-2 wow fadeInRight" data-wow-delay=".5s">
-                            <img src="assets/img/faq/faq-6.jpg" alt="faq-img">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mt-5 mt-lg-0">
-                    <div class="faq-content">
+        <!-- <div class="center-dot"></div> -->
+        <div class="row g-4 align-items-center">
+
+            <!-- Cards -->
+            <div class="col-lg-12">
+                <div class="row g-4">
+
+                    <div class="col-md-4">
                         <div class="section-title">
-                            <span class="wow fadeInUp">Discover what sets us apart</span>
-                            <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                Why Choose Us
-                            </h2>
-                            <!-- <p>There are 3 reasons for choosing us because we provide Best Quality Work and delivery Project on time</p> -->
+                            <span class="text-light wow fadeInUp">Discover what sets us apart</span>
+                            <h2 class="wow fadeInUp" data-wow-delay=".3s"> Why Choose '<b class="text-white bg-light px-2">AD</b>SENSE' </h2>
                         </div>
-                        <div class="faq-accordion">
-                            <div class="row">
-                                <div class="col-12 my-2 d-flex justify-content-between">
-                                    <b>We add value to your brand</b>
-                                    <i class="bi bi-check-square-fill"></i>
-                                </div>
-                                <div class="col-12 my-2 d-flex justify-content-between">
-                                    <b>We create effective brand communication</b>
-                                    <i class="bi bi-check-square-fill"></i>
-                                </div>
-                                <div class="col-12 my-2 d-flex justify-content-between">
-                                    <b>We create brand strategy to boost your sales</b>
-                                    <i class="bi bi-check-square-fill"></i>
-                                </div>
-                                <div class="col-12 my-2 d-flex justify-content-between">
-                                    <b>We deliver results that exceed expectations</b>
-                                    <i class="bi bi-check-square-fill"></i>
-                                </div>
-                                <div class="col-12 my-2 d-flex justify-content-between">
-                                    <b>Our captivating designs makes your brand stand out</b>
-                                    <i class="bi bi-check-square-fill"></i>
-                                </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-icon bg-light">
+                                <i class="fa fa-solid fa-lightbulb text-theme"></i>
                             </div>
+                            <h4 class="service-title">We Add Value To Your Brand</h4>
+                            <p class="service-text">
+                                Creative ideas and innovative solutions that strengthen your business identity.
+                            </p>
                         </div>
                     </div>
-                    <div class="author-items wow fadeInUp d-flex justify-content-end" data-wow-delay=".9s">
-                        <div class="about-button">
-                            <a href="why-us" class="theme-btn">
-                                Discover More
-                            </a>
+
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-icon bg-light">
+                                <i class="fa fa-solid fa-bullhorn text-theme"></i>
+                            </div>
+                            <h4 class="service-title">We Create Effective Brand Communication</h4>
+                            <p class="service-text">
+                                Clear and engaging messaging that connects with your target audience.
+                            </p>
                         </div>
                     </div>
+
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-icon bg-light">
+                                <i class="fa fa-solid fa-chart-line text-theme"></i>
+                            </div>
+                            <h4 class="service-title">We Create Brand Strategies To Boost Sales</h4>
+                            <p class="service-text">
+                                Smart marketing strategies designed to increase visibility and business growth.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-icon bg-light">
+                                <i class="fa fa-solid fa-trophy text-theme"></i>
+                            </div>
+                            <h4 class="service-title">We Deliver Results That Exceed Expectations</h4>
+                            <p class="service-text">
+                                Focused on quality, performance, and measurable success for every project.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <div class="service-icon bg-light">
+                                <i class="fa fa-solid fa-palette text-theme"></i>
+                            </div>
+                            <h4 class="service-title">Our Captivating Designs Make Your Brand Stand Out</h4>
+                            <p class="service-text">
+                                Modern and eye-catching designs that leave a lasting impression.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
         </div>
     </div>
 </section>
-
-<!-- Brand Section Start -->
-<div class="brand-section-3 fix section-padding">
-    <div class="layer-shape">
-        <img src="assets/img/layer-shape.png" alt="shape-img">
-    </div>
-    <div class="container">
-        <div class="row text-end">
-            <a href="" class="text-primary m-0 p-0" style="color: var(--white) !important;z-index: 99999;">view all &rarr;</a>
-        </div>
-        <div class="brand-wrapper style-4">
-            <div class="swiper brand-slider-2">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="brand-image">
-                            <img src="assets/img/brand/vibezzzz.png" alt="brand-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-image">
-                            <img src="assets/img/brand/cargill.png" alt="brand-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-image">
-                            <img src="assets/img/brand/SRS.png" alt="brand-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-image">
-                            <img src="assets/img/brand/STOREFORME.png" alt="brand-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-image">
-                            <img src="assets/img/brand/dev-energy.png" alt="brand-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-image">
-                            <img src="assets/img/brand/swasth-01-01.png" alt="brand-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-image">
-                            <img src="assets/img/brand/GVI-01a.png" alt="brand-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-image">
-                            <img src="assets/img/brand/LEOAN.png" alt="brand-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-image">
-                            <img src="assets/img/brand/NIBUS GLOBAL.png" alt="brand-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-image">
-                            <img src="assets/img/brand/JSM ENERGY.png" alt="brand-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-image">
-                            <img src="assets/img/brand/HAUS STORM.png" alt="brand-img">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-image">
-                            <img src="assets/img/brand/supplement.png" alt="brand-img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Brand Sectio End -->
 
 <!-- Testimonial Section Start -->
 <section class="testimonial-section-3 fix section-padding section-bg">
@@ -761,6 +691,88 @@ render_header(
         </div>
     </div>
 </section>
+
+<!-- Brand Section Start -->
+<div class="brand-section-3 fix section-padding">
+    <div class="layer-shape">
+        <img src="assets/img/layer-shape.png" alt="shape-img">
+    </div>
+    <div class="container">
+        <div class="row text-end">
+            <a href="" class="text-primary m-0 p-0" style="color: var(--white) !important;z-index: 99999;">view all &rarr;</a>
+        </div>
+        <div class="brand-wrapper style-4">
+            <div class="swiper brand-slider-2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="brand-image">
+                            <img src="assets/img/brand/vibezzzz.png" alt="brand-img">
+                            <div class="color-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-image">
+                            <img src="assets/img/brand/cargill.png" alt="brand-img">
+                            <div class="color-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-image">
+                            <img src="assets/img/brand/SRS.png" alt="brand-img">
+                            <div class="color-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-image">
+                            <img src="assets/img/brand/STOREFORME.png" alt="brand-img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-image">
+                            <img src="assets/img/brand/dev-energy.png" alt="brand-img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-image">
+                            <img src="assets/img/brand/swasth-01-01.png" alt="brand-img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-image">
+                            <img src="assets/img/brand/GVI-01a.png" alt="brand-img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-image">
+                            <img src="assets/img/brand/LEOAN.png" alt="brand-img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-image">
+                            <img src="assets/img/brand/NIBUS GLOBAL.png" alt="brand-img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-image">
+                            <img src="assets/img/brand/JSM ENERGY.png" alt="brand-img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-image">
+                            <img src="assets/img/brand/HAUS STORM.png" alt="brand-img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-image">
+                            <img src="assets/img/brand/supplement.png" alt="brand-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Brand Sectio End -->
 
 <!-- News Section Start -->
 <section class="news-section section-padding fix">

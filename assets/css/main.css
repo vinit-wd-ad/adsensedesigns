@@ -22,7 +22,7 @@
   --color-gradient-1: linear-gradient(to left, #a47cb4, #8b6e9a, #704684, #5d3e6a, #4a2d4e);
 
   ---color-gradient-2: linear-gradient(to right, #4a2d4e, #5d3e6a, #704684, #a47cb4, #8b6e9a );
-  /* --color-gradient-2: linear-gradient(to left, #5d3e6a, #704684, #8b6e9a, #a47cb4, #4a2d4e); */
+  --color-gradient-2: linear-gradient(to left, #a47cb4, #4a2d4e);
 
   ---box-shadow: 0px 0px 60px 0px rgba(4, 23, 26, 0.08);
 }
@@ -9445,11 +9445,12 @@ input.main-search-input::placeholder {
 
 .brand-wrapper .brand-image {
   margin: 0 auto;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   padding: 0px 10px;
   background-color: transparent;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  /* -webkit-filter: grayscale(100%);
+          filter: grayscale(100%); */
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -9519,12 +9520,12 @@ input.main-search-input::placeholder {
   width: 100%;
   height: 100%;
   content: "";
-  background-color: var(--theme);
+  /* background-color: var(--theme); */
   opacity: 0.8;
 }
 
 .brand-section-3 {
-  background-color: var(--theme);
+  /* background-color: var(--theme); */
   position: relative;
   padding: 45px 0px;
 }
@@ -9701,6 +9702,7 @@ input.main-search-input::placeholder {
 
 .news-section {
   position: relative;
+  background: linear-gradient(180deg, color-mix(var(--theme) 20%, #fff), transparent);
 }
 
 .news-section .swiper-slide.swiper-slide-active .single-news-items .news-image .icon {
@@ -9992,6 +9994,7 @@ input.main-search-input::placeholder {
 
 .single-news-items-3 .news-image .post-date {
   position: absolute;
+  display: none;
   left: 60px;
   bottom: 50px;
   color: var(--white);
