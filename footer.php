@@ -130,22 +130,25 @@
 <!-- Lenis CDN -->
 <!-- <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script> -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script> -->
- <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> 
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
 
 <script>
-    // Initialize Lenis
-    const lenis = new Lenis({
-        duration: 1.2,
-        smoothWheel: true
-    })
+    window.addEventListener('load', function() {
 
-    // Animation Frame Loop
-    function raf(time) {
-        lenis.raf(time)
-        requestAnimationFrame(raf)
-    }
+        const lenis = new Lenis({
+            duration: 1.2,
+            smoothWheel: true,
+            smoothTouch: false
+        });
 
-    requestAnimationFrame(raf)
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+
+    });
 </script>
 
 </body>
