@@ -27,6 +27,8 @@ function render_header($title = "Default Title", $description = "Default descrip
         <link rel="shortcut icon" href="assets/img/logo/s-logo.png">
         <!--<< Bootstrap min.css >>-->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+        
         <!--<< Font Awesome.css >>-->
         <link rel="stylesheet" href="assets/css/font-awesome.css">
         <!--<< Animate.css >>-->
@@ -45,7 +47,6 @@ function render_header($title = "Default Title", $description = "Default descrip
         <!--<< Style.css >>-->
         <link rel="stylesheet" href="assets/css/style.css">
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     </head>
 
