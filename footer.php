@@ -107,7 +107,7 @@
 <!--<< Bootstrap Js >>-->
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <!--<< Nice Select Js >>-->
-<script src="assets/js/jquery.nice-select.min.js"></script>
+<!-- <script src="assets/js/jquery.nice-select.min.js"></script> -->
 <!--<< Waypoints Js >>-->
 <script src="assets/js/jquery.waypoints.js"></script>
 <!--<< Counterup Js >>-->
@@ -117,11 +117,11 @@
 <!--<< MeanMenu Js >>-->
 <script src="assets/js/jquery.meanmenu.min.js"></script>
 <!--<< Magnific Popup Js >>-->
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- <script src="assets/js/jquery.magnific-popup.min.js"></script> -->
 <!--<< Wow Animation Js >>-->
 <script src="assets/js/wow.min.js"></script>
 <!--<< Circle Progress Js >>-->
-<script src="assets/js/circle-progress.js"></script>
+<!-- <script src="assets/js/circle-progress.js"></script> -->
 <!--<< Main.js >>-->
 <script src="assets/js/main.js"></script>
 <!--<< Custom.js >>-->

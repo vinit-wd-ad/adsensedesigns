@@ -492,7 +492,7 @@ render_header(
     </div>
     <div class="container">
         <div class="row text-end">
-            <a href="brand.html" class="text-primary m-0 p-0" style="color: var(--white) !important;z-index: 99999;">view all &rarr;</a>
+            <a href="" class="text-primary m-0 p-0" style="color: var(--white) !important;z-index: 99999;">view all &rarr;</a>
         </div>
         <div class="brand-wrapper style-4">
             <div class="swiper brand-slider-2">
