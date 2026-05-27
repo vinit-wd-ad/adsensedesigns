@@ -668,6 +668,21 @@
 
                                 <div class="svc-col">
                                     <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-print"></i></span>
+                                        Print & Corporate
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Print Supply</li>
+                                        <li>Corporate Gifting</li>
+                                        <li>Brochure</li>
+                                        <li>Catalogue</li>
+                                        <li>Leaflet</li>
+                                        <li>Corporate Presentation</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
                                         <span class="icon-box"><i class="fa fa-layer-group"></i></span>
                                         Branding & Identity
                                     </div>
@@ -686,21 +701,6 @@
                                     </div>
                                     <ul class="svc-list">
                                         <li>Digital Marketing</li>
-                                    </ul>
-                                </div>
-
-                                <div class="svc-col">
-                                    <div class="svc-col-title">
-                                        <span class="icon-box"><i class="fa fa-print"></i></span>
-                                        Print & Corporate
-                                    </div>
-                                    <ul class="svc-list">
-                                        <li>Print Supply</li>
-                                        <li>Corporate Gifting</li>
-                                        <li>Brochure</li>
-                                        <li>Catalogue</li>
-                                        <li>Leaflet</li>
-                                        <li>Corporate Presentation</li>
                                     </ul>
                                 </div>
 
@@ -758,6 +758,134 @@
                                     </div>
                                     <ul class="svc-list">
                                         <li>Website Designing</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="view-link-wrap">
+                            <a href="#" class="view-link">View Case Study <i class="fa fa-arrow-right fa-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- STOREFORME -->
+            <article class="work-card" data-categories="branding web digital print corporate">
+                <div class="card-inner row">
+                    <div class="logo-block pe-lg-0">
+                        <img src="assets/img/project/storeforme-project.png" alt="STOREFORME" class="img-fluid">
+                    </div>
+
+                    <div class="card-right">
+                        <div class="card-body-row">
+
+                            <div class="brand-block">
+                                <div class="brand-name">STOREFORME</div>
+                            </div>
+
+                            <div class="services-area pt-0">
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-print"></i></span>
+                                        Print & Corporate
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Print Supply</li>
+                                        <li>Marketing Collaterals</li>
+                                        <li>Corporate Gifting</li>
+                                        <li>Brochure</li>
+                                        <li>Catalogue</li>
+                                        <li>Leaflet</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-layer-group"></i></span>
+                                        Branding
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Logo Design</li>
+                                        <li>Brand Identity</li>
+                                        <li>Lift Branding</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-globe"></i></span>
+                                        Web & Digital
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Website Designing</li>
+                                        <li>Digital Marketing</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="view-link-wrap">
+                            <a href="#" class="view-link">View Case Study <i class="fa fa-arrow-right fa-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DEV ENERGY LTD -->
+            <article class="work-card" data-categories="branding web digital print corporate">
+                <div class="card-inner row">
+                    <div class="logo-block pe-lg-0">
+                        <img src="assets/img/project/devenergy-project.png" alt="DEV ENERGY LTD" class="img-fluid">
+                    </div>
+
+                    <div class="card-right">
+                        <div class="card-body-row">
+
+                            <div class="brand-block">
+                                <div class="brand-name">DEV ENERGY LTD</div>
+                            </div>
+
+                            <div class="services-area pt-0">
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-print"></i></span>
+                                        Print & Corporate
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Print Supply</li>
+                                        <li>Marketing Collaterals</li>
+                                        <li>Corporate Gifting</li>
+                                        <li>Brochure</li>
+                                        <li>Catalogue</li>
+                                        <li>Leaflet</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-layer-group"></i></span>
+                                        Branding
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Logo Design</li>
+                                        <li>Brand Identity</li>
+                                        <li>Lift Branding</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-globe"></i></span>
+                                        Web & Digital
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Website Designing</li>
+                                        <li>Digital Marketing</li>
                                     </ul>
                                 </div>
 
