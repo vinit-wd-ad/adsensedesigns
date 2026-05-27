@@ -44,7 +44,7 @@ render_header(
     </div>
 </div>
 
-<?php include "components/case-studies.php"; ?>
+<?php include "components/case-studies1.php"; ?>
 
 
 <?php include "footer.php"; ?>
