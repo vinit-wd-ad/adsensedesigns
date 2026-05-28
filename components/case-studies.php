@@ -1336,6 +1336,56 @@
                 </div>
             </article>
 
+            <!-- OTLER -->
+            <article class="work-card" data-categories="branding packaging">
+                <div class="card-inner row">
+                    <div class="logo-block px-5">
+                        <img src="assets/img/brand/otler.png" alt="Otler" class="img-fluid">
+                    </div>
+
+                    <div class="card-right">
+                        <div class="card-body-row">
+
+                            <div class="brand-block">
+                                <div class="brand-name">OTLER</div>
+                                <span class="industry-tag">
+                                    <i class="fa fa-flask fa-xs"></i> Personal Care & Wellness
+                                </span>
+                            </div>
+
+                            <div class="services-area">
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-layer-group"></i></span>
+                                        Branding
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Logo Design</li>
+                                        <li>Brand Identity</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-box"></i></span>
+                                        Packaging
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Packaging Design</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="view-link-wrap">
+                            <a href="#" class="view-link">View Case Study <i class="fa fa-arrow-right fa-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
             <!-- SPEDITION STORAGE INDIA -->
             <article class="work-card" data-categories="branding web digital packaging print infrastructure">
                 <div class="card-inner row">
@@ -1858,55 +1908,6 @@
                 </div>
             </article>
 
-            <!-- OTLER -->
-            <article class="work-card" data-categories="branding packaging">
-                <div class="card-inner row">
-                    <div class="logo-block px-5">
-                        <img src="assets/img/brand/otler.png" alt="Otler" class="img-fluid">
-                    </div>
-
-                    <div class="card-right">
-                        <div class="card-body-row">
-
-                            <div class="brand-block">
-                                <div class="brand-name">OTLER</div>
-                                <span class="industry-tag">
-                                    <i class="fa fa-flask fa-xs"></i> Personal Care & Wellness
-                                </span>
-                            </div>
-
-                            <div class="services-area">
-
-                                <div class="svc-col">
-                                    <div class="svc-col-title">
-                                        <span class="icon-box"><i class="fa fa-layer-group"></i></span>
-                                        Branding
-                                    </div>
-                                    <ul class="svc-list">
-                                        <li>Logo Design</li>
-                                        <li>Brand Identity</li>
-                                    </ul>
-                                </div>
-
-                                <div class="svc-col">
-                                    <div class="svc-col-title">
-                                        <span class="icon-box"><i class="fa fa-box"></i></span>
-                                        Packaging
-                                    </div>
-                                    <ul class="svc-list">
-                                        <li>Packaging Design</li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="view-link-wrap">
-                            <a href="#" class="view-link">View Case Study <i class="fa fa-arrow-right fa-xs"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </article>
 
             <article class="work-card" data-categories="branding packaging">
                 <div class="card-inner row">

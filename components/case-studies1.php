@@ -899,6 +899,473 @@
                 </div>
             </article>
 
+            <!-- DROLIA CHEMICAL WORKS -->
+            <article class="work-card" data-categories="branding web digital print corporate">
+                <div class="card-inner row">
+                    <div class="logo-block pe-lg-0">
+                        <img src="assets/img/project/drolia-project.png" alt="DROLIA CHEMICAL WORKS" class="img-fluid">
+                    </div>
+
+                    <div class="card-right">
+                        <div class="card-body-row">
+
+                            <div class="brand-block">
+                                <div class="brand-name">DROLIA CHEMICAL WORKS</div>
+                            </div>
+
+                            <div class="services-area pt-0">
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-print"></i></span>
+                                        Print & Corporate
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Print Supply</li>
+                                        <li>Marketing Collaterals</li>
+                                        <li>Corporate Gifting</li>
+                                        <li>Brochure</li>
+                                        <li>Catalogue</li>
+                                        <li>Leaflet</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-layer-group"></i></span>
+                                        Branding
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Logo Design</li>
+                                        <li>Brand Identity</li>
+                                        <li>Lift Branding</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-globe"></i></span>
+                                        Web & Digital
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Website Designing</li>
+                                        <li>Digital Marketing</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="view-link-wrap">
+                            <a href="#" class="view-link">View Case Study <i class="fa fa-arrow-right fa-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- SWASTHBHOOMI -->
+            <article class="work-card" data-categories="web digital print marketing">
+                <div class="card-inner row">
+                    <div class="logo-block pe-lg-0">
+                        <img src="assets/img/project/swasth-project.png" alt="SWASTHBHOOMI" class="img-fluid">
+                    </div>
+
+                    <div class="card-right">
+                        <div class="card-body-row">
+
+                            <div class="brand-block">
+                                <div class="brand-name">SWASTHBHOOMI</div>
+                            </div>
+
+                            <div class="services-area pt-0">
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-print"></i></span>
+                                        Print & Marketing
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Brochure</li>
+                                        <li>Catalogue</li>
+                                        <li>Leaflet</li>
+                                        <li>Banners</li>
+                                        <li>Hoardings</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-globe"></i></span>
+                                        Web & Digital
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Website Designing</li>
+                                        <li>Social Media Creatives</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="view-link-wrap">
+                            <a href="#" class="view-link">View Case Study <i class="fa fa-arrow-right fa-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- GVI -->
+            <article class="work-card" data-categories="branding web digital print corporate event">
+                <div class="card-inner row">
+                    <div class="logo-block pe-lg-0">
+                        <img src="assets/img/project/gvi-project.png" alt="GVI" class="img-fluid">
+                    </div>
+
+                    <div class="card-right">
+                        <div class="card-body-row">
+
+                            <div class="brand-block">
+                                <div class="brand-name">GVI</div>
+                            </div>
+
+                            <div class="services-area pt-0">
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-layer-group"></i></span>
+                                        Branding
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Logo Design</li>
+                                        <li>Brand Identity</li>
+                                        <li>Store Branding</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-globe"></i></span>
+                                        Web & Digital
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Website Designing</li>
+                                        <li>Social Media Creatives</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-print"></i></span>
+                                        Print & Corporate
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Print Supply</li>
+                                        <li>Brochure</li>
+                                        <li>Catalogue</li>
+                                        <li>Leaflet</li>
+                                        <li>Corporate Presentation</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-calendar-check"></i></span>
+                                        Events
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Event Management</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="view-link-wrap">
+                            <a href="#" class="view-link">View Case Study <i class="fa fa-arrow-right fa-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- LEON -->
+            <article class="work-card" data-categories="branding web digital print corporate event">
+                <div class="card-inner row">
+                    <div class="logo-block pe-lg-0">
+                        <img src="assets/img/project/leon-project" alt="LEON" class="img-fluid">
+                    </div>
+
+                    <div class="card-right">
+                        <div class="card-body-row">
+
+                            <div class="brand-block">
+                                <div class="brand-name">LEON</div>
+                            </div>
+
+                            <div class="services-area pt-0">
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-layer-group"></i></span>
+                                        Branding
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Logo Design</li>
+                                        <li>Brand Identity</li>
+                                        <li>Store Branding</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-globe"></i></span>
+                                        Web & Digital
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Website Designing</li>
+                                        <li>Social Media Creatives</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-print"></i></span>
+                                        Print & Corporate
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Print Supply</li>
+                                        <li>Brochure</li>
+                                        <li>Catalogue</li>
+                                        <li>Leaflet</li>
+                                        <li>Corporate Presentation</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-calendar-check"></i></span>
+                                        Events
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Event Management</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="view-link-wrap">
+                            <a href="#" class="view-link">View Case Study <i class="fa fa-arrow-right fa-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- NIMBUS GLOBAL ACADEMY -->
+            <article class="work-card" data-categories="branding web digital print corporate event">
+                <div class="card-inner row">
+                    <div class="logo-block pe-lg-0">
+                        <img src="assets/img/project/nimbus-project.png" alt="Nimbus Global Academy" class="img-fluid">
+                    </div>
+
+                    <div class="card-right">
+                        <div class="card-body-row">
+
+                            <div class="brand-block">
+                                <div class="brand-name">Nimbus Global Academy</div>
+                            </div>
+
+                            <div class="services-area pt-0">
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-layer-group"></i></span>
+                                        Branding
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Logo Design</li>
+                                        <li>Brand Identity</li>
+                                        <li>Store Branding</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-globe"></i></span>
+                                        Web & Digital
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Website Designing</li>
+                                        <li>Social Media Creatives</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-print"></i></span>
+                                        Print & Corporate
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Print Supply</li>
+                                        <li>Brochure</li>
+                                        <li>Catalogue</li>
+                                        <li>Leaflet</li>
+                                        <li>Corporate Presentation</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-calendar-check"></i></span>
+                                        Events
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Event Management</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="view-link-wrap">
+                            <a href="#" class="view-link">View Case Study <i class="fa fa-arrow-right fa-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- JSM ENERGY PVT LTD -->
+            <article class="work-card" data-categories="branding web digital print corporate event">
+                <div class="card-inner row">
+                    <div class="logo-block pe-lg-0">
+                        <img src="assets/img/project/jsm-project.png" alt="JSM ENERGY PVT LTD" class="img-fluid">
+                    </div>
+
+                    <div class="card-right">
+                        <div class="card-body-row">
+
+                            <div class="brand-block">
+                                <div class="brand-name">JSM ENERGY PVT LTD</div>
+                            </div>
+
+                            <div class="services-area pt-0">
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-layer-group"></i></span>
+                                        Branding
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Logo Design</li>
+                                        <li>Brand Identity</li>
+                                        <li>Store Branding</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-globe"></i></span>
+                                        Web & Digital
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Website Designing</li>
+                                        <li>Social Media Creatives</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-print"></i></span>
+                                        Print & Corporate
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Print Supply</li>
+                                        <li>Brochure</li>
+                                        <li>Catalogue</li>
+                                        <li>Leaflet</li>
+                                        <li>Corporate Presentation</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-calendar-check"></i></span>
+                                        Events
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Event Management</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="view-link-wrap">
+                            <a href="#" class="view-link">View Case Study <i class="fa fa-arrow-right fa-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- OTLER -->
+            <article class="work-card" data-categories="branding packaging">
+                <div class="card-inner row">
+                    <div class="logo-block pe-lg-0">
+                        <img src="assets/img/project/otler-project.png" alt="Otler" class="img-fluid">
+                    </div>
+
+                    <div class="card-right">
+                        <div class="card-body-row">
+
+                            <div class="brand-block">
+                                <div class="brand-name">OTLER</div>
+                            </div>
+
+                            <div class="services-area pt-0">
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-layer-group"></i></span>
+                                        Branding
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Logo Design</li>
+                                        <li>Brand Identity</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-box"></i></span>
+                                        Packaging
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Packaging Design</li>
+                                        <li>Product Mockup Design</li>
+                                    </ul>
+                                </div>
+
+                                <div class="svc-col">
+                                    <div class="svc-col-title">
+                                        <span class="icon-box"><i class="fa fa-globe"></i></span>
+                                        Web & Digital
+                                    </div>
+                                    <ul class="svc-list">
+                                        <li>Website Designing & Development</li>
+                                        <li>Website Maintenance</li>
+                                        <li>Social Media Creatives</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="view-link-wrap">
+                            <a href="#" class="view-link">View Case Study <i class="fa fa-arrow-right fa-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
         </div>
 
         <!-- ── BOTTOM STATS ── -->
