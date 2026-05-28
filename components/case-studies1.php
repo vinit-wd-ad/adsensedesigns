@@ -1091,7 +1091,7 @@
             <article class="work-card" data-categories="branding web digital print corporate event">
                 <div class="card-inner row">
                     <div class="logo-block pe-lg-0">
-                        <img src="assets/img/project/leon-project" alt="LEON" class="img-fluid">
+                        <img src="assets/img/project/leon-project.png" alt="LEON" class="img-fluid">
                     </div>
 
                     <div class="card-right">
