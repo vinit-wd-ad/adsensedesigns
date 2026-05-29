@@ -1,5 +1,5 @@
 <?php
-
+require "setting.php";
 include "header.php";
 
 render_header(

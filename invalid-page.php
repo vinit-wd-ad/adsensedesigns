@@ -1,7 +1,7 @@
 <?php
 header("HTTP/1.1 410 Gone");
 header("Status: 410 Gone");
-
+require "setting.php";
 include "header.php";
 
 render_header(

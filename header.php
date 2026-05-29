@@ -1,6 +1,7 @@
 <?php
 function render_header($title = "Default Title", $description = "Default description", $meta_tags = [],  $link_tags = [])
 {
+    global $BASE_URL;
 ?>
 
     <!DOCTYPE html>
@@ -24,20 +25,20 @@ function render_header($title = "Default Title", $description = "Default descrip
         <!-- <meta name="msvalidate.01" content="8BA2DD0F6A3775417E8A3BBF05F9D014" /> -->
 
         <!--<< Favcion >>-->
-        <link rel="shortcut icon" href="assets/img/logo/s-logo.png">
+        <link rel="shortcut icon" href="<?= BASE_URL ?>assets/img/logo/s-logo.png">
         <!--<< Bootstrap min.css >>-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/bootstrap.min.css">
         <!--<< Font Awesome.css >>-->
-        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/font-awesome.css">
         <!--<< Animate.css >>-->
-        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/animate.css">
         <!--<< Swiper Bundle.css >>-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/swiper-bundle.min.css">
         <!--<< Main.css >>-->
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/custom.css?v=1.01.02">
+        <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/main.css">
+        <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/custom.css?v=1.01.02">
         <!--<< Style.css >>-->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/style.css">
 
     </head>
 
@@ -200,10 +201,10 @@ function render_header($title = "Default Title", $description = "Default descrip
                         <div class="header-main">
                             <div class="logo">
                                 <a href="./" class="header-logo">
-                                    <img src="assets/img/logo/logo2.svg" alt="logo-img">
+                                    <img src="<?= BASE_URL ?>assets/img/logo/logo2.svg" alt="logo-img">
                                 </a>
                                 <a href="./" class="header-logo-2">
-                                    <img src="assets/img/logo/logo1.png" alt="logo-img">
+                                    <img src="<?= BASE_URL ?>assets/img/logo/logo1.png" alt="logo-img">
                                 </a>
                             </div>
                             <div class="header-left">
@@ -212,7 +213,7 @@ function render_header($title = "Default Title", $description = "Default descrip
                                         <nav id="mobile-menu">
                                             <ul>
                                                 <li class="active">
-                                                    <a href="./">
+                                                    <a href="<?= BASE_URL ?>">
                                                         Home
                                                     </a>
                                                 </li>
@@ -222,41 +223,41 @@ function render_header($title = "Default Title", $description = "Default descrip
                                                         <i class="fas fa-angle-down"></i>
                                                     </a>
                                                     <ul class="submenu">
-                                                        <li><a href="about">Who We Are</a></li>
-                                                        <li><a href="what-we-do">What We Do</a></li>
-                                                        <li><a href="why-us">Why Choose Us</a></li>
-                                                        <li><a href="testimonial">Testimonial</a></li>
+                                                        <li><a href="<?= BASE_URL ?>about">Who We Are</a></li>
+                                                        <li><a href="<?= BASE_URL ?>what-we-do">What We Do</a></li>
+                                                        <li><a href="<?= BASE_URL ?>why-us">Why Choose Us</a></li>
+                                                        <li><a href="<?= BASE_URL ?>testimonial">Testimonial</a></li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <a href="services">
+                                                    <a href="<?= BASE_URL ?>services">
                                                         Services
                                                         <i class="fas fa-angle-down"></i>
                                                     </a>
                                                     <ul class="submenu">
-                                                        <li><a href="service-details">GRAPHICS DESIGN</a></li>
-                                                        <li><a href="service-details">MOTION GRAPHICS</a></li>
-                                                        <li><a href="service-details">DIGITAL MARKETING</a></li>
-                                                        <li><a href="service-details">MARKETING SOLUTION</a></li>
-                                                        <li><a href="service-details">EXHIBITIONS</a></li>
-                                                        <li><a href="service-details">INTERIORS</a></li>
-                                                        <li><a href="service-details">PRINT SOLUTIONS</a></li>
-                                                        <li><a href="service-details">CORPRORATE GIFTING</a></li>
-                                                        <li><a href="service-details">INDOOR & DOOR BRANDING</a></li>
+                                                        <li><a href="<?= BASE_URL ?>service-details">GRAPHICS DESIGN</a></li>
+                                                        <li><a href="<?= BASE_URL ?>service-details">MOTION GRAPHICS</a></li>
+                                                        <li><a href="<?= BASE_URL ?>service-details">DIGITAL MARKETING</a></li>
+                                                        <li><a href="<?= BASE_URL ?>service-details">MARKETING SOLUTION</a></li>
+                                                        <li><a href="<?= BASE_URL ?>service-details">EXHIBITIONS</a></li>
+                                                        <li><a href="<?= BASE_URL ?>service-details">INTERIORS</a></li>
+                                                        <li><a href="<?= BASE_URL ?>service-details">PRINT SOLUTIONS</a></li>
+                                                        <li><a href="<?= BASE_URL ?>service-details">CORPRORATE GIFTING</a></li>
+                                                        <li><a href="<?= BASE_URL ?>service-details">INDOOR & DOOR BRANDING</a></li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <a href="case-studies">
+                                                    <a href="<?= BASE_URL ?>case-studies">
                                                         Case Studies
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="blogs">
+                                                    <a href="<?= BASE_URL ?>blogs">
                                                         Blogs
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="contact">Contact Us</a>
+                                                    <a href="<?= BASE_URL ?>contact">Contact Us</a>
                                                 </li>
                                             </ul>
                                         </nav>

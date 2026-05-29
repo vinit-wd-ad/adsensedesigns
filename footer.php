@@ -1,5 +1,5 @@
 <!-- Footer Section Start -->
-<footer class="footer-section style-2 fix bg-cover" style="background-image: url('assets/img/footer-bg.jpg');">
+<footer class="footer-section style-2 fix bg-cover" style="background-image: url('<?= BASE_URL ?>assets/img/footer-bg.jpg');">
     <div class="container">
         <div class="footer-widgets-wrapper">
             <div class="row">
@@ -7,7 +7,7 @@
                     <div class="single-footer-widget">
                         <div class="widget-head">
                             <a href="./">
-                                <img src="assets/img/logo/logo2.svg" alt="logo-img">
+                                <img src="<?= BASE_URL ?>assets/img/logo/logo2.svg" alt="logo-img">
                             </a>
                         </div>
                         <div class="footer-content">
@@ -102,16 +102,16 @@
 
 <!--<< All JS Plugins >>-->
 <!--<< Bootstrap Js >>-->
-<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="<?= BASE_URL ?>assets/js/bootstrap.bundle.min.js"></script>
 <!--<< Swiper Slider Js >>-->
-<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="<?= BASE_URL ?>assets/js/swiper-bundle.min.js"></script>
 <!--<< Wow Animation Js >>-->
-<script src="assets/js/wow.min.js"></script>
+<script src="<?= BASE_URL ?>assets/js/wow.min.js"></script>
 <!--<< Main.js >>-->
-<script src="assets/js/lenis.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="<?= BASE_URL ?>assets/js/lenis.min.js"></script>
+<script src="<?= BASE_URL ?>assets/js/main.js"></script>
 <!--<< Custom.js >>-->
-<script src="assets/js/custom.js"></script>
+<script src="<?= BASE_URL ?>assets/js/custom.js"></script>
 
 </body>
 

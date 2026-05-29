@@ -1,5 +1,5 @@
 <?php
-
+require "setting.php";
 include "header.php";
 
 render_header(
@@ -15,7 +15,7 @@ render_header(
 <!--<< Breadcrumb Section Start >>-->
 <div class="breadcrumb-wrapper bg-cover section-padding" style="background-image: url('assets/img/breadcrumb.jpg');">
     <div class="layer-shape wow fadeInLeft" data-wow-delay=".3s">
-        <img src="assets/img/layer-shape-3.png" alt="shape-img">
+        <img src="<?= BASE_URL ?>assets/img/layer-shape-3.png" alt="shape-img">
     </div>
     <div class="container">
         <div class="page-heading">

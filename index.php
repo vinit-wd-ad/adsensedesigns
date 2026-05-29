@@ -1,5 +1,5 @@
 <?php
-
+require_once "setting.php";
 include "header.php";
 
 render_header(
@@ -774,94 +774,7 @@ render_header(
 </div>
 <!-- Brand Sectio End -->
 
-<!-- News Section Start -->
-<section class="news-section section-padding fix">
-    <div class="line-area">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="container">
-        <div class="section-title text-center">
-            <span class="wow fadeInUp">Our blog</span>
-            <h2 class="wow fadeInUp" data-wow-delay=".3s">Read our latest blog post</h2>
-        </div>
-        <div class="row">
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                <div class="single-news-items-3">
-                    <div class="news-image bg-cover" style="background-image: url('assets/img/news/07.jpg');">
-                        <span class="post-date">16 FEB</span>
-                    </div>
-                    <div class="news-content">
-                        <span>By admin _ Development</span>
-                        <h3>
-                            <a href="#">
-                                Does My Website Need
-                                Any Blog?
-                            </a>
-                        </h3>
-                        <div class="news-btn d-flex align-items-center justify-content-between">
-                            <a href="news.details.html">
-                                Read More
-                            </a>
-                            <a href="#">
-                                <i class="fas fa-long-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                <div class="single-news-items-3 active">
-                    <div class="news-image bg-cover" style="background-image: url('assets/img/news/08.jpg');">
-                        <span class="post-date">16 FEB</span>
-                    </div>
-                    <div class="news-content">
-                        <span>By admin _ Development</span>
-                        <h3>
-                            <a href="#">
-                                Does My Website Need
-                                Any Blog?
-                            </a>
-                        </h3>
-                        <div class="news-btn d-flex align-items-center justify-content-between">
-                            <a href="#">
-                                Read More
-                            </a>
-                            <a href="#">
-                                <i class="fas fa-long-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                <div class="single-news-items-3">
-                    <div class="news-image bg-cover" style="background-image: url('assets/img/news/09.jpg');">
-                        <span class="post-date">16 FEB</span>
-                    </div>
-                    <div class="news-content">
-                        <span>By admin _ Development</span>
-                        <h3>
-                            <a href="#">
-                                Does My Website Need
-                                Any Blog?
-                            </a>
-                        </h3>
-                        <div class="news-btn d-flex align-items-center justify-content-between">
-                            <a href="#">
-                                Read More
-                            </a>
-                            <a href="#">
-                                <i class="fas fa-long-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include "components/blog-section.php"; ?>
 
 <!-- Contact Info Section Start -->
 <div class="cta-section-3 fix section-padding bg-cover" style="background-image: url('assets/img/cta-banner/02.jpg');">
