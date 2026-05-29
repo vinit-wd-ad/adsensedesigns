@@ -200,10 +200,10 @@ function render_header($title = "Default Title", $description = "Default descrip
                     <div class="mega-menu-wrapper">
                         <div class="header-main">
                             <div class="logo">
-                                <a href="./" class="header-logo">
+                                <a href="<?= BASE_URL ?>" class="header-logo">
                                     <img src="<?= BASE_URL ?>assets/img/logo/logo2.svg" alt="logo-img">
                                 </a>
-                                <a href="./" class="header-logo-2">
+                                <a href="<?= BASE_URL ?>" class="header-logo-2">
                                     <img src="<?= BASE_URL ?>assets/img/logo/logo1.png" alt="logo-img">
                                 </a>
                             </div>
