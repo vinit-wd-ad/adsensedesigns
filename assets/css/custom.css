@@ -11,7 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-.text-theme{
+.text-theme {
   color: var(--theme);
 }
 .offcanvas__info {
@@ -539,7 +539,7 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
-.service-icon {
+.services-section .service-icon {
   width: 65px;
   height: 65px;
   border-radius: 50%;
@@ -596,5 +596,112 @@ body {
 
   .service-card {
     padding: 28px 22px;
+  }
+}
+
+.what-we-do {
+  background: #f7f5fb;
+}
+
+.what-we-do .section-para {
+  max-width: 700px;
+  color: #666;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/* Service Card */
+.what-we-do .service-card {
+  background: #fff;
+  padding: 45px 25px;
+  transition: 0.4s ease;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.what-we-do .service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(111, 60, 195, 0.18);
+}
+
+/* Icon */
+.what-we-do .service-icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  background: #f3eefc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease;
+}
+
+.what-we-do .service-icon i {
+  font-size: 38px;
+  color: var(--theme);
+}
+
+.what-we-do .service-card:hover .service-icon {
+  background: var(--theme);
+  transform: rotate(8deg) scale(1.05);
+}
+
+.what-we-do .service-card:hover .service-icon i {
+  color: #fff;
+}
+
+/* Content */
+.what-we-do .service-card h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.what-we-do .service-card p {
+  color: #666;
+  font-size: 15px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+/* Mini Points */
+.what-we-do .mini-points {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.what-we-do .mini-points span {
+  color: #444;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Button */
+.what-we-do .service-btn {
+  display: inline-block;
+  background: #6f3cc3;
+  color: #fff;
+  padding: 14px 34px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.4s ease;
+}
+
+.what-we-do .service-btn:hover {
+  background: #5424a8;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .what-we-do .service-card {
+    padding: 35px 20px;
   }
 }

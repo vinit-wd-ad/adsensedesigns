@@ -30,7 +30,7 @@ render_header(
             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                 <li>
                     <a href="/">
-                        Home Page
+                        Home
                     </a>
                 </li>
                 <li>
@@ -44,125 +44,187 @@ render_header(
     </div>
 </div>
 
+<!-- WHAT WE DO SECTION START -->
+<section class="what-we-do py-5">
+    <div class="container py-3">
 
-<!-- Growth Section Start -->
-<section class="growth-section fix">
-    <div class="container">
-        <div class="growth-wrapper">
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <div class="growth-content">
-                        <div class="section-title">
-                            <span class="wow fadeInUp">Our recent work</span>
-                            <h2 class="wow fadeInUp" data-wow-delay=".3s">Sales growth</h2>
-                        </div>
-                        <p class="mt-4 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                            Our clients describe us as a product team which creates amazing <strong class="head-color">UI/UX</strong> experiences, by crafting top-notch user experience of funny the century rather.,
-                        </p>
-                        <div class="circle-progress-bar-wrapper wow fadeInUp" data-wow-delay=".7s">
-                            <div class="single-circle-bar">
-                                <div class="circle-bar" data-percent="65" data-duration="1000">
-                                </div>
-                                <div class="content">
-                                    <h5>
-                                        Increased by <br>
-                                        the last 2 years
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Section Heading -->
+        <div class="text-center mb-5">
+            <h6 class="section-subtitle">OUR SERVICES</h6>
+            <h2 class="section-title my-2">What We Do</h2>
+            <p class="section-para mx-auto">
+                We provide creative digital solutions that help businesses grow,
+                build strong branding, and create impactful customer experiences.
+            </p>
+        </div>
+
+        <!-- Services Row -->
+        <div class="row g-4 justify-content-center">
+
+            <!-- Service Item -->
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card text-center">
+                    <div class="service-icon">
+                        <i class="fa fa-solid fa-palette"></i>
                     </div>
-                </div>
-                <div class="col-lg-7 mt-4 mt-lg-0">
-                    <div class="growth-image bg-cover" style="background-image: url('assets/img/growth/01.jpg');">
-                        <div class="shape-image">
-                            <img src="assets/img/growth/shape.png" alt="shape-img">
-                        </div>
+                    <h4>Graphic Design</h4>
+                    <p>
+                        Creative visual designs that make your brand memorable.
+                    </p>
+
+                    <div class="mini-points">
+                        <span>✔ Logo Design</span>
+                        <span>✔ Social Creatives</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
 
-<!-- Service Productive Section Start -->
-<section class="service-productive fix section-padding">
-    <div class="service-productive-wrapper pt-0">
-        <div class="circle-shape">
-            <img src="assets/img/circle-shape.png" alt="shape-img" class="text-circle">
-        </div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="productive-image-2">
-                        <img src="assets/img/service/04.jpg" alt="img">
+            <!-- Service Item -->
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card text-center">
+                    <div class="service-icon">
+                        <i class="fa fa-solid fa-bullhorn"></i>
                     </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 mt-5 mt-xl-0">
-                    <div class="productive-content">
-                        <div class="section-title wow fadeInUp" data-wow-delay=".3s">
-                            <h2>
-                                We made things easier <br>
-                                for your business
-                            </h2>
-                        </div>
-                        <p class="mt-4 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                            Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day going forward, a new normal that has evolved from
-                            operational X is on the runway
-                        </p>
-                        <div class="icon-items-area">
-                            <div class="icon-item d-flex align-items-center wow fadeInUp" data-wow-delay=".3s">
-                                <div class="icon">
-                                    <i class="flaticon-light-bulb"></i>
-                                </div>
-                                <div class="content">
-                                    <h5>
-                                        Deliver <br>
-                                        Awesome Idea
-                                    </h5>
-                                </div>
-                            </div>
-                            <div class="icon-item d-flex align-items-center active wow fadeInUp" data-wow-delay=".5s">
-                                <div class="icon">
-                                    <i class="flaticon-review"></i>
-                                </div>
-                                <div class="content">
-                                    <h5>
-                                        Moneyback <br>
-                                        Gurantee
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                        <h6 class="wow fadeInUp" data-wow-delay=".7s">We’re commited to deliver high quality productive service</h6>
-                        <div class="author-items wow fadeInUp" data-wow-delay=".9s">
-                            <div class="about-button">
-                                <a href="about.html" class="theme-btn">
-                                    Discover More
-                                </a>
-                            </div>
-                            <img src="assets/img/about/signature-2.png" alt="signature">
-                        </div>
+                    <h4>Digital Marketing</h4>
+                    <p>
+                        Result-driven strategies to grow your online presence.
+                    </p>
+
+                    <div class="mini-points">
+                        <span>✔ SEO Marketing</span>
+                        <span>✔ Social Media Ads</span>
                     </div>
                 </div>
             </div>
+
+            <!-- Service Item -->
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card text-center">
+                    <div class="service-icon">
+                        <i class="fa fa-solid fa-video"></i>
+                    </div>
+                    <h4>Motion Graphics</h4>
+                    <p>
+                        Engaging animations and promotional video content.
+                    </p>
+
+                    <div class="mini-points">
+                        <span>✔ Video Animation</span>
+                        <span>✔ Brand Promotions</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Item -->
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card text-center">
+                    <div class="service-icon">
+                        <i class="fa fa-solid fa-code"></i>
+                    </div>
+                    <h4>Web Development</h4>
+                    <p>
+                        Modern responsive websites designed for performance.
+                    </p>
+
+                    <div class="mini-points">
+                        <span>✔ Responsive Design</span>
+                        <span>✔ Fast Loading</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Item -->
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card text-center">
+                    <div class="service-icon">
+                        <i class="fa fa-paint-brush"></i>
+                    </div>
+                    <h4>Branding Solutions</h4>
+                    <p>
+                        Build a unique and professional brand identity.
+                    </p>
+
+                    <div class="mini-points">
+                        <span>✔ Brand Identity</span>
+                        <span>✔ Creative Strategy</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Item -->
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card text-center">
+                    <div class="service-icon">
+                        <i class="fa fa-solid fa-print"></i>
+                    </div>
+                    <h4>Print Solutions</h4>
+                    <p>
+                        High-quality printing solutions for your business.
+                    </p>
+
+                    <div class="mini-points">
+                        <span>✔ Brochure Design</span>
+                        <span>✔ Packaging Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Item -->
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card text-center">
+                    <div class="service-icon">
+                        <i class="fa fa-tv"></i>
+                    </div>
+                    <h4>Exhibition Design</h4>
+                    <p>
+                        Creative exhibition and event branding solutions.
+                    </p>
+
+                    <div class="mini-points">
+                        <span>✔ Stall Design</span>
+                        <span>✔ Event Branding</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Item -->
+            <div class="col-lg-3 col-md-6">
+                <div class="service-card text-center">
+                    <div class="service-icon">
+                        <i class="fa fa-solid fa-building"></i>
+                    </div>
+                    <h4>Interior Branding</h4>
+                    <p>
+                        Transform interiors with creative branding concepts.
+                    </p>
+
+                    <div class="mini-points">
+                        <span>✔ Office Branding</span>
+                        <span>✔ Wall Graphics</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
     </div>
 </section>
+<!-- WHAT WE DO SECTION END -->
+
 
 <!-- Cta Section Start -->
 <section class="cta-section-3 fix section-padding bg-cover" style="background-image: url('assets/img/cta-banner/02.jpg');">
     <div class="container">
         <div class="cta-wrapper-3">
             <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">
-                Make your website unforgettable <br>
-                join the azent community
+                Ready To Grow Your Brand?
             </h2>
-            <a href="contact.html" class="theme-btn hover-white wow fadeInUp" data-wow-delay=".5s">JOIN TO DOWNLOAD</a>
+            <a href="<?= BASE_URL ?>contact-us" class="theme-btn hover-white wow fadeInUp" data-wow-delay=".5s">Get Free Consultation</a>
         </div>
     </div>
 </section>
 
+<?php include "components/social-section.php" ?>
 
 
 <?php include "footer.php"; ?>

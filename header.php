@@ -223,28 +223,28 @@ function render_header($title = "Default Title", $description = "Default descrip
                                                         <i class="fas fa-angle-down"></i>
                                                     </a>
                                                     <ul class="submenu">
-                                                        <li><a href="<?= BASE_URL ?>about">Who We Are</a></li>
+                                                        <li><a href="<?= BASE_URL ?>about-us">Who We Are</a></li>
                                                         <li><a href="<?= BASE_URL ?>what-we-do">What We Do</a></li>
-                                                        <li><a href="<?= BASE_URL ?>why-us">Why Choose Us</a></li>
+                                                        <li><a href="<?= BASE_URL ?>why-choose-us">Why Choose Us</a></li>
                                                         <li><a href="<?= BASE_URL ?>testimonial">Testimonial</a></li>
                                                     </ul>
                                                 </li>
                                                 <li>
                                                     <a href="<?= BASE_URL ?>services">
                                                         Services
-                                                        <i class="fas fa-angle-down"></i>
+                                                        <!-- <i class="fas fa-angle-down"></i> -->
                                                     </a>
-                                                    <ul class="submenu">
-                                                        <li><a href="<?= BASE_URL ?>service-details">GRAPHICS DESIGN</a></li>
-                                                        <li><a href="<?= BASE_URL ?>service-details">MOTION GRAPHICS</a></li>
-                                                        <li><a href="<?= BASE_URL ?>service-details">DIGITAL MARKETING</a></li>
-                                                        <li><a href="<?= BASE_URL ?>service-details">MARKETING SOLUTION</a></li>
-                                                        <li><a href="<?= BASE_URL ?>service-details">EXHIBITIONS</a></li>
-                                                        <li><a href="<?= BASE_URL ?>service-details">INTERIORS</a></li>
-                                                        <li><a href="<?= BASE_URL ?>service-details">PRINT SOLUTIONS</a></li>
-                                                        <li><a href="<?= BASE_URL ?>service-details">CORPRORATE GIFTING</a></li>
-                                                        <li><a href="<?= BASE_URL ?>service-details">INDOOR & DOOR BRANDING</a></li>
-                                                    </ul>
+                                                    <!-- <ul class="submenu">
+                                                        <li><a href="<?= BASE_URL ?>services">GRAPHICS DESIGN</a></li>
+                                                        <li><a href="<?= BASE_URL ?>services">MOTION GRAPHICS</a></li>
+                                                        <li><a href="<?= BASE_URL ?>services">DIGITAL MARKETING</a></li>
+                                                        <li><a href="<?= BASE_URL ?>services">MARKETING SOLUTION</a></li>
+                                                        <li><a href="<?= BASE_URL ?>services">EXHIBITIONS</a></li>
+                                                        <li><a href="<?= BASE_URL ?>services">INTERIORS</a></li>
+                                                        <li><a href="<?= BASE_URL ?>services">PRINT SOLUTIONS</a></li>
+                                                        <li><a href="<?= BASE_URL ?>services">CORPRORATE GIFTING</a></li>
+                                                        <li><a href="<?= BASE_URL ?>services">INDOOR & DOOR BRANDING</a></li>
+                                                    </ul> -->
                                                 </li>
                                                 <li>
                                                     <a href="<?= BASE_URL ?>case-studies">
@@ -257,7 +257,7 @@ function render_header($title = "Default Title", $description = "Default descrip
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="<?= BASE_URL ?>contact">Contact Us</a>
+                                                    <a href="<?= BASE_URL ?>contact-us">Contact Us</a>
                                                 </li>
                                             </ul>
                                         </nav>

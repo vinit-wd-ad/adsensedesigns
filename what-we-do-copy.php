@@ -3,14 +3,14 @@ require "setting.php";
 include "header.php";
 
 render_header(
-    "Adsense Designs - About Us",
-    "we know that good design means good business solution",
+    "Adsense Designs - What We Do",
+    "Discover what we do at Adsense Designs. We specialize in creating innovative solutions that enhance user experience and drive business growth.",
     [
-        "keywords" => "graphic design, web design, UI/UX, business solutions",
+        "keywords" => "what we do, services, business solutions, user experience, innovation",
         "robots" => "index, follow",
     ],
     [
-        "canonical" => "https://adsensedesigns.com/about",
+        "canonical" => "https://adsensedesigns.com/what-we-do",
     ]
 );
 
@@ -26,7 +26,7 @@ render_header(
     </div>
     <div class="container">
         <div class="page-heading">
-            <h1 class="wow fadeInUp" data-wow-delay=".3s">About Us</h1>
+            <h1 class="wow fadeInUp" data-wow-delay=".3s">What We Do</h1>
             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                 <li>
                     <a href="/">
@@ -37,65 +37,13 @@ render_header(
                     /
                 </li>
                 <li>
-                    About Us
+                    What We Do
                 </li>
             </ul>
         </div>
     </div>
 </div>
 
-<!-- About Section Start -->
-<section class="about-section fix section-padding">
-    <div class="shape-image">
-        <img src="assets/img/about/shape.png" alt="shape-img">
-    </div>
-    <div class="shape-image-2">
-        <img src="assets/img/about/shape-2.png" alt="shape-img">
-    </div>
-    <div class="line-area">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="about-wrapper-3">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6 col-lg-6">
-                    <div class="about-image bg-cover wow fadeInUp" data-wow-delay=".3s"
-                        style="background-image: url('assets/img/about/about-5.jpg');">
-                        <div class="about-image-2 bg-cover wow fadeInLeft" data-wow-delay=".5s"
-                            style="background-image: url('assets/img/about/about-6.jpg');"></div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 mt-5 mt-lg-0">
-                    <div class="about-content">
-                        <div class="section-title style-2">
-                            <h5>About us</h5>
-                            <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                Good design comes from <br>
-                                good ideas & best thinking
-                            </h2>
-                        </div>
-                        <h5 class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">We know that good design means
-                            good business solution</h5>
-                        <p class="wow fadeInUp" data-wow-delay=".7s">
-                            Bring to the table win-win survival strategies to ensure proactive domination. At the
-                            end of the day going forward, a new normal that has evolved from <br>
-                            operational X is on the runway
-                        </p>
-                        <div class="author-items wow fadeInUp d-flex justify-content-end" data-wow-delay=".9s">
-                            <div class="about-button">
-                                <a href="about" class="theme-btn">
-                                    Discover More
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- Growth Section Start -->
 <section class="growth-section fix">
@@ -189,7 +137,7 @@ render_header(
                         <h6 class="wow fadeInUp" data-wow-delay=".7s">We’re commited to deliver high quality productive service</h6>
                         <div class="author-items wow fadeInUp" data-wow-delay=".9s">
                             <div class="about-button">
-                                <a class="theme-btn">
+                                <a href="about.html" class="theme-btn">
                                     Discover More
                                 </a>
                             </div>
@@ -207,10 +155,9 @@ render_header(
     <div class="container">
         <div class="cta-wrapper-3">
             <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">
-                Make your website unforgettable <br>
-                join the azent community
+                Ready To Grow Your Brand?
             </h2>
-            <a href="" class="theme-btn hover-white wow fadeInUp" data-wow-delay=".5s">JOIN TO DOWNLOAD</a>
+            <a href="<?= BASE_URL ?>contact-us" class="theme-btn hover-white wow fadeInUp" data-wow-delay=".5s">Get Free Consultation</a>
         </div>
     </div>
 </section>

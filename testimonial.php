@@ -30,7 +30,7 @@ render_header(
             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                 <li>
                     <a href="/">
-                        Home Page
+                        Home
                     </a>
                 </li>
                 <li>
@@ -45,106 +45,179 @@ render_header(
 </div>
 
 <!-- Testimonial Section Start -->
-<section class="testimonial-section section-padding fix section-bg">
-    <div class="container">
-        <div class="row">
+<section class="testimonial-section fix section-bg py-5">
+    <div class="container py-3">
+        <div class="text-center">
+            <h2 class="section-title mb-3">What Our Clients Say</h2>
+            <p class="section-para mx-auto mt-0">
+                Trusted by businesses for creative design, branding, and result-driven digital solutions that deliver real growth and lasting impact.
+            </p>
+        </div>
+        <div class="row g-4">
+
+            <!-- Testimonial Item -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                 <div class="testimonial-card-items">
-                    <div class="testimonial-image bg-cover" style="background-image: url('assets/img/client/01.jpg');"></div>
-                    <div class="icon">
-                        <i class="flaticon-quotation"></i>
-                    </div>
+
                     <div class="testimonial-content">
                         <p>
-                            Bring to the table win-win strategies to ensure proactive domination. At the end of the day going forward normal that has evolved from
-                            operational X is on the
+                            Back end team members and graphics Guys are very efficient.
+                            One stop solution for all the marketing needs.
                         </p>
-                        <h4>Janes Cooper</h4>
-                        <span>Designer</span>
+
+                        <div class="client-info mt-4">
+                            <h4>SWASTHBHOOMI</h4>
+                            <span>(Director) <b class="base-color">Subrata Biswas</b></span>
+
+                            <div class="review-logo mt-3">
+                                <a href="https://adsensedesigns.com">
+                                    <img src="assets/img/client/images.png" alt="" width="15px">
+                                    <img src="assets/img/client/google.png" alt="" width="50px">
+                                    <img src="assets/img/client/verify.jpg" alt="" width="80px">
+                                </a>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
+
+            <!-- Testimonial Item -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                <div class="testimonial-card-items active">
-                    <div class="testimonial-image bg-cover" style="background-image: url('assets/img/client/02.jpg');"></div>
-                    <div class="icon">
-                        <i class="flaticon-quotation"></i>
-                    </div>
+                <div class="testimonial-card-items">
+
                     <div class="testimonial-content">
                         <p>
-                            Bring to the table win-win strategies to ensure proactive domination. At the end of the day going forward normal that has evolved from
-                            operational X is on the
+                            Masters of masters, best designs and ideas.
+                            <br>Don't go anywhere else.
+                            <br>All solutions under one roof.
                         </p>
-                        <h4>Jack Daniel
-                        </h4>
-                        <span>Designer</span>
+
+                        <div class="client-info mt-4">
+                            <h4>GVI Hardware</h4>
+                            <span>(Director) <b class="base-color">Vinay Aggarwal</b></span>
+
+                            <div class="review-logo mt-3">
+                                <a href="https://adsensedesigns.com">
+                                    <img src="assets/img/client/images.png" alt="" width="15px">
+                                    <img src="assets/img/client/google.png" alt="" width="50px">
+                                    <img src="assets/img/client/verify.jpg" alt="" width="80px">
+                                </a>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
+
+            <!-- Testimonial Item -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                 <div class="testimonial-card-items">
-                    <div class="testimonial-image bg-cover" style="background-image: url('assets/img/client/03.jpg');"></div>
-                    <div class="icon">
-                        <i class="flaticon-quotation"></i>
-                    </div>
+
                     <div class="testimonial-content">
                         <p>
-                            Bring to the table win-win strategies to ensure proactive domination. At the end of the day going forward normal that has evolved from
-                            operational X is on the
+                            Very good design agency. Worked with them for 5 years across
+                            3 companies. Very cooperative and professional.
                         </p>
-                        <h4>Ava Olivia</h4>
-                        <span>Designer</span>
+
+                        <div class="client-info mt-4">
+                            <h4>Suhail</h4>
+                            <span>(Head Marketing)</span>
+
+                            <div class="review-logo mt-3">
+                                <a href="https://adsensedesigns.com">
+                                    <img src="assets/img/client/images.png" alt="" width="15px">
+                                    <img src="assets/img/client/google.png" alt="" width="50px">
+                                    <img src="assets/img/client/verify.jpg" alt="" width="80px">
+                                </a>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
+
+            <!-- Testimonial Item -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                 <div class="testimonial-card-items">
-                    <div class="testimonial-image bg-cover" style="background-image: url('assets/img/client/04.jpg');"></div>
-                    <div class="icon">
-                        <i class="flaticon-quotation"></i>
-                    </div>
+
                     <div class="testimonial-content">
                         <p>
-                            Bring to the table win-win strategies to ensure proactive domination. At the end of the day going forward normal that has evolved from
-                            operational X is on the
+                            Working with AdSense for the past four years for our
+                            corporate needs. Creative artworks delivered on time.
                         </p>
-                        <h4>Liam Noah</h4>
-                        <span>Designer</span>
+
+                        <div class="client-info mt-4">
+                            <h4>CARGILL</h4>
+                            <span>(Strategic Marketing) <b class="base-color">Syam</b></span>
+
+                            <div class="review-logo mt-3">
+                                <a href="https://adsensedesigns.com">
+                                    <img src="assets/img/client/images.png" alt="" width="15px">
+                                    <img src="assets/img/client/google.png" alt="" width="50px">
+                                    <img src="assets/img/client/verify.jpg" alt="" width="80px">
+                                </a>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
+
+            <!-- Testimonial Item -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                 <div class="testimonial-card-items">
-                    <div class="testimonial-image bg-cover" style="background-image: url('assets/img/client/05.jpg');"></div>
-                    <div class="icon">
-                        <i class="flaticon-quotation"></i>
-                    </div>
+
                     <div class="testimonial-content">
                         <p>
-                            Bring to the table win-win strategies to ensure proactive domination. At the end of the day going forward normal that has evolved from
-                            operational X is on the
+                            Systematic, efficient and a very co-operative team.
+                            Ready with suggestions for getting best outcomes.
                         </p>
-                        <h4>Salman Islam</h4>
-                        <span>Designer</span>
+
+                        <div class="client-info mt-4">
+                            <h4>STOREFORME</h4>
+                            <span>(Head) <b class="base-color">Kanchan</b></span>
+
+                            <div class="review-logo mt-3">
+                                <a href="https://adsensedesigns.com">
+                                    <img src="assets/img/client/images.png" alt="" width="15px">
+                                    <img src="assets/img/client/google.png" alt="" width="50px">
+                                    <img src="assets/img/client/verify.jpg" alt="" width="80px">
+                                </a>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
+
+            <!-- Testimonial Item -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                 <div class="testimonial-card-items">
-                    <div class="testimonial-image bg-cover" style="background-image: url('assets/img/client/06.jpg');"></div>
-                    <div class="icon">
-                        <i class="flaticon-quotation"></i>
-                    </div>
+
                     <div class="testimonial-content">
                         <p>
-                            Bring to the table win-win strategies to ensure proactive domination. At the end of the day going forward normal that has evolved from
-                            operational X is on the
+                            Very professional and best team to work with.
+                            Highly recommended.
                         </p>
-                        <h4>Lucas Owen</h4>
-                        <span>Designer</span>
+
+                        <div class="client-info mt-4">
+                            <h4>SPEDITION</h4>
+                            <span>(Operations) <b class="base-color">Harpreet Singh</b></span>
+
+                            <div class="review-logo mt-3">
+                                <a href="https://adsensedesigns.com">
+                                    <img src="assets/img/client/images.png" alt="" width="15px">
+                                    <img src="assets/img/client/google.png" alt="" width="50px">
+                                    <img src="assets/img/client/verify.jpg" alt="" width="80px">
+                                </a>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
+
         </div>
     </div>
 </section>

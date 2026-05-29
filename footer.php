@@ -31,11 +31,11 @@
                             <h3>Navigtion</h3>
                         </div>
                         <ul class="list-area">
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Case Studies</a></li>
-                            <li><a href="#">Blogs</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="<?= BASE_URL ?>about-us">About Us</a></li>
+                            <li><a href="<?= BASE_URL ?>services">Services</a></li>
+                            <li><a href="<?= BASE_URL ?>case-studies">Case Studies</a></li>
+                            <li><a href="<?= BASE_URL ?>blogs">Blogs</a></li>
+                            <li><a href="<?= BASE_URL ?>contact-us">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
