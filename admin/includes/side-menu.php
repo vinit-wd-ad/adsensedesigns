@@ -33,7 +33,7 @@ require_once BASE_PATH . 'admin/session.php';
                     <span class="hide-menu">Blogs</span>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="<?= BASE_URL ?>admin/blogs/blog-list" aria-expanded="false">
+                    <a class="sidebar-link" href="<?= BASE_URL ?>admin/blogs/blog-list.php" aria-expanded="false">
                         <span>
                             <iconify-icon icon="solar:login-3-bold-duotone" class="fs-6"></iconify-icon>
                         </span>
@@ -41,7 +41,7 @@ require_once BASE_PATH . 'admin/session.php';
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="<?= BASE_URL ?>admin/blogs/category-list" aria-expanded="false">
+                    <a class="sidebar-link" href="<?= BASE_URL ?>admin/blogs/category-list.php" aria-expanded="false">
                         <span>
                             <iconify-icon icon="solar:login-3-bold-duotone" class="fs-6"></iconify-icon>
                         </span>
@@ -54,7 +54,7 @@ require_once BASE_PATH . 'admin/session.php';
                     <span class="hide-menu">Admin</span>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="<?= BASE_URL ?>admin/admins/list" aria-expanded="false">
+                    <a class="sidebar-link" href="<?= BASE_URL ?>admin/admins/list.php" aria-expanded="false">
                         <span>
                             <iconify-icon icon="solar:login-3-bold-duotone" class="fs-6"></iconify-icon>
                         </span>
@@ -62,7 +62,7 @@ require_once BASE_PATH . 'admin/session.php';
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="<?= BASE_URL ?>admin/admins/new" aria-expanded="false">
+                    <a class="sidebar-link" href="<?= BASE_URL ?>admin/admins/new.php" aria-expanded="false">
                         <span>
                             <iconify-icon icon="solar:user-plus-rounded-bold-duotone" class="fs-6"></iconify-icon>
                         </span>
@@ -75,7 +75,7 @@ require_once BASE_PATH . 'admin/session.php';
                     <span class="hide-menu">Extra</span>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="<?= BASE_URL ?>admin/sample-page" aria-expanded="false">
+                    <a class="sidebar-link" href="<?= BASE_URL ?>admin/sample-page.php" aria-expanded="false">
                         <span>
                             <iconify-icon icon="solar:login-3-bold-duotone" class="fs-6"></iconify-icon>
                         </span>
