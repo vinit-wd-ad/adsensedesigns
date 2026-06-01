@@ -116,7 +116,7 @@ $displayImage     = (!$isDefault && !empty($blog['image'])) ? BASE_URL . "upload
                         <p><?= $displayShortDesc ?></p>
 
                         <!-- <div class="details-image bg-cover mt-4" style="background-image: url('<?= $displayImage ?>');"></div> -->
-                        <img src="<?= $displayImage ?>" alt="">
+                        <img src="<?= $displayImage ?>" alt="<?= $displayTitle ?>" class="img-fluid w-100">
 
                         <div class="main-blog-rich-content mt-5">
                             <?php if (!$isDefault && !empty($content)): ?>
