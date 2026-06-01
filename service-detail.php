@@ -185,7 +185,8 @@ if (!empty($service['short_description'])) {
         </section>
     <?php $sectionIndex++;
     endforeach; ?>
-<?php else: ?>
+<?php else: 
+    if (empty($service['short_description'])) { ?>
     <section class="section-padding bg-white text-center">
         <div class="container">
             <div class="p-5 border rounded bg-light max-w-2xl mx-auto">
@@ -195,7 +196,7 @@ if (!empty($service['short_description'])) {
             </div>
         </div>
     </section>
-<?php endif; ?>
+<?php } endif; ?>
 
 <?php include "components/social-section.php" ?>
 
