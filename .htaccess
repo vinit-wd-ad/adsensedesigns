@@ -1,6 +1,4 @@
 RewriteEngine On
-
-# UNIVERSAL FIX: Base ab dono jagah sirf root (/) rahega
 RewriteBase /
 
 # Admin area ko rules se exclude karein
@@ -8,13 +6,23 @@ RewriteCond %{REQUEST_URI} ^/admin [NC]
 RewriteRule .* - [L]
 
 # ====================================================================
-# CRITICAL FIX FOR BLOG: Request dynamic blog page directly
+# BLOG URLS
 # ====================================================================
+
+# Clean blog URL
 RewriteRule ^blog/([a-zA-Z0-9_-]+)/?$ blog-details.php?slug=$1 [QSA,L]
+
+# ====================================================================
+# SERVICE URLS
+# ====================================================================
+
+# Clean service URL → service.php?slug=xyz
+RewriteRule ^service/([a-zA-Z0-9_-]+)/?$ service-detail.php?slug=$1 [QSA,L]
 
 # ====================================================================
 # SPAM & INVALID PAGES REDIRECTIONS
 # ====================================================================
+
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/(why-us|index)(\.php)?\?[^\s]*\sHTTP/
 RewriteRule ^(why-us|index)(\.php)?$ invalid-page [R=301,L]
 
@@ -24,23 +32,30 @@ RewriteRule ^ invalid-page [R=301,L]
 RewriteRule ^(shopdetail|oreka|toreka|feature|pcmypage|product_archives|snoox|safe_search|product|zhHant)(/.*)?$ invalid-page [R=301,L]
 
 # ====================================================================
-# CLEAN URL & PHP EXTENSION REMOVAL RULES
+# CLEAN URL & PHP EXTENSION REMOVAL
 # ====================================================================
+
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/([^.]+)\.php\sHTTP/
 RewriteRule ^([^.]+)\.php$ $1 [R=301,L]
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !^/blog/ [NC]
+RewriteCond %{REQUEST_URI} !^/service/ [NC]
 RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
 
 # ====================================================================
-# FALLBACKS & HEADERS
+# ERROR PAGES
 # ====================================================================
+
 ErrorDocument 404 /404.php
 
+# ====================================================================
+# SECURITY HEADERS
+# ====================================================================
+
 <IfModule mod_headers.c>
-    # Security headers
+
     Header set X-Content-Type-Options "nosniff"
     Header set X-XSS-Protection "1; mode=block"
     Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
@@ -48,8 +63,6 @@ ErrorDocument 404 /404.php
     Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
     Header always set X-Frame-Options "SAMEORIGIN"
 
-    # ====================================================================
-    # UPDATED CSP: Added ckEditor, Cloudflare, and General Admin CDNs
-    # ====================================================================
     Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://cdn.ckeditor.com https://*.ckeditor.com https://cdn.jsdelivr.net https://code.jquery.com https://maps.googleapis.com https://www.youtube.com https://www.youtube-nocookie.com https://elfsightcdn.com https://snapwidget.com https://cdn.lightwidget.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.ckeditor.com https://fonts.googleapis.com https://cdn.jsdelivr.net; frame-src 'self' https://www.google.com https://maps.google.com https://www.youtube.com https://www.youtube-nocookie.com https://www.instagram.com https://snapwidget.com https://cdn.lightwidget.com https://apps.elfsight.com https://*.elf.site; connect-src 'self' https://*.ckeditor.com https://*.elf.site https://apps.elfsight.com; img-src 'self' data: https:; font-src 'self' data: https://cdnjs.cloudflare.com https://fonts.gstatic.com https://cdn.jsdelivr.net; object-src 'none'"
+
 </IfModule>

@@ -30,7 +30,7 @@ render_header(
             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                 <li>
                     <a href="/">
-                        Home Page
+                        Home
                     </a>
                 </li>
                 <li>
@@ -54,9 +54,9 @@ render_header(
                 service for customer
             </h2>
         </div>
-        <?php include "components/service-section-2.php"; ?>
+        <?php  include "components/service-section-2.php";  ?>
     </div>
-</section>>
+</section>
 
 
 <!-- Project Successful Section Start -->

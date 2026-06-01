@@ -51,6 +51,40 @@ require_once BASE_PATH . 'admin/session.php';
                 <li class="nav-small-cap">
                     <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-6"
                         class="fs-6"></iconify-icon>
+                    <span class="hide-menu">Case Studies</span>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="<?= BASE_URL ?>admin/case-studies/client-list.php" aria-expanded="false">
+                        <span>
+                            <iconify-icon icon="solar:login-3-bold-duotone" class="fs-6"></iconify-icon>
+                        </span>
+                        <span class="hide-menu">Clients</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="<?= BASE_URL ?>admin/case-studies/category-work-list.php" aria-expanded="false">
+                        <span>
+                            <iconify-icon icon="solar:login-3-bold-duotone" class="fs-6"></iconify-icon>
+                        </span>
+                        <span class="hide-menu">Work Category</span>
+                    </a>
+                </li>
+                <li class="nav-small-cap">
+                    <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-6"
+                        class="fs-6"></iconify-icon>
+                    <span class="hide-menu">Services</span>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="<?= BASE_URL ?>admin/services/service-list.php" aria-expanded="false">
+                        <span>
+                            <iconify-icon icon="solar:login-3-bold-duotone" class="fs-6"></iconify-icon>
+                        </span>
+                        <span class="hide-menu">Services</span>
+                    </a>
+                </li>
+                <li class="nav-small-cap">
+                    <iconify-icon icon="solar:menu-dots-linear" class="nav-small-cap-icon fs-6"
+                        class="fs-6"></iconify-icon>
                     <span class="hide-menu">Admin</span>
                 </li>
                 <li class="sidebar-item">
@@ -59,14 +93,6 @@ require_once BASE_PATH . 'admin/session.php';
                             <iconify-icon icon="solar:login-3-bold-duotone" class="fs-6"></iconify-icon>
                         </span>
                         <span class="hide-menu">Admin List</span>
-                    </a>
-                </li>
-                <li class="sidebar-item">
-                    <a class="sidebar-link" href="<?= BASE_URL ?>admin/admins/new.php" aria-expanded="false">
-                        <span>
-                            <iconify-icon icon="solar:user-plus-rounded-bold-duotone" class="fs-6"></iconify-icon>
-                        </span>
-                        <span class="hide-menu">New Admin</span>
                     </a>
                 </li>
                 <li class="nav-small-cap">

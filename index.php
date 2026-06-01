@@ -147,7 +147,7 @@ render_header(
 </section>
 
 <!-- Service Section Start -->
-<section class="service-section">
+<section class="service-section py-5">
     <div class="container">
         <div class="section-title">
             <a href=""><span class="wow fadeInUp">Our Services</span></a>
@@ -156,7 +156,10 @@ render_header(
                 service for customer
             </h2>
         </div>
-        <?php include "components/service-section-3.php"; ?>
+        <?php
+        $maxCount = 8;
+        include "components/service-section-2.php";
+        ?>
     </div>
 </section>
 

@@ -187,8 +187,13 @@
                         </div>
                     </div>
                     <div class="array-button pt-5 text-end">
-                        <button class="array-next"><i class="fal fa-arrow-left"></i></button>
-                        <button class="array-prev"><i class="fal fa-arrow-right"></i></button>
+                        <button class="array-next">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </button>
+
+                        <button class="array-prev">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
             </div>

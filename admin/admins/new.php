@@ -53,7 +53,7 @@ if (isset($_GET['eid'])) {
                             <h5 class="card-title fw-semibold mb-0">
                                 <?= $isEdit ? 'Edit Admin Profile' : 'Add New Admin' ?>
                             </h5>
-                            <a href="<?= BASE_URL ?>admin/admins/admin-list.php" class="btn btn-primary">
+                            <a href="<?= BASE_URL ?>admin/admins/list.php" class="btn btn-primary">
                                 Admins List
                             </a>
                         </div>

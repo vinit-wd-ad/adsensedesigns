@@ -42,8 +42,8 @@ loader();
 
 document.addEventListener("DOMContentLoaded", function () {
     // --- 1. CONFIGURATION ---
-    const ICON_OPEN = 'fal fa-plus';
-    const ICON_CLOSE = 'fal fa-minus';
+    const ICON_OPEN = 'fa-solid fa-plus';
+    const ICON_CLOSE = 'fa-solid fa-minus';
 
     // --- 2. MOBILE MENU CLONING & TOGGLE LOGIC ---
     const mainMenu = document.querySelector('#mobile-menu > ul');

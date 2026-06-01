@@ -4,4 +4,5 @@
 <link rel="shortcut icon" type="image/png" href="<?= BASE_URL ?>admin/assets/images/logos/s-logo.png" />
 <link rel="stylesheet" href="<?= BASE_URL ?>admin/assets/css/styles.min.css" />
 <link rel="stylesheet" href="<?= BASE_URL ?>admin/assets/css/custom.css?v=1.1.1" />
+<link rel="stylesheet" href="<?= BASE_URL ?>assets/css/all.min.css" />
 <script src="https://cdn.ckeditor.com/ckeditor5/41.0.0/classic/ckeditor.js"></script>

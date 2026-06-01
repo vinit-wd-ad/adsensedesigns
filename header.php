@@ -1,7 +1,10 @@
 <?php
+$serObj = new Database('services');
+$serHeader = $serObj->where(['status' => 'active']);
 function render_header($title = "Default Title", $description = "Default description", $meta_tags = [],  $link_tags = [])
 {
     global $BASE_URL;
+    global $serHeader;
 ?>
 
     <!DOCTYPE html>
@@ -29,14 +32,15 @@ function render_header($title = "Default Title", $description = "Default descrip
         <!--<< Bootstrap min.css >>-->
         <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/bootstrap.min.css">
         <!--<< Font Awesome.css >>-->
-        <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/font-awesome.css">
+        <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/all.min.css">
+        <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/flaticon.css">
         <!--<< Animate.css >>-->
         <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/animate.css">
         <!--<< Swiper Bundle.css >>-->
         <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/swiper-bundle.min.css">
         <!--<< Main.css >>-->
         <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/main.css">
-        <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/custom.css?v=1.01.02">
+        <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/custom.css?v=1.01.11">
         <!--<< Style.css >>-->
         <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/style.css">
 
@@ -103,13 +107,13 @@ function render_header($title = "Default Title", $description = "Default descrip
                     <div class="offcanvas__content">
                         <div class="offcanvas__top mb-3 d-flex justify-content-between align-items-center">
                             <div class="offcanvas__logo">
-                                <a href="index.html">
+                                <a href="<?= BASE_URL ?>">
                                     <img src="assets/img/logo/logo.jpeg" alt="logo-img">
                                 </a>
                             </div>
                             <div class="offcanvas__close">
                                 <button>
-                                    <i class="fas fa-times"></i>
+                                    <i class="fa-solid fa-xmark"></i>
                                 </button>
                             </div>
                         </div>
@@ -117,50 +121,64 @@ function render_header($title = "Default Title", $description = "Default descrip
                         <div class="mobile-menu fix mb-3"></div>
                         <div class="offcanvas__contact">
                             <h4>Contact Info</h4>
+
                             <ul>
                                 <li class="d-flex align-items-center">
                                     <div class="offcanvas__contact-icon">
-                                        <i class="fal fa-map-marker-alt"></i>
+                                        <i class="fa-solid fa-location-dot"></i>
                                     </div>
                                     <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
+                                        <a target="_blank" href="#">
+                                            201-A, Jaina Tower-II, District Centre, Janak Puri, New Delhi 110058
+                                        </a>
                                     </div>
                                 </li>
+
                                 <li class="d-flex align-items-center">
                                     <div class="offcanvas__contact-icon mr-15">
-                                        <i class="fal fa-envelope"></i>
+                                        <i class="fa-solid fa-envelope"></i>
                                     </div>
                                     <div class="offcanvas__contact-text">
-                                        <a href="mailto:info@example.com"><span>info@example.com</span></a>
+                                        <a href="mailto:info@adsensedesigns.com">
+                                            <span>info@adsensedesigns.com</span>
+                                        </a>
                                     </div>
                                 </li>
+
                                 <li class="d-flex align-items-center">
                                     <div class="offcanvas__contact-icon mr-15">
-                                        <i class="fal fa-clock"></i>
+                                        <i class="fa-solid fa-clock"></i>
                                     </div>
                                     <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                        <a target="_blank" href="#">
+                                            Mon - Sat, 10:00 AM - 7:00 PM
+                                        </a>
                                     </div>
                                 </li>
+
                                 <li class="d-flex align-items-center">
                                     <div class="offcanvas__contact-icon mr-15">
-                                        <i class="far fa-phone"></i>
+                                        <i class="fa-solid fa-phone"></i>
                                     </div>
                                     <div class="offcanvas__contact-text">
-                                        <a href="tel:+11002345909">+11002345909</a>
+                                        <a href="tel:+911234567890">
+                                            +91 12345 67890
+                                        </a>
                                     </div>
                                 </li>
                             </ul>
+
                             <div class="header-button mt-4">
                                 <a href="contact.html" class="theme-btn text-center">
                                     Contact Us
                                 </a>
                             </div>
+
                             <div class="social-icon d-flex align-items-center">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-youtube"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
@@ -177,20 +195,23 @@ function render_header($title = "Default Title", $description = "Default descrip
                     <div class="header-top-wrapper">
                         <ul>
                             <li>
-                                <i class="fal fa-map-marker-alt me-2"></i>
+                                <i class="fa-solid fa-location-dot me-2"></i>
                                 201-A, Jaina Tower-II, District Centre, Janak Puri, New Delhi 110058
                             </li>
+
                             <li>
-                                <i class="fal fa-envelope me-2"></i>
-                                <a href="mailto:info@example.com"><span>info@adsensedesigns.com</span></a>
+                                <i class="fa-solid fa-envelope me-2"></i>
+                                <a href="mailto:info@adsensedesigns.com">
+                                    <span>info@adsensedesigns.com</span>
+                                </a>
                             </li>
                         </ul>
                         <div class="social-icon d-flex align-items-center">
                             <span class="me-3">Follow us:</span>
-                            <a href="#"><i class="fab fa-facebook-f me-3"></i></a>
-                            <a href="#"><i class="fab fa-twitter me-3"></i></a>
-                            <a href="#"><i class="fab fa-youtube me-3"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f me-3"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter me-3"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube me-3"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -232,19 +253,17 @@ function render_header($title = "Default Title", $description = "Default descrip
                                                 <li>
                                                     <a href="<?= BASE_URL ?>services">
                                                         Services
-                                                        <!-- <i class="fas fa-angle-down"></i> -->
+                                                        <i class="fas fa-angle-down"></i>
                                                     </a>
-                                                    <!-- <ul class="submenu">
-                                                        <li><a href="<?= BASE_URL ?>services">GRAPHICS DESIGN</a></li>
-                                                        <li><a href="<?= BASE_URL ?>services">MOTION GRAPHICS</a></li>
-                                                        <li><a href="<?= BASE_URL ?>services">DIGITAL MARKETING</a></li>
-                                                        <li><a href="<?= BASE_URL ?>services">MARKETING SOLUTION</a></li>
-                                                        <li><a href="<?= BASE_URL ?>services">EXHIBITIONS</a></li>
-                                                        <li><a href="<?= BASE_URL ?>services">INTERIORS</a></li>
-                                                        <li><a href="<?= BASE_URL ?>services">PRINT SOLUTIONS</a></li>
-                                                        <li><a href="<?= BASE_URL ?>services">CORPRORATE GIFTING</a></li>
-                                                        <li><a href="<?= BASE_URL ?>services">INDOOR & DOOR BRANDING</a></li>
-                                                    </ul> -->
+                                                    <ul class="submenu">
+                                                        <?php 
+                                                            foreach($serHeader as $serviceH){
+                                                        ?>
+                                                        <li><a href="<?= BASE_URL ?>service/<?= $serviceH['slug'] ?>"><?= strtoupper($serviceH['name']) ?></a></li>
+                                                        <?php 
+                                                            }
+                                                        ?>
+                                                    </ul>
                                                 </li>
                                                 <li>
                                                     <a href="<?= BASE_URL ?>case-studies">
@@ -265,11 +284,11 @@ function render_header($title = "Default Title", $description = "Default descrip
                                 </div>
                             </div>
                             <div class="header-right d-flex justify-content-end align-items-center">
-                                <a href="#0" class="search-trigger search-icon"><i class="fal fa-search"></i></a>
-                                <!-- <a href="shop-cart.html" class="cart-icon"><i class="far fa-shopping-cart"></i></a> -->
+                                <a href="#0" class="search-trigger search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                <!-- <a href="#" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a> -->
                                 <div class="header__hamburger d-lg-none my-auto">
                                     <div class="sidebar__toggle">
-                                        <i class="far fa-bars"></i>
+                                        <i class="fa-solid fa-bars"></i>
                                     </div>
                                 </div>
                             </div>
@@ -282,7 +301,7 @@ function render_header($title = "Default Title", $description = "Default descrip
         <!-- Search Area Start -->
         <div class="search-wrap">
             <div class="search-inner">
-                <i class="fas fa-times search-close" id="search-close"></i>
+                <i class="fa-solid fa-xmark search-close" id="search-close"></i>
                 <div class="search-cell">
                     <form method="get">
                         <div class="search-field-holder">

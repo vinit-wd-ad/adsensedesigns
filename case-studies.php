@@ -30,7 +30,7 @@ render_header(
             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                 <li>
                     <a href="/">
-                        Home Page
+                        Home
                     </a>
                 </li>
                 <li>
@@ -44,7 +44,7 @@ render_header(
     </div>
 </div>
 
-<?php include "components/case-studies1.php"; ?>
+<?php include "components/case-studies2.php"; ?>
 
 
 <?php include "footer.php"; ?>

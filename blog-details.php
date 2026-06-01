@@ -97,7 +97,9 @@ $displayImage     = (!$isDefault && !empty($blog['image'])) ? BASE_URL . "upload
         <div class="page-heading">
             <h1 class="wow fadeInUp" data-wow-delay=".3s"><?= !$isDefault ? "Blog Details" : "Service Details" ?></h1>
             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
-                <li><a href="<?= BASE_URL ?>">Home Page</a></li>
+                <li><a href="<?= BASE_URL ?>">Home</a></li>
+                <li>/</li>
+                <li><a href="<?= BASE_URL ?>blogs">Blogs</a></li>
                 <li>/</li>
                 <li><?= !$isDefault ? htmlspecialchars($blog['title']) : "Service Details" ?></li>
             </ul>

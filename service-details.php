@@ -30,7 +30,7 @@ render_header(
             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                 <li>
                     <a href="/">
-                        Home Page
+                        Home
                     </a>
                 </li>
                 <li>

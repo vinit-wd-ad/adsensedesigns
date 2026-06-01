@@ -1,0 +1,56 @@
+/* flaticon.css */
+
+@font-face {
+    font-family: "flaticon";
+    src: url("../webfonts/flaticon.woff2") format("woff2"),
+         url("../webfonts/flaticon.woff") format("woff");
+    font-display: swap;
+}
+
+i[class^="flaticon-"]:before,
+i[class*=" flaticon-"]:before,
+span[class^="flaticon-"]:before,
+span[class*=" flaticon-"]:before {
+    font-family: "flaticon" !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-mobile-app:before { content: "\f101"; }
+.flaticon-check-mark:before { content: "\f102"; }
+.flaticon-checked:before { content: "\f103"; }
+.flaticon-phone:before { content: "\f104"; }
+.flaticon-search:before { content: "\f105"; }
+.flaticon-shopping-cart:before { content: "\f106"; }
+.flaticon-next:before { content: "\f107"; }
+.flaticon-play:before { content: "\f108"; }
+.flaticon-play-button:before { content: "\f109"; }
+.flaticon-curve:before { content: "\f10a"; }
+.flaticon-mobile-development:before { content: "\f10b"; }
+.flaticon-quotation:before { content: "\f10c"; }
+.flaticon-send:before { content: "\f10d"; }
+.flaticon-facebook-app-symbol:before { content: "\f10e"; }
+.flaticon-instagram:before { content: "\f10f"; }
+.flaticon-linkedin:before { content: "\f110"; }
+.flaticon-twitter:before { content: "\f111"; }
+.flaticon-light-bulb:before { content: "\f112"; }
+.flaticon-verify:before { content: "\f113"; }
+.flaticon-advertisig-agency:before { content: "\f114"; }
+.flaticon-review:before { content: "\f115"; }
+.flaticon-tag:before { content: "\f116"; }
+.flaticon-server:before { content: "\f117"; }
+.flaticon-maintenance:before { content: "\f118"; }
+.flaticon-share:before { content: "\f119"; }
+.flaticon-travel-agency:before { content: "\f11a"; }
+.flaticon-clock:before { content: "\f11b"; }
+.flaticon-calendar:before { content: "\f11c"; }
+.flaticon-user:before { content: "\f11d"; }
+.flaticon-message:before { content: "\f11e"; }
+.flaticon-telephone:before { content: "\f11f"; }
+.flaticon-placeholder:before { content: "\f120"; }
+.flaticon-mail:before { content: "\f121"; }
