@@ -137,7 +137,7 @@ if (isset($_GET['eid'])) {
                                 <button type="submit" class="btn btn-primary">
                                     <?= $isEdit ? 'Update Profile' : 'Add Admin' ?>
                                 </button>
-                                <a href="<?= BASE_URL ?>admin/admins/admin-list.php" class="btn btn-light-danger text-danger">
+                                <a href="<?= BASE_URL ?>admin/admins/list.php" class="btn btn-light-danger text-danger">
                                     Cancel
                                 </a>
                             </div>
