@@ -6,7 +6,7 @@ $contents = isset($contents) && is_array($contents) ? $contents : [];
     <?php if (!empty($contents)): ?>
         <?php foreach ($contents as $content): ?>
             <div class="col-xl-6 col-md-6 mb-4">
-                <div class="service-item-1 h-100 shadow-sm border rounded bg-white p-4 text-center">
+                <div class="service-item-1 h-100 text-center">
                     
                     <?php if (!empty($content['image']) && file_exists("uploads/contents/" . $content['image'])): ?>
                         <div class="mb-3 overflow-hidden rounded" style="max-height: 160px;">
