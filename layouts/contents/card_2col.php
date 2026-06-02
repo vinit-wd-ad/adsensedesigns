@@ -24,7 +24,7 @@ $contents = isset($contents) && is_array($contents) ? $contents : [];
 
                     <h5 class="fw-bold mb-2 px-4"><?= strtoupper(htmlspecialchars($content['title'])) ?></h5>
                     <?php if (!empty($content['description'])): ?>
-                        <p class="text-muted small mb-0 px-4"><?= htmlspecialchars($content['description']) ?></p>
+                        <p class="text-muted small mb-4 px-4"><?= htmlspecialchars($content['description']) ?></p>
                     <?php endif; ?>
 
                 </div>
