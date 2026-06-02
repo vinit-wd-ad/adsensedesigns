@@ -1114,7 +1114,6 @@ body {
 .service-item-1:hover {
   transform: translateY(-10px);
   box-shadow: 0 5px 20px color-mix(var(--theme) 30%, transparent);
-  background: rgb(var(--theme) / 30%);
 }
 .service-item-1 .icon {
   width: 90px;
