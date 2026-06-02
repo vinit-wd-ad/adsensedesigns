@@ -15,7 +15,7 @@ foreach ($sections as $section):
             <div class="row align-items-center my-2 section-inner-row">
                 <?php if (!empty($section['image']) && file_exists("uploads/sections/" . $section['image'])): ?>
                     <div class="col-lg-5 <?= ($globalSectionCount % 2 == 1) ? 'order-lg-2' : '' ?> mb-4 wow fadeInLeft">
-                        <img src="<?= BASE_URL . 'uploads/sections/' . $section['image'] ?>" class="img-fluid w-100 border rounded shadow-sm">
+                        <img src="<?= BASE_URL . 'uploads/sections/' . $section['image'] ?>" class="img-fluid w-100 shadow-sm">
                     </div>
                     <div class="col-lg-7 <?= ($globalSectionCount % 2 == 1) ? 'order-lg-1' : '' ?> wow fadeInRight">
                     <?php else: ?>
