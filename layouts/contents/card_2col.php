@@ -13,18 +13,18 @@ $contents = isset($contents) && is_array($contents) ? $contents : [];
                             <img src="<?= BASE_URL . 'uploads/contents/' . $content['image'] ?>" alt="<?= htmlspecialchars($content['title']) ?>" class="w-100 img-fluid object-fit-cover">
                         </div>
                     <?php elseif (!empty($content['icon'])): ?>
-                        <div class="icon fs-1 mb-3">
+                        <div class="icon fs-1 my-3 mt-4">
                             <?= $content['icon'] ?>
                         </div>
                     <?php else: ?>
-                        <div class="icon fs-1 mb-3">
+                        <div class="icon fs-1 my-3">
                             <i class="fas fa-check-circle"></i>
                         </div>
                     <?php endif; ?>
 
-                    <h5 class="fw-bold mb-2"><?= strtoupper(htmlspecialchars($content['title'])) ?></h5>
+                    <h5 class="fw-bold mb-2 px-4"><?= strtoupper(htmlspecialchars($content['title'])) ?></h5>
                     <?php if (!empty($content['description'])): ?>
-                        <p class="text-muted small mb-0"><?= htmlspecialchars($content['description']) ?></p>
+                        <p class="text-muted small mb-0 px-4"><?= htmlspecialchars($content['description']) ?></p>
                     <?php endif; ?>
 
                 </div>
