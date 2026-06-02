@@ -71,7 +71,7 @@ function getWrapperName($wrapperId)
                                 <thead class="table-dark">
                                     <tr>
                                         <th style="width: 60px;">#</th>
-                                        <th style="width: 90px;">Image</th> 
+                                        <th style="width: 110px;">Image / Icon</th> 
                                         <th class="text-start">Section Title</th>
                                         <th>Assigned Wrapper</th>
                                         <th style="width: 80px;">Priority</th>
@@ -93,8 +93,12 @@ function getWrapperName($wrapperId)
                                                                  class="img-thumbnail" 
                                                                  style="max-width: 60px; max-height: 45px; object-fit: cover;">
                                                         </a>
+                                                    <?php elseif (!empty($sec['icon'])): ?>
+                                                        <div class="p-2 border rounded bg-light d-inline-block" title="<?= htmlspecialchars($sec['icon']) ?>">
+                                                            <?= $sec['icon'] ?>
+                                                        </div>
                                                     <?php else: ?>
-                                                        <span class="badge bg-light text-muted border font-monospace small">No Image</span>
+                                                        <span class="badge bg-light text-muted border font-monospace small">No Media</span>
                                                     <?php endif; ?>
                                                 </td>
 

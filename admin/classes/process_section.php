@@ -35,6 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     try {
         $id           = isset($_POST['id']) ? trim($_POST['id']) : '';
         $title        = trim($_POST['title']); 
+        $icon        = trim($_POST['icon']);
         $description  = trim($_POST['description']);
         $status       = !empty($_POST['status']) ? trim($_POST['status']) : 'active';
         $priority     = !empty($_POST['priority']) ? intval($_POST['priority']) : 0;
@@ -100,6 +101,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $data = [
             'wrapper_id'  => $wrapper_id,
             'title'       => $title,
+            'icon'        => $icon,
             'image'       => $final_image_value,
             'description' => $description,
             'content_design_type' => $design_type,

@@ -83,23 +83,8 @@ $currentWrapper = $wrapperObj->find($passed_wrapper_id);
                                 </div>
 
                                 <div class="col-md-6 mb-3">
-                                    <label class="form-label">Section Image Feature</label>
-                                    <input type="file" name="image" class="form-control" accept="image/*">
-
-                                    <?php if ($isEdit && !empty($sectionData['image'])): ?>
-                                        <div class="mt-3 p-2 border rounded bg-light d-flex align-items-center gap-3">
-                                            <div>
-                                                <p class="mb-1 small text-muted">Current Image:</p>
-                                                <img src="<?= BASE_URL ?>uploads/sections/<?= $sectionData['image'] ?>" alt="Preview" class="img-thumbnail" style="max-height: 70px;">
-                                            </div>
-                                            <div class="form-check mt-3">
-                                                <input class="form-check-input border-danger" type="checkbox" name="remove_image" value="1" id="removeImgCheck">
-                                                <label class="form-check-label text-danger fw-semibold" Jaksa for="removeImgCheck">
-                                                    Remove Current Image
-                                                </label>
-                                            </div>
-                                        </div>
-                                    <?php endif; ?>
+                                    <label class="form-label">Icon Class (e.g.: fa fa-cog)</label>
+                                    <input type="text" name="icon" class="form-control" value="<?= $isEdit ? htmlspecialchars($sectionData['icon'] ?? '') : '' ?>">
                                 </div>
 
                                 <div class="col-md-6 mb-3">
@@ -124,6 +109,26 @@ $currentWrapper = $wrapperObj->find($passed_wrapper_id);
                                         <option value="slider_3col" <?= ($isEdit && $sectionData['content_design_type'] === 'slider_3col') ? 'selected' : '' ?>>Card Slider (1X3 Layout)</option>
                                         <option value="slider_4col" <?= ($isEdit && $sectionData['content_design_type'] === 'slider_4col') ? 'selected' : '' ?>>Card Slider (1X4 Layout)</option>
                                     </select>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Section Image Feature</label>
+                                    <input type="file" name="image" class="form-control" accept="image/*">
+
+                                    <?php if ($isEdit && !empty($sectionData['image'])): ?>
+                                        <div class="mt-3 p-2 border rounded bg-light d-flex align-items-center gap-3">
+                                            <div>
+                                                <p class="mb-1 small text-muted">Current Image:</p>
+                                                <img src="<?= BASE_URL ?>uploads/sections/<?= $sectionData['image'] ?>" alt="Preview" class="img-thumbnail" style="max-height: 70px;">
+                                            </div>
+                                            <div class="form-check mt-3">
+                                                <input class="form-check-input border-danger" type="checkbox" name="remove_image" value="1" id="removeImgCheck">
+                                                <label class="form-check-label text-danger fw-semibold" for="removeImgCheck">
+                                                    Remove Current Image
+                                                </label>
+                                            </div>
+                                        </div>
+                                    <?php endif; ?>
                                 </div>
 
                                 <div class="col-md-12 mb-3">
