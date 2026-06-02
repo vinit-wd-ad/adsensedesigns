@@ -85,9 +85,9 @@ function getParentName($parentId)
                             class="btn btn-sm btn-secondary text-white">
                             <i class="ti ti-search"></i> SEO
                           </a>
-                          <a href="<?= BASE_URL ?>admin/services/section-list.php?service_id=<?= $svc['id'] ?>"
+                          <a href="<?= BASE_URL ?>admin/services/wrapper-list.php?service_id=<?= $svc['id'] ?>"
                             class="btn btn-sm btn-warning" title="Manage Sections">
-                            <i class="ti ti-layout-grid"></i> Sections
+                            <i class="ti ti-layout-grid"></i> Wrappers
                           </a>
 
                           <a href="<?= BASE_URL ?>admin/services/service-new.php?eid=<?= $svc['id'] ?>"

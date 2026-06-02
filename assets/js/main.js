@@ -512,6 +512,30 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    if (document.querySelector('.project-slider-4')) {
+        new Swiper(".project-slider-4", {
+            spaceBetween: 30,
+            speed: 1500,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".dot",
+                clickable: true,
+            },
+            breakpoints: {
+                1199: { slidesPerView: 3 },
+                991: { slidesPerView: 3 },
+                767: { slidesPerView: 2 },
+                575: { slidesPerView: 1 },
+                0: { slidesPerView: 1 },
+            },
+        });
+    }
+
     //>> Testimonial Slider Start <<//
     if (document.querySelector('.testimonial-slider')) {
         new Swiper(".testimonial-slider", {

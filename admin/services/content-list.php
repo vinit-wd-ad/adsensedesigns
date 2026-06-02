@@ -57,7 +57,7 @@ function getSectionName($sectionId)
                             </h5>
 
                             <div>
-                                <a href="<?= BASE_URL ?>admin/services/section-list.php<?= $filteredSection ? '?service_id=' . $filteredSection['service_id'] : '' ?>" class="btn btn-outline-secondary me-2">
+                                <a href="<?= BASE_URL ?>admin/services/section-list.php<?= $filteredSection ? '?wrapper_id=' . $filteredSection['wrapper_id'] : '' ?>" class="btn btn-outline-secondary me-2">
                                     Back to Sections
                                 </a>
                                 <a href="<?= BASE_URL ?>admin/services/content-new.php<?= $section_id ? '?section_id=' . $section_id : '' ?>" class="btn btn-primary">
