@@ -12,15 +12,15 @@
                         </div>
                         <div class="footer-content">
                             <p>
-                                201-A, Jaina Tower-II, District Centre,<br> Janak Puri, New Delhi 110058
+                               <i class="fa-solid fa-location-dot"></i> 201-A, Jaina Tower-II, District Centre,<br> Janak Puri, New Delhi 110058
                             </p>
-                            <h6><a href="#"> 011-40044653</a></h6>
-                            <h6><a href="#">info@adsensedesigns.com</a></h6>
+                            <h6><a href="#"><i class="fa-solid fa-phone"></i> 011-40044653</a></h6>
+                            <h6><a href="#"><i class="fa-solid fa-envelope"></i> info@adsensedesigns.com</a></h6>
                             <div class="social-icon d-flex align-items-center">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="active"><i class="fab fa-vimeo-v"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
@@ -45,17 +45,18 @@
                             <h3>Services</h3>
                         </div>
                         <ul class="list-area">
-                            <li><a href="#">Web Design</a></li>
-                            <li><a href="#">Graphics Design</a></li>
-                            <li><a href="#">Digital Marketing</a></li>
-                            <li><a href="#">Motion Graphics</a></li>
+                            <?php
+                            $serHeader = empty($serHeader) ? [] : $serHeader;
+                            $serCount = 1; 
+                            foreach ($serHeader as $serviceH) {
+                            ?>
+                                <li><a href="<?= BASE_URL ?>service/<?= $serviceH['slug'] ?>"><?= ($serviceH['name']) ?></a></li>
+                            <?php
+                            if($serCount === 4) break;
+                            $serCount ++;
+                            }
+                            ?>
                             <li><a href="services">view all <span style='font-size:22px;color:brown'>&#8594;</span></a></li>
-                            <!-- <li><a href="#">Marketing Solution</a></li>
-                            <li><a href="#">Exhibitions</a></li>
-                            <li><a href="#">Interiors</a></li>
-                            <li><a href="#">Print Solutions</a></li>
-                            <li><a href="#">Corprorate Gifting</a></li>
-                            <li><a href="#">Indoor & Door Branding</a></li> -->
                         </ul>
                     </div>
                 </div>

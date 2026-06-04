@@ -63,15 +63,15 @@ render_header(
                         <h3 class="wow fadeInUp" data-wow-delay=".3s">Contact Info</h3>
                         <div class="info-items mb-3 wow fadeInUp" data-wow-delay=".5s">
                             <h5>Address</h5>
-                            <p>201-A, Jaina Tower-II, District Centre, Janak Puri, New Delhi 110058</p>
+                            <p><i class="fa-solid fa-location-dot"></i> 201-A, Jaina Tower-II, District Centre, Janak Puri, New Delhi 110058</p>
                         </div>
                         <div class="info-items mb-3 wow fadeInUp" data-wow-delay=".7s">
                             <h5>Phone</h5>
-                            <a href="tel:+09354587874"> 011-40044653</a>
+                            <a href="tel:+09354587874"><i class="fa-solid fa-phone"></i> 011-40044653</a>
                         </div>
                         <div class="info-items wow fadeInUp" data-wow-delay=".9s">
                             <h5>Email</h5>
-                            <a href="#0">info@adsensedesigns.com</a>
+                            <a href="#0"><i class="fa-solid fa-envelope"></i> info@adsensedesigns.com</a>
                         </div>
                     </div>
                 </div>
