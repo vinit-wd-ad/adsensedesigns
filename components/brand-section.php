@@ -7,7 +7,7 @@ $brandLogos = [
     'STOREFORME.png',
     'dev-energy.png',
     'swasth-01-01.png',
-    'gvi.png',
+    'gvi-1.png',
     'leon.png',
     'nibus-global.png',
     'jsm-energy.png',
