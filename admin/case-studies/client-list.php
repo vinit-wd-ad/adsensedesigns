@@ -9,7 +9,8 @@ if (!isset($_SESSION['admin_role']) || !isset($_SESSION['admin_id'])) {
 $current_user_role = $_SESSION['admin_role'];
 
 $obj = new Database('portfolio_client');
-$clients = $obj->fetchAll();
+$clientStmt = $obj->query("SELECT * FROM portfolio_client WHERE status = 'active' ORDER BY priority ASC");
+$clients = $clientStmt->fetchAll();
 ?>
 
 <!doctype html>
