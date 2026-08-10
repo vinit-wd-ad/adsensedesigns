@@ -1137,7 +1137,7 @@ body {
 .social-links-group {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -1147,7 +1147,7 @@ body {
   justify-content: center;
   width: 45px;
   height: 45px;
-  font-size: 30px !important;
+  font-size: 22px !important;
   border-radius: 20%;
   background-color: #f8f9fa;
   color: #495057;
