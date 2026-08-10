@@ -1150,7 +1150,7 @@ body {
   font-size: 22px !important;
   border-radius: 20%;
   background-color: #f8f9fa;
-  color: #495057;
+  color: var(--theme);
   border: 1px solid #bfbfbf;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
