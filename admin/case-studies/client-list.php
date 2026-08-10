@@ -66,7 +66,7 @@ $clients = $clientStmt->fetchAll();
                                         <th>Logo</th>
                                         <th>Company Name</th>
                                         <th>Contact Info</th>
-                                        <th>Priority</th>
+                                        <th style="width: 120px;">Priority</th>
                                         <th>Status</th>
                                         <th style="width: 25%;">Action</th>
                                     </tr>
@@ -96,7 +96,16 @@ $clients = $clientStmt->fetchAll();
                                                     <strong>P:</strong> <?= htmlspecialchars($client['phone']) ?>
                                                 </td>
                                                 <td>
-                                                    <span class="badge bg-info text-white"><?= htmlspecialchars($client['priority']) ?></span>
+                                                    <!-- INLINE PRIORITY INPUT -->
+                                                    <div class="d-flex align-items-center justify-content-center gap-1">
+                                                        <input type="number" 
+                                                               class="form-control form-control-sm text-center priority-input" 
+                                                               style="width: 70px;" 
+                                                               value="<?= htmlspecialchars($client['priority']) ?>" 
+                                                               data-id="<?= $client['id'] ?>" 
+                                                               data-original="<?= htmlspecialchars($client['priority']) ?>">
+                                                        <span class="priority-status" id="status-<?= $client['id'] ?>"></span>
+                                                    </div>
                                                 </td>
                                                 <td>
                                                     <span class="badge <?= $client['status'] === 'Active' ? 'bg-light-success text-success' : 'bg-light-danger text-danger' ?> border">
@@ -161,6 +170,67 @@ $clients = $clientStmt->fetchAll();
     </div>
 
     <?php include BASE_PATH . "admin/includes/script.php" ?>
+
+    <!-- AJAX UPDATE SCRIPT -->
+    <script>
+        $(document).ready(function() {
+            function updatePriority(input) {
+                var clientId = input.data('id');
+                var newPriority = input.val();
+                var originalValue = input.data('original');
+                var statusSpan = $('#status-' + clientId);
+
+                // Agar value change nahi hui ho to return ho jaye
+                if (newPriority === originalValue) {
+                    return;
+                }
+
+                statusSpan.html('<i class="ti ti-loader spinner-border spinner-border-sm text-primary"></i>');
+
+                $.ajax({
+                    url: '<?= BASE_URL ?>admin/classes/process_client_priority.php',
+                    type: 'POST',
+                    data: {
+                        action: 'update_priority',
+                        client_id: clientId,
+                        priority: newPriority
+                    },
+                    dataType: 'json',
+                    success: function(response) {
+                        if (response.status === 'success') {
+                            input.data('original', newPriority);
+                            statusSpan.html('<i class="ti ti-check text-success fs-5"></i>');
+                            setTimeout(function() {
+                                statusSpan.empty();
+                            }, 2000);
+                        } else {
+                            alert(response.message || 'Error updating priority.');
+                            input.val(originalValue);
+                            statusSpan.empty();
+                        }
+                    },
+                    error: function() {
+                        alert('Server error occurred while updating priority.');
+                        input.val(originalValue);
+                        statusSpan.empty();
+                    }
+                });
+            }
+
+            // Enter Key press hone par priority update kare
+            $('.priority-input').on('keypress', function(e) {
+                if (e.which === 13) {
+                    e.preventDefault();
+                    $(this).blur(); // Blur trigger hone par niche waala handler auto execution karega
+                }
+            });
+
+            // Input field focusout/blur hone par update execute kare
+            $('.priority-input').on('blur', function() {
+                updatePriority($(this));
+            });
+        });
+    </script>
 </body>
 
 </html>
