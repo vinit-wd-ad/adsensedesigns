@@ -956,9 +956,11 @@ body {
 
 .view-link-wrap {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding: 0 1.25rem 1rem 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 /* ── CARD INNER LAYOUT ── */
@@ -1128,4 +1130,37 @@ body {
 }
 .service-item-1 .icon i {
   color: var(--theme);
+}
+
+/* Styling for dynamic social icons in view-link-wrap */
+
+.social-links-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.social-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  font-size: 30px !important;
+  border-radius: 20%;
+  background-color: #f8f9fa;
+  color: #495057;
+  border: 1px solid #bfbfbf;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 15px;
+}
+
+.social-icon-btn:hover {
+  background-color: var(--theme);
+  color: #ffffff !important;
+  border-color: var(--theme);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.25);
 }

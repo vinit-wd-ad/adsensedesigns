@@ -5,7 +5,7 @@
 $categoryDb = new Database('portfolio_work_category');
 $allCategories = $categoryDb->where(['status' => 'active']);
 
-// 2. Fetch Active Clients (🛠️ UPDATE: Sorted according to priority descending)
+// 2. Fetch Active Clients (Sorted according to priority ascending)
 $dbHelper = new Database('');
 $clientStmt = $dbHelper->query("SELECT * FROM portfolio_client WHERE status = 'active' ORDER BY priority ASC");
 $activeClients = $clientStmt->fetchAll();
@@ -86,6 +86,11 @@ $clientImageDb = new Database('portfolio_client_image');
 
                     $categoryFilterString = implode(' ', array_unique($assignedSlugs));
 
+                    // ── FETCH CLIENT SOCIAL LINKS (ORDERED BY SORT ORDER) ──
+                    $socialSql = "SELECT name, icon, link FROM portfolio_social WHERE client_id = :client_id AND status = '1' ORDER BY sort_order ASC";
+                    $socialStmt = $dbHelper->query($socialSql, ['client_id' => $clientId]);
+                    $clientSocials = $socialStmt->fetchAll();
+
                     // ── IMAGE FALLBACK LOGIC ENGINE ──
                     $showcaseImage = '';
                     $galleryCheck = $clientImageDb->where(['client_id' => $clientId]);
@@ -136,11 +141,23 @@ $clientImageDb = new Database('portfolio_client_image');
 
                                 </div>
 
+                                <!-- ── DYNAMIC LINKS + ACTION BUTTON SECTION ── -->
                                 <div class="view-link-wrap">
+                                    <div class="social-links-group">
+                                        <?php if (!empty($clientSocials)): ?>
+                                            <?php foreach ($clientSocials as $social): ?>
+                                                <a href="<?= htmlspecialchars($social['link']) ?>" target="_blank" class="social-icon-btn" title="<?= htmlspecialchars($social['name']) ?>" aria-label="<?= htmlspecialchars($social['name']) ?>">
+                                                    <i class="<?= htmlspecialchars($social['icon']) ?>"></i>
+                                                </a>
+                                            <?php endforeach; ?>
+                                        <?php endif; ?>
+                                    </div>
+
                                     <a href="<?= !empty($client['website_url']) ? htmlspecialchars($client['website_url']) : '#' ?>" <?= !empty($client['website_url']) ? 'target="_blank"' : '' ?> class="view-link">
                                         View Case Study <i class="fa fa-arrow-right fa-xs"></i>
                                     </a>
                                 </div>
+
                             </div>
 
                         </div>

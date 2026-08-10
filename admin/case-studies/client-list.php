@@ -29,7 +29,7 @@ $clients = $obj->fetchAll();
             <?php include BASE_PATH . "admin/includes/header.php"; ?>
 
             <div class="container-fluid">
-                
+
                 <?php if (isset($_GET['error'])): ?>
                     <div class="alert alert-danger p-3 mb-4 fs-3 fw-semibold">
                         <i class="ti ti-alert-triangle me-2"></i><?= htmlspecialchars($_GET['error']) ?>
@@ -103,30 +103,40 @@ $clients = $obj->fetchAll();
                                                     </span>
                                                 </td>
                                                 <td>
-                                                    <div class="d-flex justify-content-center gap-2">
-                                                        <a href="<?= BASE_URL ?>admin/case-studies/client-work-manage.php?client_id=<?= $client['id'] ?>" class="btn btn-sm btn-success">
-                                                            Add Work
-                                                        </a>
-
-                                                        <a href="<?= BASE_URL ?>admin/case-studies/client-image-manage.php?client_id=<?= $client['id'] ?>" class="btn btn-sm btn-warning text-white">
-                                                            Add Images
-                                                        </a>
-
-                                                        <a href="<?= BASE_URL ?>admin/case-studies/client-new.php?eid=<?= $client['id'] ?>" class="btn btn-sm btn-info">Edit</a>
-
-                                                        <?php if ($current_user_role === 'Super Admin'): ?>
-                                                            <a href="<?= BASE_URL ?>admin/classes/process_client.php?action=delete&id=<?= $client['id'] ?>" 
-                                                               class="btn btn-sm btn-danger" 
-                                                               onclick="return confirm('Are you sure you want to completely remove this client? This will affect its mapped work and images.');">
-                                                                Delete
+                                                    <div class="d-flex flex-column gap-2">
+                                                        <!-- Top Line: Primary Actions -->
+                                                        <div class="d-flex justify-content-center gap-2">
+                                                            <a href="<?= BASE_URL ?>admin/case-studies/client-links-manage.php?client_id=<?= $client['id'] ?>" class="btn btn-sm btn-info">
+                                                                Add Links
                                                             </a>
-                                                        <?php else: ?>
-                                                            <button class="btn btn-sm btn-secondary" disabled>Delete</button>
-                                                        <?php endif; ?>
+                                                            <a href="<?= BASE_URL ?>admin/case-studies/client-work-manage.php?client_id=<?= $client['id'] ?>" class="btn btn-sm btn-success">
+                                                                Add Work
+                                                            </a>
+                                                            <a href="<?= BASE_URL ?>admin/case-studies/client-image-manage.php?client_id=<?= $client['id'] ?>" class="btn btn-sm btn-warning text-white">
+                                                                Add Images
+                                                            </a>
+                                                        </div>
+
+                                                        <!-- Bottom Line: Management Actions -->
+                                                        <div class="d-flex justify-content-center gap-2">
+                                                            <a href="<?= BASE_URL ?>admin/case-studies/client-new.php?eid=<?= $client['id'] ?>" class="btn btn-sm btn-info">
+                                                                Edit
+                                                            </a>
+
+                                                            <?php if ($current_user_role === 'Super Admin'): ?>
+                                                                <a href="<?= BASE_URL ?>admin/classes/process_client.php?action=delete&id=<?= $client['id'] ?>"
+                                                                    class="btn btn-sm btn-danger"
+                                                                    onclick="return confirm('Are you sure you want to completely remove this client? This will affect its mapped work and images.');">
+                                                                    Delete
+                                                                </a>
+                                                            <?php else: ?>
+                                                                <button class="btn btn-sm btn-secondary" disabled>Delete</button>
+                                                            <?php endif; ?>
+                                                        </div>
                                                     </div>
                                                 </td>
                                             </tr>
-                                    <?php
+                                        <?php
                                         }
                                     } else {
                                         ?>
