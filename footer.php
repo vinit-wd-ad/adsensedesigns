@@ -74,8 +74,7 @@
                                 </button>
                             </div>
                             <p>
-                                The ultimate Webflow template for agencies <br>
-                                startups, and small businesses.
+                                We help businesses grow through creative web design, digital marketing, SEO, and result-driven online strategies.
                             </p>
                         </div>
                     </div>

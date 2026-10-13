@@ -86,11 +86,10 @@ render_header(
                                     <h5 data-animation="fadeInUp" data-delay="1.3s">
                                         WE ARE ALWAYS BEST
                                     </h5>
-                                    <h2 class="banner-title" data-animation="fadeInUp" data-delay="1.5s">DIGITAL MARKETING</h2>
+                                    <h1 class="banner-title" data-animation="fadeInUp" data-delay="1.5s">DIGITAL MARKETING</h1>
                                     <p data-animation="fadeInUp" data-delay="1.7s">
-                                        Adsense is a creative digital agency and design agency based on USA by the
-                                        saiful <br>
-                                        New Yourk San fransisco company
+                                        Adsense Designs is a premier creative digital and marketing agency <br>
+                                        delivering result-driven strategies, graphic design, and custom web solutions.
                                     </p>
                                 </div>
                             </div>
@@ -107,11 +106,10 @@ render_header(
                                     <h5 data-animation="fadeInUp" data-delay="1.3s">
                                         WE ARE ALWAYS BEST
                                     </h5>
-                                    <h2 class="banner-title" data-animation="fadeInUp" data-delay="1.5s">GRAPHICS DESIGN</h2>
+                                    <h1 class="banner-title" data-animation="fadeInUp" data-delay="1.5s">GRAPHICS DESIGN</h1>
                                     <p data-animation="fadeInUp" data-delay="1.7s">
-                                        Adsense is a creative digital agency and design agency based on USA by the
-                                        saiful <br>
-                                        New Yourk San fransisco company
+                                        Transform your brand identity with innovative motion graphics, <br>
+                                        strategic digital marketing, and comprehensive corporate branding.
                                     </p>
 
                                 </div>
@@ -129,11 +127,10 @@ render_header(
                                     <h5 data-animation="fadeInUp" data-delay="1.3s">
                                         WE ARE ALWAYS BEST
                                     </h5>
-                                    <h2 class="banner-title" data-animation="fadeInUp" data-delay="1.5s">MOTION GRAPHICS</h2>
+                                    <h1 class="banner-title" data-animation="fadeInUp" data-delay="1.5s">MOTION GRAPHICS</h1>
                                     <p data-animation="fadeInUp" data-delay="1.7s">
-                                        Adsense is a creative digital agency and design agency based on UK by the
-                                        saiful <br>
-                                        London Based Consulting company
+                                        From immersive exhibition setups to corporate gifting and retail interiors, <br>
+                                        we bring your business vision to life with professional expertise.
                                     </p>
 
                                 </div>

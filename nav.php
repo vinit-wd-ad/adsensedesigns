@@ -118,8 +118,8 @@ if (!isset($serHeader)) {
                                     <i class="fa-solid fa-phone"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a href="tel:+911234567890">
-                                        +91 12345 67890
+                                    <a href="tel:011-40044653">
+                                        011-40044653
                                     </a>
                                 </div>
                             </li>

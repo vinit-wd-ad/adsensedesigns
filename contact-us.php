@@ -108,7 +108,7 @@ render_header(
                         <h2>Get in Touch</h2>
                     </div>
                     <p class="mt-4 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                        A vast majority of the app marketers mainly concent post-launch app marketing techniques and measures while completely missing pre-launch campaign. This prevents the
+                        Have a project in mind or looking to grow your business online? We’re here to help. Get in touch with our team to discuss your goals and discover the right digital solutions for your business. Let’s work together to turn your ideas into meaningful results.
                     </p>
                     <div class="info-list">
                         <h3 class="wow fadeInUp" data-wow-delay=".3s">Contact Info</h3>
