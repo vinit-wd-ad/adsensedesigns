@@ -2,16 +2,64 @@
 require_once "setting.php";
 include "header.php";
 
+$schema = [
+    "@context" => "https://schema.org",
+    "@type" => "LocalBusiness",
+    "name" => "Adsense Designs Pvt. Ltd.",
+    "image" => "https://adsensedesigns.com/assets/img/logo/logo.png",
+    "@id" => "https://adsensedesigns.com/",
+    "url" => "https://adsensedesigns.com/",
+    "telephone" => "+91-11-40044653",
+    "address" => [
+        "@type" => "PostalAddress",
+        "streetAddress" => "201-A, Jaina Tower-II, District Centre, Janak Puri",
+        "addressLocality" => "New Delhi",
+        "postalCode" => "110058",
+        "addressCountry" => "IN"
+    ],
+    "geo" => [
+        "@type" => "GeoCoordinates",
+        "latitude" => 28.6290,
+        "longitude" => 77.0860
+    ],
+    "openingHoursSpecification" => [
+        "@type" => "OpeningHoursSpecification",
+        "dayOfWeek" => [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ],
+        "opens" => "10:00",
+        "closes" => "19:00"
+    ],
+    "sameAs" => [
+        "https://adsensedesigns.com/"
+    ]
+];
+
 render_header(
-    "We are adding sense to your brand",
+    "Adsense Designs | Best Digital Marketing & Creative Agency in Delhi",
     "We are Adsense Design Pvt. Ltd., a dynamic marketing agency dedicated to crafting compelling brand stories and driving impactful digital experiences",
     [
-        "keywords" => "Graphics Design, Motion Graphics, Digital Marketing, Marketing Solutions, Exhibitions, Corporate Gifting, Print Solutions",
+        "keywords" => "Graphics Design, Motion Graphics, Digital Marketing, Marketing Solutions, Exhibitions, Corporate Gifting",
         "robots" => "index, follow",
+        // Open Graph Tags (Facebook, WhatsApp, LinkedIn)
+        "og:title" => "Adsense Designs | Best Digital Marketing Agency in Delhi",
+        "og:description" => "We add sense to your brand! Professional services in digital marketing, graphics design, and corporate branding.",
+        "og:image" => BASE_URL . "assets/img/logo/  ",
+        "og:url" => "https://adsensedesigns.com/",
+        "og:type" => "website",
+        // Twitter Cards
+        "twitter:card" => "summary_large_image",
+        "twitter:title" => "Adsense Designs | Best Digital Marketing Agency in Delhi",
+        "twitter:description" => "Transform your brand with expert digital marketing, graphics design, and corporate solutions.",
+        "twitter:image" => BASE_URL . "assets/img/logo/og-banner.jpg"
     ],
-    [
-        "canonical" => "https://adsensedesigns.com/",
-    ]
+    ["canonical" => "https://adsensedesigns.com/"],
+    $schema
 );
 
 ?>
@@ -38,7 +86,7 @@ render_header(
                                     <h5 data-animation="fadeInUp" data-delay="1.3s">
                                         WE ARE ALWAYS BEST
                                     </h5>
-                                    <h1 class="banner-title" data-animation="fadeInUp" data-delay="1.5s">DIGITAL MARKETING</h1>
+                                    <h2 class="banner-title" data-animation="fadeInUp" data-delay="1.5s">DIGITAL MARKETING</h2>
                                     <p data-animation="fadeInUp" data-delay="1.7s">
                                         Adsense is a creative digital agency and design agency based on USA by the
                                         saiful <br>
@@ -59,7 +107,7 @@ render_header(
                                     <h5 data-animation="fadeInUp" data-delay="1.3s">
                                         WE ARE ALWAYS BEST
                                     </h5>
-                                    <h1 class="banner-title" data-animation="fadeInUp" data-delay="1.5s">GRAPHICS DESIGN</h1>
+                                    <h2 class="banner-title" data-animation="fadeInUp" data-delay="1.5s">GRAPHICS DESIGN</h2>
                                     <p data-animation="fadeInUp" data-delay="1.7s">
                                         Adsense is a creative digital agency and design agency based on USA by the
                                         saiful <br>
@@ -81,7 +129,7 @@ render_header(
                                     <h5 data-animation="fadeInUp" data-delay="1.3s">
                                         WE ARE ALWAYS BEST
                                     </h5>
-                                    <h1 class="banner-title" data-animation="fadeInUp" data-delay="1.5s">MOTION GRAPHICS</h1>
+                                    <h2 class="banner-title" data-animation="fadeInUp" data-delay="1.5s">MOTION GRAPHICS</h2>
                                     <p data-animation="fadeInUp" data-delay="1.7s">
                                         Adsense is a creative digital agency and design agency based on UK by the
                                         saiful <br>

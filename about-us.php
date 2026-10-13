@@ -1,21 +1,48 @@
 <?php
-require "setting.php";
+require_once "setting.php";
 include "header.php";
 
+$schema = [
+    "@context" => "https://schema.org",
+    "@type" => "AboutPage",
+    "name" => "About Us - Adsense Designs Pvt. Ltd.",
+    "description" => "Learn more about Adsense Designs Pvt. Ltd., a premier creative and digital marketing agency in Delhi offering branding, design, and marketing solutions.",
+    "url" => "https://adsensedesigns.com/about-us",
+    "publisher" => [
+        "@type" => "Organization",
+        "name" => "Adsense Designs Pvt. Ltd.",
+        "logo" => [
+            "@type" => "ImageObject",
+            "url" => "https://adsensedesigns.com/assets/img/logo/logo.png"
+        ]
+    ]
+];
+
 render_header(
-    "Adsense Designs - About Us",
-    "we know that good design means good business solution",
+    "About Us | Adsense Designs - Creative & Digital Agency in Delhi",
+    "Learn about Adsense Designs Pvt. Ltd. We know that good design means good business solutions. We offer top-notch digital marketing, graphics design, and corporate branding.",
     [
-        "keywords" => "graphic design, web design, UI/UX, business solutions",
+        "keywords" => "About Adsense Designs, graphic design agency, digital marketing Delhi, web design, UI/UX, business solutions, corporate branding",
         "robots" => "index, follow",
+        // Open Graph Tags
+        "og:title" => "About Us | Adsense Designs - Creative & Digital Agency",
+        "og:description" => "Discover how Adsense Designs crafts compelling brand stories and delivers impactful digital experiences.",
+        "og:image" => BASE_URL . "assets/img/logo/og-banner.jpg",
+        "og:url" => "https://adsensedesigns.com/about-us",
+        "og:type" => "website",
+        // Twitter Cards
+        "twitter:card" => "summary_large_image",
+        "twitter:title" => "About Us | Adsense Designs - Creative & Digital Agency",
+        "twitter:description" => "Discover how Adsense Designs crafts compelling brand stories and delivers impactful digital experiences.",
+        "twitter:image" => BASE_URL . "assets/img/logo/og-banner.jpg"
     ],
     [
-        "canonical" => "https://adsensedesigns.com/about",
-    ]
+        "canonical" => "https://adsensedesigns.com/about-us"
+    ],
+    $schema
 );
 
 ?>
-
 <!--<< Breadcrumb Section Start >>-->
 <div class="breadcrumb-wrapper section-padding bg-cover bg-banner-height" style="background-image: url('assets/img/breadcrumb.jpg');height:25rem;">
     <div class="layer-shape wow fadeInLeft" data-wow-delay=".3s">

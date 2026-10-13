@@ -5,6 +5,9 @@ RewriteBase /
 RewriteCond %{REQUEST_URI} ^/admin [NC]
 RewriteRule .* - [L]
 
+RewriteEngine On
+RewriteRule ^llms\.txt$ llms.php [L]
+
 # ====================================================================
 # BLOG URLS
 # ====================================================================

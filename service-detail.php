@@ -1,5 +1,5 @@
 <?php
-require "setting.php";
+require_once "setting.php";
 
 // 1. Fetch Slug securely from Clean URL Param mapping via htaccess
 $slug = isset($_GET['slug']) ? trim($_GET['slug']) : '';
@@ -37,27 +37,60 @@ $meta_title = !empty($seo_meta['title']) ? $seo_meta['title'] : htmlspecialchars
 $meta_desc  = !empty($seo_meta['description']) ? $seo_meta['description'] : (!empty($service['short_description']) ? htmlspecialchars($service['short_description']) : "Explore our expert dynamic industry application profiles.");
 $meta_keys  = !empty($seo_meta['keywords']) ? $seo_meta['keywords'] : "services, corporate identity, design strategies, " . strtolower(htmlspecialchars($service['name']));
 $robots     = !empty($seoData['robots']) ? $seoData['robots'] : "index, follow";
-$canonical  = !empty($seoData['canonical_url']) ? $seoData['canonical_url'] : BASE_URL . htmlspecialchars($service['slug']);
+$canonical  = !empty($seoData['canonical_url']) ? $seoData['canonical_url'] : BASE_URL . "services/" . htmlspecialchars($service['slug']);
 
-// Load structural presentation layout configuration header context template asset
+// Open Graph & Twitter fallbacks
+$og_title   = !empty($og_seo['og:title']) ? $og_seo['og:title'] : $meta_title;
+$og_desc    = !empty($og_seo['og:description']) ? $og_seo['og:description'] : $meta_desc;
+$og_image   = !empty($og_seo['og:image']) ? $og_seo['og:image'] : (!empty($service['banner_image']) ? BASE_URL . "assets/img/services/" . $service['banner_image'] : BASE_URL . "assets/img/logo/og-banner.jpg");
+
+// Meta Tags Array (Keywords, Robots, Open Graph, Twitter)
+$meta_tags = [
+    "keywords"          => $meta_keys,
+    "robots"            => $robots,
+    "og:title"          => $og_title,
+    "og:description"    => $og_desc,
+    "og:image"          => $og_image,
+    "og:url"            => $canonical,
+    "og:type"           => "website",
+    "twitter:card"      => "summary_large_image",
+    "twitter:title"     => $og_title,
+    "twitter:description" => $og_desc,
+    "twitter:image"     => $og_image
+];
+
+// Schema JSON Parse or Dynamic Service Schema Fallback
+$schemaData = [];
+if (!empty($seoData['schema_json']) && $seoData['schema_json'] !== '{}' && is_string($seoData['schema_json'])) {
+    $schemaData = json_decode($seoData['schema_json'], true) ?: [];
+} else {
+    // Dynamic Fallback Schema if database schema JSON is empty
+    $schemaData = [
+        "@context" => "https://schema.org",
+        "@type" => "Service",
+        "name" => htmlspecialchars($service['name']),
+        "provider" => [
+            "@type" => "LocalBusiness",
+            "name" => "Adsense Designs Pvt. Ltd.",
+            "url" => "https://adsensedesigns.com/"
+        ],
+        "description" => $meta_desc,
+        "url" => $canonical
+    ];
+}
+
+// Load header template assets
 include "header.php";
 
 render_header(
     $meta_title,
     $meta_desc,
-    [
-        "keywords" => $meta_keys,
-        "robots"   => $robots,
-    ],
+    $meta_tags,
     [
         "canonical" => $canonical,
-    ]
+    ],
+    $schemaData
 );
-
-// Inject strict dynamic structured Schema markup to body loop if parsed successfully
-if (!empty($seoData['schema_json']) && $seoData['schema_json'] !== '{}' && is_string($seoData['schema_json'])) {
-    echo "\n<script type=\"application/ld+json\">\n" . $seoData['schema_json'] . "\n</script>\n";
-}
 ?>
 
 <div class="breadcrumb-wrapper section-padding bg-cover bg-banner-height" style="background-image: url('<?= BASE_URL ?>assets/img/breadcrumb.jpg'); height: 25rem;">

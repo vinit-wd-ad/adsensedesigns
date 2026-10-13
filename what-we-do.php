@@ -1,17 +1,42 @@
 <?php
-require "setting.php";
+require_once "setting.php";
 include "header.php";
 
+$schema = [
+    "@context" => "https://schema.org",
+    "@type" => "Service",
+    "name" => "What We Do - Adsense Designs Services",
+    "provider" => [
+        "@type" => "LocalBusiness",
+        "name" => "Adsense Designs Pvt. Ltd.",
+        "url" => "https://adsensedesigns.com/"
+    ],
+    "description" => "Discover what we do at Adsense Designs. We specialize in graphic design, digital marketing, web development, corporate gifting, and exhibition setups.",
+    "url" => "https://adsensedesigns.com/what-we-do"
+];
+
 render_header(
-    "Adsense Designs - What We Do",
-    "Discover what we do at Adsense Designs. We specialize in creating innovative solutions that enhance user experience and drive business growth.",
+    "What We Do | Creative & Digital Marketing Services | Adsense Designs",
+    "Discover what we do at Adsense Designs. We specialize in creating innovative solutions including graphics design, digital marketing, web solutions, and corporate branding to drive business growth.",
     [
-        "keywords" => "what we do, services, business solutions, user experience, innovation",
+        "keywords" => "what we do, digital marketing services, graphics design, web design, UI/UX, exhibition setups, corporate gifting, business solutions",
         "robots" => "index, follow",
+        // Open Graph Tags
+        "og:title" => "What We Do | Services by Adsense Designs",
+        "og:description" => "Explore our wide range of services: Graphics Design, Digital Marketing, Corporate Branding, and Web Solutions.",
+        "og:image" => BASE_URL . "assets/img/logo/og-banner.jpg",
+        "og:url" => "https://adsensedesigns.com/what-we-do",
+        "og:type" => "website",
+        // Twitter Cards
+        "twitter:card" => "summary_large_image",
+        "twitter:title" => "What We Do | Services by Adsense Designs",
+        "twitter:description" => "Explore our wide range of services: Graphics Design, Digital Marketing, Corporate Branding, and Web Solutions.",
+        "twitter:image" => BASE_URL . "assets/img/logo/og-banner.jpg"
     ],
     [
-        "canonical" => "https://adsensedesigns.com/what-we-do",
-    ]
+        "canonical" => "https://adsensedesigns.com/what-we-do"
+    ],
+    $schema
 );
 
 ?>

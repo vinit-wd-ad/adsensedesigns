@@ -1,17 +1,68 @@
 <?php
-require "setting.php";
+require_once "setting.php";
 include "header.php";
 
+$schema = [
+    "@context" => "https://schema.org",
+    "@type" => "ContactPage",
+    "name" => "Contact Us - Adsense Designs Pvt. Ltd.",
+    "description" => "Get in touch with Adsense Designs for your creative design, web development, digital marketing, and branding needs.",
+    "url" => "https://adsensedesigns.com/contact-us",
+    "mainEntity" => [
+        "@type" => "LocalBusiness",
+        "name" => "Adsense Designs Pvt. Ltd.",
+        "image" => "https://adsensedesigns.com/assets/img/logo/logo.png",
+        "telephone" => "+91-11-40044653",
+        "address" => [
+            "@type" => "PostalAddress",
+            "streetAddress" => "201-A, Jaina Tower-II, District Centre, Janak Puri",
+            "addressLocality" => "New Delhi",
+            "postalCode" => "110058",
+            "addressCountry" => "IN"
+        ],
+        "geo" => [
+            "@type" => "GeoCoordinates",
+            "latitude" => 28.6290,
+            "longitude" => 77.0860
+        ],
+        "openingHoursSpecification" => [
+            "@type" => "OpeningHoursSpecification",
+            "dayOfWeek" => [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+            ],
+            "opens" => "10:00",
+            "closes" => "19:00"
+        ]
+    ]
+];
+
 render_header(
-    "Adsense Designs - Contact Us",
-    "Get in touch with us for your design needs",
+    "Contact Us | Get in Touch for Creative & Digital Solutions | Adsense Designs",
+    "Get in touch with Adsense Designs for your design needs, web development, digital marketing, and corporate branding solutions in New Delhi.",
     [
-        "keywords" => "contact, design, web design, graphic design",
+        "keywords" => "contact adsensedesigns, get in touch, digital agency contact delhi, web design enquiry, graphic design support, janakpuri office",
         "robots" => "index, follow",
+        // Open Graph Tags
+        "og:title" => "Contact Us | Adsense Designs Pvt. Ltd.",
+        "og:description" => "Reach out to our expert team for digital marketing, graphic design, and custom web development services.",
+        "og:image" => BASE_URL . "assets/img/logo/og-banner.jpg",
+        "og:url" => "https://adsensedesigns.com/contact-us",
+        "og:type" => "website",
+        // Twitter Cards
+        "twitter:card" => "summary_large_image",
+        "twitter:title" => "Contact Us | Adsense Designs Pvt. Ltd.",
+        "twitter:description" => "Reach out to our expert team for digital marketing, graphic design, and custom web development services.",
+        "twitter:image" => BASE_URL . "assets/img/logo/og-banner.jpg"
     ],
     [
-        "canonical" => "https://adsensedesigns.com/contact",
-    ]
+        "canonical" => "https://adsensedesigns.com/contact-us"
+    ],
+    $schema
 );
 
 ?>
@@ -71,7 +122,7 @@ render_header(
                         </div>
                         <div class="info-items wow fadeInUp" data-wow-delay=".9s">
                             <h5>Email</h5>
-                            <a href="#0"><i class="fa-solid fa-envelope"></i> info@adsensedesigns.com</a>
+                            <a href="mailto:info@adsensedesigns.com"><i class="fa-solid fa-envelope"></i> info@adsensedesigns.com</a>
                         </div>
                     </div>
                 </div>

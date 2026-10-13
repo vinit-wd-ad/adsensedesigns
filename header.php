@@ -1,7 +1,8 @@
 <?php
 $serObj = new Database('services');
 $serHeader = $serObj->where(['status' => 'active']);
-function render_header($title = "Default Title", $description = "Default description", $meta_tags = [],  $link_tags = [])
+
+function render_header($title = "Default Title", $description = "Default description", $meta_tags = [],  $link_tags = [], $schema = [])
 {
     global $BASE_URL;
     global $serHeader;
@@ -13,12 +14,19 @@ function render_header($title = "Default Title", $description = "Default descrip
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title><?php echo htmlspecialchars($title); ?></title>
-        <meta name="description" content="<?php echo htmlspecialchars($description); ?>" />
+        <title><?php echo $title; ?></title>
+        <meta name="description" content="<?php echo $description; ?>" />
+        <meta name="geo.region" content="IN-DL" />
+        <meta name="geo.placename" content="New Delhi" />
         <?php
         // Additional meta tags (array of name => content)
-        foreach ($meta_tags as $name => $content) {
-            echo '<meta name="' . htmlspecialchars($name) . '" content="' . htmlspecialchars($content) . '">' . "\n\t\t";
+        foreach ($meta_tags as $key => $content) {
+            // Agar key 'og:' ya 'property' se shuru ho toh attribute 'property' use karein, warna 'name'
+            if (strpos($key, 'og:') === 0) {
+                echo '<meta property="' . htmlspecialchars($key) . '" content="' . $content . '">' . "\n\t\t";
+            } else {
+                echo '<meta name="' . htmlspecialchars($key) . '" content="' . $content . '">' . "\n\t\t";
+            }
         }
         // Output optional link tags
         foreach ($link_tags as $rel => $href) {
@@ -44,274 +52,16 @@ function render_header($title = "Default Title", $description = "Default descrip
         <!--<< Style.css >>-->
         <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/style.css">
 
+        <?php
+        if (!empty($schema)) {
+            echo '<script type="application/ld+json">' . "\n";
+            echo json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+            echo "\n" . '</script>' . "\n";
+        }
+        ?>
     </head>
 
-    <body>
-
-        <!-- Preloader Start -->
-        <div id="preloader" class="preloader">
-            <div class="animation-preloader">
-                <div class="spinner">
-                </div>
-                <div class="txt-loading">
-                    <span data-text-preloader="A" class="letters-loading">
-                        A
-                    </span>
-                    <span data-text-preloader="D" class="letters-loading">
-                        D
-                    </span>
-                    <span data-text-preloader="S" class="letters-loading">
-                        S
-                    </span>
-                    <span data-text-preloader="E" class="letters-loading">
-                        E
-                    </span>
-                    <span data-text-preloader="N" class="letters-loading">
-                        N
-                    </span>
-                    <span data-text-preloader="S" class="letters-loading">
-                        S
-                    </span>
-                    <span data-text-preloader="E" class="letters-loading">
-                        E
-                    </span>
-                </div>
-                <p class="text-center">...........</p>
-            </div>
-            <div class="loader">
-                <div class="row">
-                    <div class="col-3 loader-section section-left">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-left">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-right">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-right">
-                        <div class="bg"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--<< Mouse Cursor Start >>-->
-        <div class="mouse-cursor cursor-outer"></div>
-        <div class="mouse-cursor cursor-inner"></div>
-
-        <!-- Offcanvas Area Start -->
-        <div class="fix-area">
-            <div class="offcanvas__info">
-                <div class="offcanvas__wrapper">
-                    <div class="offcanvas__content">
-                        <div class="offcanvas__top mb-3 d-flex justify-content-between align-items-center">
-                            <div class="offcanvas__logo">
-                                <a href="<?= BASE_URL ?>">
-                                    <img src="assets/img/logo/logo.jpeg" alt="logo-img">
-                                </a>
-                            </div>
-                            <div class="offcanvas__close">
-                                <button>
-                                    <i class="fa-solid fa-xmark"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="mobile-menu fix mb-3"></div>
-                        <div class="offcanvas__contact">
-                            <h4>Contact Info</h4>
-
-                            <ul>
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">
-                                            201-A, Jaina Tower-II, District Centre, Janak Puri, New Delhi 110058
-                                        </a>
-                                    </div>
-                                </li>
-
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon mr-15">
-                                        <i class="fa-solid fa-envelope"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a href="mailto:info@adsensedesigns.com">
-                                            <span>info@adsensedesigns.com</span>
-                                        </a>
-                                    </div>
-                                </li>
-
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon mr-15">
-                                        <i class="fa-solid fa-clock"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">
-                                            Mon - Sat, 10:00 AM - 7:00 PM
-                                        </a>
-                                    </div>
-                                </li>
-
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon mr-15">
-                                        <i class="fa-solid fa-phone"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a href="tel:+911234567890">
-                                            +91 12345 67890
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <div class="header-button mt-4">
-                                <a href="contact.html" class="theme-btn text-center">
-                                    Contact Us
-                                </a>
-                            </div>
-
-                            <div class="social-icon d-flex align-items-center">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="offcanvas__overlay"></div>
-
-        <!-- Header Area Start -->
-        <header>
-            <div class="header-top">
-                <div class="container-fluid">
-                    <div class="header-top-wrapper">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot me-2"></i>
-                                201-A, Jaina Tower-II, District Centre, Janak Puri, New Delhi 110058
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-envelope me-2"></i>
-                                <a href="mailto:info@adsensedesigns.com">
-                                    <span>info@adsensedesigns.com</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="social-icon d-flex align-items-center">
-                            <span class="me-3">Follow us:</span>
-                            <a href="#"><i class="fa-brands fa-facebook-f me-3"></i></a>
-                            <a href="#"><i class="fa-brands fa-x-twitter me-3"></i></a>
-                            <a href="#"><i class="fa-brands fa-youtube me-3"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="header-sticky" class="header-1">
-                <div class="container-fluid">
-                    <div class="mega-menu-wrapper">
-                        <div class="header-main">
-                            <div class="logo">
-                                <a href="<?= BASE_URL ?>" class="header-logo">
-                                    <img src="<?= BASE_URL ?>assets/img/logo/logo2.svg" alt="logo-img">
-                                </a>
-                                <a href="<?= BASE_URL ?>" class="header-logo-2">
-                                    <img src="<?= BASE_URL ?>assets/img/logo/logo1.png" alt="logo-img">
-                                </a>
-                            </div>
-                            <div class="header-left">
-                                <div class="mean__menu-wrapper d-none d-lg-block">
-                                    <div class="main-menu">
-                                        <nav id="mobile-menu">
-                                            <ul>
-                                                <li class="active">
-                                                    <a href="<?= BASE_URL ?>">
-                                                        Home
-                                                    </a>
-                                                </li>
-
-                                                <li>
-                                                    <a>About Us
-                                                        <i class="fas fa-angle-down"></i>
-                                                    </a>
-                                                    <ul class="submenu">
-                                                        <li><a href="<?= BASE_URL ?>about-us">Who We Are</a></li>
-                                                        <li><a href="<?= BASE_URL ?>what-we-do">What We Do</a></li>
-                                                        <li><a href="<?= BASE_URL ?>why-choose-us">Why Choose Us</a></li>
-                                                        <li><a href="<?= BASE_URL ?>testimonial">Testimonial</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="<?= BASE_URL ?>services">
-                                                        Services
-                                                        <i class="fas fa-angle-down"></i>
-                                                    </a>
-                                                    <ul class="submenu">
-                                                        <?php 
-                                                            foreach($serHeader as $serviceH){
-                                                        ?>
-                                                        <li><a href="<?= BASE_URL ?>service/<?= $serviceH['slug'] ?>"><?= strtoupper($serviceH['name']) ?></a></li>
-                                                        <?php 
-                                                            }
-                                                        ?>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="<?= BASE_URL ?>case-studies">
-                                                        Case Studies
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?= BASE_URL ?>blogs">
-                                                        Blogs
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="<?= BASE_URL ?>contact-us">Contact Us</a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="header-right d-flex justify-content-end align-items-center">
-                                <a href="#0" class="search-trigger search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
-                                <!-- <a href="#" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a> -->
-                                <div class="header__hamburger d-lg-none my-auto">
-                                    <div class="sidebar__toggle">
-                                        <i class="fa-solid fa-bars"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- Search Area Start -->
-        <div class="search-wrap">
-            <div class="search-inner">
-                <i class="fa-solid fa-xmark search-close" id="search-close"></i>
-                <div class="search-cell">
-                    <form method="get">
-                        <div class="search-field-holder">
-                            <input type="search" class="main-search-input" placeholder="Search...">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-    <?php
+<?php
+    include BASE_PATH . "nav.php";
 }
-    ?>
+?>

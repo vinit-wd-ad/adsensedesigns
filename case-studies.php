@@ -1,17 +1,45 @@
 <?php
-require "setting.php";
+require_once "setting.php";
 include "header.php";
 
+$schema = [
+    "@context" => "https://schema.org",
+    "@type" => "CollectionPage",
+    "name" => "Case Studies & Success Stories - Adsense Designs",
+    "description" => "Explore our portfolio of case studies, client projects, and design success stories showcasing our creative and digital marketing expertise.",
+    "url" => "https://adsensedesigns.com/case-studies",
+    "publisher" => [
+        "@type" => "Organization",
+        "name" => "Adsense Designs Pvt. Ltd.",
+        "logo" => [
+            "@type" => "ImageObject",
+            "url" => "https://adsensedesigns.com/assets/img/logo/logo.png"
+        ]
+    ]
+];
+
 render_header(
-    "Adsense Designs - Case Studies",
-    "Explore Our Case Studies, Client Projects, and Design Success Stories",
+    "Case Studies & Client Success Stories | Adsense Designs",
+    "Explore our case studies, client projects, and design success stories. See how we deliver impactful creative design, digital marketing, and branding solutions for businesses.",
     [
-        "keywords" => "case studies, client projects, design success stories",
+        "keywords" => "case studies, client projects, design success stories, portfolio, digital marketing results, branding projects, adsense designs",
         "robots" => "index, follow",
+        // Open Graph Tags
+        "og:title" => "Case Studies & Success Stories | Adsense Designs",
+        "og:description" => "Discover our successful client projects, design portfolios, and digital marketing transformation case studies.",
+        "og:image" => BASE_URL . "assets/img/logo/og-banner.jpg",
+        "og:url" => "https://adsensedesigns.com/case-studies",
+        "og:type" => "website",
+        // Twitter Cards
+        "twitter:card" => "summary_large_image",
+        "twitter:title" => "Case Studies & Success Stories | Adsense Designs",
+        "twitter:description" => "Discover our successful client projects, design portfolios, and digital marketing transformation case studies.",
+        "twitter:image" => BASE_URL . "assets/img/logo/og-banner.jpg"
     ],
     [
-        "canonical" => "https://adsensedesigns.com/case-studies",
-    ]
+        "canonical" => "https://adsensedesigns.com/case-studies"
+    ],
+    $schema
 );
 
 ?>

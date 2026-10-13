@@ -1,3 +1,4 @@
+</main>
 <!-- Footer Section Start -->
 <footer class="footer-section style-2 fix bg-cover" style="background-image: url('<?= BASE_URL ?>assets/img/footer-bg.jpg');">
     <div class="container">
@@ -12,7 +13,7 @@
                         </div>
                         <div class="footer-content">
                             <p>
-                               <i class="fa-solid fa-location-dot"></i> 201-A, Jaina Tower-II, District Centre,<br> Janak Puri, New Delhi 110058
+                                <i class="fa-solid fa-location-dot"></i> 201-A, Jaina Tower-II, District Centre,<br> Janak Puri, New Delhi 110058
                             </p>
                             <h6><a href="#"><i class="fa-solid fa-phone"></i> 011-40044653</a></h6>
                             <h6><a href="#"><i class="fa-solid fa-envelope"></i> info@adsensedesigns.com</a></h6>
@@ -47,13 +48,13 @@
                         <ul class="list-area">
                             <?php
                             $serHeader = empty($serHeader) ? [] : $serHeader;
-                            $serCount = 1; 
+                            $serCount = 1;
                             foreach ($serHeader as $serviceH) {
                             ?>
                                 <li><a href="<?= BASE_URL ?>service/<?= $serviceH['slug'] ?>"><?= ($serviceH['name']) ?></a></li>
                             <?php
-                            if($serCount === 4) break;
-                            $serCount ++;
+                                if ($serCount === 4) break;
+                                $serCount++;
                             }
                             ?>
                             <li><a href="services">view all <span style='font-size:22px;color:brown'>&#8594;</span></a></li>

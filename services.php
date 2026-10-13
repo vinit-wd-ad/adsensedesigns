@@ -1,17 +1,69 @@
 <?php
-require "setting.php";
+require_once "setting.php";
 include "header.php";
 
+$schema = [
+    "@context" => "https://schema.org",
+    "@type" => "ItemList",
+    "name" => "Our Creative & Digital Services - Adsense Designs",
+    "description" => "Explore the full suite of creative, design, digital marketing, motion graphics, and exhibition setup services offered by Adsense Designs Pvt. Ltd.",
+    "url" => "https://adsensedesigns.com/services",
+    "itemListElement" => [
+        [
+            "@type" => "ListItem",
+            "position" => 1,
+            "name" => "Graphic Design & Branding"
+        ],
+        [
+            "@type" => "ListItem",
+            "position" => 2,
+            "name" => "Digital Marketing & SEO"
+        ],
+        [
+            "@type" => "ListItem",
+            "position" => 3,
+            "name" => "Motion Graphics & Animation"
+        ],
+        [
+            "@type" => "ListItem",
+            "position" => 4,
+            "name" => "Exhibition Setups & Display"
+        ],
+        [
+            "@type" => "ListItem",
+            "position" => 5,
+            "name" => "Corporate Gifting & Printing Solutions"
+        ],
+        [
+            "@type" => "ListItem",
+            "position" => 6,
+            "name" => "Indoor Branding & Retail Interiors"
+        ]
+    ]
+];
+
 render_header(
-    "Adsense Designs - Our Services",
-    "Explore our wide range of services including graphic design, motion graphics, digital marketing, and more. We are committed to delivering the best solutions for our customers.",
+    "Our Services | Graphic Design, Digital Marketing & Branding | Adsense Designs",
+    "Explore our wide range of services including graphic design, motion graphics, digital marketing, corporate gifting, exhibition setups, and print solutions. We deliver result-driven strategies for your brand.",
     [
-        "keywords" => "services, graphic design, motion graphics, digital marketing, marketing solutions, exhibitions, corporate gifting, print solutions, indoor branding, interiors",
+        "keywords" => "services, graphic design, motion graphics, digital marketing, marketing solutions, exhibitions, corporate gifting, print solutions, indoor branding, interiors, adsense designs services",
         "robots" => "index, follow",
+        // Open Graph Tags
+        "og:title" => "Our Services | Adsense Designs Pvt. Ltd.",
+        "og:description" => "Explore our comprehensive creative design, digital marketing, and branding services tailored for your business.",
+        "og:image" => BASE_URL . "assets/img/logo/og-banner.jpg",
+        "og:url" => "https://adsensedesigns.com/services",
+        "og:type" => "website",
+        // Twitter Cards
+        "twitter:card" => "summary_large_image",
+        "twitter:title" => "Our Services | Adsense Designs Pvt. Ltd.",
+        "twitter:description" => "Explore our comprehensive creative design, digital marketing, and branding services tailored for your business.",
+        "twitter:image" => BASE_URL . "assets/img/logo/og-banner.jpg"
     ],
     [
-        "canonical" => "https://adsensedesigns.com/services",
-    ]
+        "canonical" => "https://adsensedesigns.com/services"
+    ],
+    $schema
 );
 
 ?>
@@ -54,7 +106,7 @@ render_header(
                 service for customer
             </h2>
         </div>
-        <?php  include "components/service-section-2.php";  ?>
+        <?php include "components/service-section-2.php";  ?>
     </div>
 </section>
 

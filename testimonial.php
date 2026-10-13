@@ -1,21 +1,48 @@
 <?php
-require "setting.php";
+require_once "setting.php";
 include "header.php";
 
+$schema = [
+    "@context" => "https://schema.org",
+    "@type" => "ItemPage",
+    "name" => "Client Testimonials - Adsense Designs",
+    "description" => "Read what our clients say about Adsense Designs. Customer reviews and feedback on our digital marketing, web design, and branding services.",
+    "url" => "https://adsensedesigns.com/testimonial",
+    "publisher" => [
+        "@type" => "Organization",
+        "name" => "Adsense Designs Pvt. Ltd.",
+        "logo" => [
+            "@type" => "ImageObject",
+            "url" => "https://adsensedesigns.com/assets/img/logo/logo.png"
+        ]
+    ]
+];
+
 render_header(
-    "Adsense Designs - Testimonials",
-    "Read what our clients say about us. We value our customers' feedback and strive to provide the best service possible.",
+    "Client Testimonials & Reviews | Adsense Designs",
+    "Read what our clients say about us. We value our customers' feedback and strive to provide the best creative design, branding, and digital marketing services possible.",
     [
-        "keywords" => "testimonials, client feedback, customer reviews",
+        "keywords" => "testimonials, client feedback, customer reviews, adsense designs reviews, digital agency testimonials delhi",
         "robots" => "index, follow",
+        // Open Graph Tags
+        "og:title" => "Client Testimonials | Adsense Designs",
+        "og:description" => "Discover how Adsense Designs helps businesses grow through our creative design and digital marketing solutions.",
+        "og:image" => BASE_URL . "assets/img/logo/og-banner.jpg",
+        "og:url" => "https://adsensedesigns.com/testimonial",
+        "og:type" => "website",
+        // Twitter Cards
+        "twitter:card" => "summary_large_image",
+        "twitter:title" => "Client Testimonials | Adsense Designs",
+        "twitter:description" => "Discover how Adsense Designs helps businesses grow through our creative design and digital marketing solutions.",
+        "twitter:image" => BASE_URL . "assets/img/logo/og-banner.jpg"
     ],
     [
-        "canonical" => "https://adsensedesigns.com/testimonials",
-    ]
+        "canonical" => "https://adsensedesigns.com/testimonial"
+    ],
+    $schema
 );
 
 ?>
-
 <!--<< Breadcrumb Section Start >>-->
 <div class="breadcrumb-wrapper section-padding bg-cover bg-banner-height" style="background-image: url('assets/img/breadcrumb.jpg');height:25rem;">
     <div class="layer-shape wow fadeInLeft" data-wow-delay=".3s">

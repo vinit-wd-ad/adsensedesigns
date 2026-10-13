@@ -1,17 +1,45 @@
 <?php
-require "setting.php";
+require_once "setting.php";
 include "header.php";
 
+$schema = [
+    "@context" => "https://schema.org",
+    "@type" => "WebPage",
+    "name" => "Why Choose Us - Adsense Designs",
+    "description" => "Discover why businesses trust Adsense Designs for creative design, branding, digital marketing, motion graphics, and print solutions.",
+    "url" => "https://adsensedesigns.com/why-choose-us",
+    "publisher" => [
+        "@type" => "Organization",
+        "name" => "Adsense Designs Pvt. Ltd.",
+        "logo" => [
+            "@type" => "ImageObject",
+            "url" => "https://adsensedesigns.com/assets/img/logo/logo.png"
+        ]
+    ]
+];
+
 render_header(
-    "Best Digital Marketing & Creative Agency Services | Why Choose Us",
-    "Choose our digital agency for creative design, branding, digital marketing, motion graphics, and print solutions. We deliver innovative strategies, quality work, and result-driven services for your business growth.",
+    "Why Choose Us | Best Digital Marketing & Creative Agency in Delhi",
+    "Choose Adsense Designs for creative design, branding, digital marketing, motion graphics, and print solutions. We deliver innovative strategies, quality work, and result-driven services for your business growth.",
     [
-        "keywords" => "what we do, services, business solutions, user experience, innovation",
+        "keywords" => "why choose us, best digital agency delhi, creative branding agency, result driven marketing, digital marketing experts, quality web design",
         "robots" => "index, follow",
+        // Open Graph Tags
+        "og:title" => "Why Choose Us | Adsense Designs - Digital & Creative Agency",
+        "og:description" => "We deliver innovative strategies, quality work, and result-driven services for your business growth.",
+        "og:image" => BASE_URL . "assets/img/logo/og-banner.jpg",
+        "og:url" => "https://adsensedesigns.com/why-choose-us",
+        "og:type" => "website",
+        // Twitter Cards
+        "twitter:card" => "summary_large_image",
+        "twitter:title" => "Why Choose Us | Adsense Designs - Digital & Creative Agency",
+        "twitter:description" => "We deliver innovative strategies, quality work, and result-driven services for your business growth.",
+        "twitter:image" => BASE_URL . "assets/img/logo/og-banner.jpg"
     ],
     [
-        "canonical" => "https://adsensedesigns.com/what-we-do",
-    ]
+        "canonical" => "https://adsensedesigns.com/why-choose-us"
+    ],
+    $schema
 );
 
 ?>

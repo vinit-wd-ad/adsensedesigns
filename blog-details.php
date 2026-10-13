@@ -1,12 +1,10 @@
 <?php
-require "setting.php"; 
-include "header.php";
+require_once "setting.php";
 
 $slug = '';
 if (isset($_GET['slug']) && !empty($_GET['slug'])) {
     $slug = trim($_GET['slug']);
 } else {
-    
     $request_uri = str_replace('/adsense/', '', $_SERVER['REQUEST_URI']);
     $uri_parts = explode('/', trim($request_uri, '/'));
     if (isset($uri_parts[0]) && $uri_parts[0] === 'blog' && isset($uri_parts[1])) {
@@ -15,26 +13,26 @@ if (isset($_GET['slug']) && !empty($_GET['slug'])) {
 }
 
 // Database Objects initializing
-$objBlog = new Database('blogs');
+$objBlog    = new Database('blogs');
 $objContent = new Database('blogs_content');
-$objSeo = new Database('blogs_seo');
+$objSeo     = new Database('blogs_seo');
 
-$blog = null;
-$content = '';
-$seoData = null;
+$blog      = null;
+$content   = '';
+$seoData   = null;
 $isDefault = true;
 
 if (!empty($slug)) {
     try {
         $blogRows = $objBlog->whereCustom(['slug' => $slug], "slug = :slug");
-        
+
         if (!empty($blogRows)) {
-            $blog = $blogRows[0];
-            $blog_id = $blog['id'];
+            $blog      = $blogRows[0];
+            $blog_id   = $blog['id'];
             $isDefault = false;
 
             $contentRows = $objContent->where(['blog_id' => $blog_id]);
-            $content = !empty($contentRows) ? $contentRows[0]['content'] : '';
+            $content     = !empty($contentRows) ? $contentRows[0]['content'] : '';
 
             $seoRows = $objSeo->where(['blog_id' => $blog_id]);
             if (!empty($seoRows)) {
@@ -46,43 +44,91 @@ if (!empty($slug)) {
     }
 }
 
-
+// Prepare Meta Data and Schema
 if (!$isDefault && $blog) {
-    $seo_meta = !empty($seoData['seo_meta']) ? json_decode($seoData['seo_meta'], true) : [];
+    $seo_meta = (!empty($seoData['seo_meta']) && is_string($seoData['seo_meta'])) ? json_decode($seoData['seo_meta'], true) : [];
+    $og_seo   = (!empty($seoData['og_seo']) && is_string($seoData['og_seo'])) ? json_decode($seoData['og_seo'], true) : [];
 
-    $page_title = !empty($seo_meta['title']) ? $seo_meta['title'] : $blog['title'];
-    $meta_desc  = !empty($seo_meta['description']) ? $seo_meta['description'] : $blog['short_description'];
-    $keywords   = !empty($seo_meta['keywords']) ? $seo_meta['keywords'] : "web design, blogs, adsense designs";
+    $page_title = !empty($seo_meta['title']) ? $seo_meta['title'] : htmlspecialchars($blog['title']) . " - Adsense Designs";
+    $meta_desc  = !empty($seo_meta['description']) ? $seo_meta['description'] : htmlspecialchars($blog['short_description']);
+    $keywords   = !empty($seo_meta['keywords']) ? $seo_meta['keywords'] : "web design, blogs, digital marketing, adsense designs";
 
     $robots     = !empty($seoData['robots']) ? $seoData['robots'] : "index, follow";
-    $canonical  = !empty($seoData['canonical_url']) ? $seoData['canonical_url'] : BASE_URL . "blog/" . $blog['slug'];
-} else {
+    $canonical  = !empty($seoData['canonical_url']) ? $seoData['canonical_url'] : BASE_URL . "blog/" . htmlspecialchars($blog['slug']);
 
+    // Image Setup
+    $blog_image = !empty($blog['image']) ? BASE_URL . "uploads/blogs/" . $blog['image'] : BASE_URL . "assets/img/logo/og-banner.jpg";
+
+    // Open Graph Fallbacks
+    $og_title   = !empty($og_seo['og:title']) ? $og_seo['og:title'] : $page_title;
+    $og_desc    = !empty($og_seo['og:description']) ? $og_seo['og:description'] : $meta_desc;
+    $og_image   = !empty($og_seo['og:image']) ? $og_seo['og:image'] : $blog_image;
+
+    // Schema Setup
+    $schemaData = [];
+    if (!empty($seoData['schema_json']) && $seoData['schema_json'] !== '{}' && is_string($seoData['schema_json'])) {
+        $schemaData = json_decode($seoData['schema_json'], true) ?: [];
+    } else {
+        // Automatic BlogPosting Schema Fallback
+        $schemaData = [
+            "@context" => "https://schema.org",
+            "@type" => "BlogPosting",
+            "headline" => htmlspecialchars($blog['title']),
+            "image" => $blog_image,
+            "url" => $canonical,
+            "description" => $meta_desc,
+            "publisher" => [
+                "@type" => "Organization",
+                "name" => "Adsense Designs Pvt. Ltd.",
+                "logo" => [
+                    "@type" => "ImageObject",
+                    "url" => BASE_URL . "assets/img/logo/s-logo.png"
+                ]
+            ]
+        ];
+    }
+} else {
     $page_title = "Adsense Designs - Blog Details";
     $meta_desc  = "Explore Our Blog Details - Adsense Designs";
     $keywords   = "service details, web design, cloud service, IT management";
     $robots     = "index, follow";
-    $canonical  = "https://adsensedesigns.com/blog-details";
+    $canonical  = BASE_URL . "blog-details";
+
+    $og_title   = $page_title;
+    $og_desc    = $meta_desc;
+    $og_image   = BASE_URL . "assets/img/logo/og-banner.jpg";
+    $schemaData = [];
 }
 
+// Meta Tags Array
+$meta_tags = [
+    "keywords"          => $keywords,
+    "robots"            => $robots,
+    "og:title"          => $og_title,
+    "og:description"    => $og_desc,
+    "og:image"          => $og_image,
+    "og:url"            => $canonical,
+    "og:type"           => "article",
+    "twitter:card"      => "summary_large_image",
+    "twitter:title"     => $og_title,
+    "twitter:description" => $og_desc,
+    "twitter:image"     => $og_image
+];
+
+// Include header assets
+include "header.php";
 
 render_header(
     $page_title,
     $meta_desc,
-    [
-        "keywords" => $keywords,
-        "robots" => $robots,
-    ],
+    $meta_tags,
     [
         "canonical" => $canonical,
-    ]
+    ],
+    $schemaData
 );
 
-if (!$isDefault && !empty($seoData['schema_json']) && $seoData['schema_json'] !== '{}') {
-    echo "\n<script type='application/ld+json'>\n" . $seoData['schema_json'] . "\n</script>\n";
-}
-
-// Display elements assignment
+// Display elements assignment for HTML view
 $displayTitle     = !$isDefault ? htmlspecialchars($blog['title']) : "World best web <br> design service provider.";
 $displayShortDesc = !$isDefault ? htmlspecialchars($blog['short_description']) : "We embrace holistic development and support for employees with the aim of being a first-choice employer within our sectors.";
 $displayImage     = (!$isDefault && !empty($blog['image'])) ? BASE_URL . "uploads/blogs/" . $blog['image'] : "assets/img/service/details.jpg";
